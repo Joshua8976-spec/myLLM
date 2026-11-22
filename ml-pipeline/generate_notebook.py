@@ -45,7 +45,7 @@ This notebook trains **Qwen 2.5 3B Instruct** on StudyVerse's curated ChatML dat
 
         make_cell("code", """# 1. Install Unsloth and modern fine-tuning libraries
 %%capture
-!pip install --no-deps "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+!pip install unsloth unsloth_zoo
 !pip install --no-deps trl peft accelerate bitsandbytes
 !pip install datasets"""),
 
