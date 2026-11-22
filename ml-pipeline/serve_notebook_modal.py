@@ -29,9 +29,10 @@ image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("git", "cmake", "build-essential")
     .pip_install(
-        "torch>=2.2.0,<2.5.0",
-        "torchvision",
-        "torchaudio",
+        "torch==2.4.1",
+        extra_options="--index-url https://download.pytorch.org/whl/cu124",
+    )
+    .pip_install(
         "transformers>=4.44.0,<4.48.0",
         "datasets",
         "trl<0.13.0",
