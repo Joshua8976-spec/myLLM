@@ -41,6 +41,12 @@ image = (
         "bitsandbytes",
         "huggingface_hub",
         "hf_transfer",
+        "pillow",
+        "sentencepiece",
+        "protobuf",
+        "einops",
+        "wheel",
+        "packaging",
         "jupyterlab~=4.2.0",
     )
     .run_commands(

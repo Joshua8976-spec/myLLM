@@ -35,6 +35,12 @@ image = (
         "bitsandbytes",
         "huggingface_hub",
         "hf_transfer",
+        "pillow",
+        "sentencepiece",
+        "protobuf",
+        "einops",
+        "wheel",
+        "packaging",
     )
     .run_commands(
         'pip install --no-deps "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"',
