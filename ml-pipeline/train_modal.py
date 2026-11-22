@@ -173,13 +173,20 @@ def train():
     )
 
     # Auto-resume from volume checkpoint if available
-    existing_checkpoints = glob.glob(f"{checkpoint_dir}/checkpoint-*")
+    existing_checkpoints = [
+        d for d in glob.glob(f"{checkpoint_dir}/checkpoint-*")
+        if os.path.exists(os.path.join(d, "trainer_state.json"))
+    ]
     latest_checkpoint = max(existing_checkpoints, key=os.path.getctime) if existing_checkpoints else None
     if latest_checkpoint:
-        print(f"🔁 Resuming from: {latest_checkpoint}")
-        trainer.train(resume_from_checkpoint=latest_checkpoint)
+        try:
+            print(f"🔁 Resuming from: {latest_checkpoint}")
+            trainer.train(resume_from_checkpoint=latest_checkpoint)
+        except Exception as e:
+            print(f"⚠️ Checkpoint resume failed ({e}). Starting fresh training...")
+            trainer.train()
     else:
-        print("🚀 Starting fine-tuning...")
+        print("🚀 Starting fine-tuning from step 0...")
         trainer.train()
 
     # 6. Post-training evaluation
