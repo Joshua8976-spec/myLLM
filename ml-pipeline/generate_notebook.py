@@ -43,11 +43,11 @@ This notebook trains **Qwen 2.5 3B Instruct** on StudyVerse's curated ChatML dat
 **Method:** Unsloth 4-bit QLoRA ($r=16, \\alpha=16$, max_seq_length=1024)  
 **Hosting & Inference:** Modal Serverless GPU (`ml-pipeline/serve_llm_modal.py`)"""),
 
-        make_cell("code", """# 1. Install Unsloth and modern fine-tuning libraries
+        make_cell("code", """# 1. Install Unsloth and compatible fine-tuning libraries
 %%capture
-!pip install unsloth unsloth_zoo
-!pip install --no-deps trl peft accelerate bitsandbytes
-!pip install datasets"""),
+!pip install "transformers>=4.44.0,<4.48.0" "trl<0.13.0" peft accelerate bitsandbytes datasets
+!pip install --no-deps "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"
+!pip install --no-deps "unsloth @ git+https://github.com/unslothai/unsloth.git" """),
 
         make_cell("code", """# 2. Checkpoint Storage: Modal Volume, Google Drive, or Local
 import os

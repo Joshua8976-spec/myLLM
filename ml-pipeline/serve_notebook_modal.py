@@ -29,19 +29,22 @@ image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("git", "cmake", "build-essential")
     .pip_install(
-        "torch>=2.4.0",
+        "torch>=2.2.0,<2.5.0",
         "torchvision",
         "torchaudio",
-        "unsloth",
-        "unsloth_zoo",
-        "trl",
+        "transformers>=4.44.0,<4.48.0",
+        "datasets",
+        "trl<0.13.0",
         "peft",
         "accelerate",
         "bitsandbytes",
-        "datasets",
         "huggingface_hub",
         "hf_transfer",
         "jupyterlab~=4.2.0",
+    )
+    .run_commands(
+        'pip install --no-deps "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"',
+        'pip install --no-deps "unsloth @ git+https://github.com/unslothai/unsloth.git"',
     )
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1"})
     .add_local_dir(str(ML_PIPELINE_DIR), remote_path="/root/ml-pipeline")
