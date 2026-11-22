@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Generates the ready-to-upload Google Colab notebook ml-pipeline/train_qwen25_3b.ipynb
-Configured for free Tesla T4 GPU (16GB VRAM) using Unsloth 4-bit QLoRA,
-SFTTrainer with Google Drive checkpointing/auto-resume, before/after evaluation,
-and GGUF q4_k_m export with Model Card upload.
+Generates the ready-to-upload Google Colab / Modal notebook ml-pipeline/train_qwen25_3b.ipynb
+Configured for Tesla T4 GPU (16GB VRAM) using Unsloth 4-bit QLoRA,
+SFTTrainer with Modal Volume / Google Drive auto-resume checkpointing,
+before/after evaluation across 4 modes, and LoRA adapter export for Modal serving.
 """
 
 import json
@@ -29,8 +29,9 @@ def make_cell(cell_type: str, source: str) -> dict:
 
 def build_notebook() -> dict:
     cells = [
-        make_cell("markdown", """# StudyVerse $0 Qwen 2.5 3B Instruct Fine-Tuning Pipeline
-### Ultra-fast, zero-cost QLoRA fine-tuning for Academic Tutoring, Adaptive Quizzes, Mistake Diagnostics & Calm Companion on Free Google Colab T4 GPU
+        make_cell("markdown", """# StudyVerse Qwen 2.5 3B Instruct Fine-Tuning Pipeline
+### Ultra-fast, zero-cost QLoRA fine-tuning for Academic Tutoring, Adaptive Quizzes, Mistake Diagnostics & Calm Companion on Cloud GPU
+Designed for execution on **Modal GPU** or **Google Colab T4** with direct deployment to **Modal Serverless Inference**.
 
 This notebook trains **Qwen 2.5 3B Instruct** on StudyVerse's curated ChatML dataset (`train.jsonl` and `val.jsonl`) across 4 task modes:
 1. `[Mode: tutor]`: Concise, syllabus-grounded academic explanations with LaTeX math.
@@ -38,15 +39,15 @@ This notebook trains **Qwen 2.5 3B Instruct** on StudyVerse's curated ChatML dat
 3. `[Mode: diagnostic]`: Root cause mistake analysis and remedial steps.
 4. `[Mode: companion]`: Empathetic, grounded emotional support with crisis safety (isolated from academic records).
 
-**Hardware:** Free Colab Tesla T4 (16GB VRAM)  
+**Hardware:** Tesla T4 GPU (16GB VRAM)  
 **Method:** Unsloth 4-bit QLoRA ($r=16, \\alpha=16$, max_seq_length=1024)  
-**Export:** GGUF `q4_k_m` for $0 CPU deployment on Hugging Face Spaces or local Ollama."""),
+**Hosting & Inference:** Modal Serverless GPU (`ml-pipeline/serve_llm_modal.py`)"""),
 
         make_cell("code", """# 1. Install Unsloth and modern fine-tuning libraries
 %%capture
 !pip install --no-deps "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
 !pip install --no-deps trl peft accelerate bitsandbytes
-!pip install datasets huggingface_hub"""),
+!pip install datasets"""),
 
         make_cell("code", """# 2. Checkpoint Storage: Modal Volume, Google Drive, or Local
 import os
@@ -100,7 +101,7 @@ import torch
 from unsloth import FastLanguageModel
 
 max_seq_length = 1024
-dtype = None # Auto-detects float16 for T4, bfloat16 for Ampere
+dtype = None # Auto detection
 load_in_4bit = True
 
 model, tokenizer = FastLanguageModel.from_pretrained(
@@ -110,21 +111,21 @@ model, tokenizer = FastLanguageModel.from_pretrained(
     load_in_4bit=load_in_4bit,
 )
 
-# Apply PEFT / QLoRA adapters
 model = FastLanguageModel.get_peft_model(
     model,
     r=16,
     target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
     lora_alpha=16,
-    lora_dropout=0, # Optimized = 0 for Unsloth
+    lora_dropout=0,
     bias="none",
     use_gradient_checkpointing="unsloth",
     random_state=42,
     max_seq_length=max_seq_length,
 )
-print("✅ QLoRA model initialized with 16-rank adapters.")"""),
 
-        make_cell("code", """# 5. Format ChatML Conversation Templates
+print("✅ Model & LoRA adapters configured successfully.")"""),
+
+        make_cell("code", """# 5. Format ChatML Conversation Template
 from unsloth.chat_templates import get_chat_template
 
 tokenizer = get_chat_template(
@@ -134,36 +135,39 @@ tokenizer = get_chat_template(
 
 def formatting_prompts_func(examples):
     convos = examples["messages"]
-    texts = [tokenizer.apply_chat_template(convo, tokenize=False, add_generation_prompt=False) for convo in convos]
+    texts = [
+        tokenizer.apply_chat_template(convo, tokenize=False, add_generation_prompt=False)
+        for convo in convos
+    ]
     return {"text": texts}
 
-formatted_dataset = dataset.map(formatting_prompts_func, batched=True)
-print("✅ Formatted sample ChatML text preview:")
-print(formatted_dataset["train"][0]["text"][:350])"""),
+formatted_train = dataset["train"].map(formatting_prompts_func, batched=True)
+formatted_val = dataset["validation"].map(formatting_prompts_func, batched=True)
+print("✅ Dataset formatted with ChatML template.")"""),
 
-        make_cell("code", """# 6. Baseline (Before Training) Qualitative Evaluation
+        make_cell("code", """# 6. Baseline Evaluation (Before Training) across 4 Modes
 FastLanguageModel.for_inference(model)
 
 test_eval_prompts = [
     {
         "mode": "tutor",
-        "system": "You are StudyVerse AI Tutor. [Mode: tutor]",
+        "system": "You are StudyVerse AI tutor. [Mode: tutor]",
         "user": "Explain Newton's Second Law and derive F = ma for constant mass."
     },
     {
         "mode": "quiz",
-        "system": "You are StudyVerse Quiz Generator. [Mode: quiz] Output strict JSON with stem, options, correct_answer, explanation, difficulty, topic.",
+        "system": "You are StudyVerse AI quiz generator. [Mode: quiz]",
         "user": "Generate a medium difficulty MCQ on Coulomb's law."
     },
     {
         "mode": "diagnostic",
-        "system": "You are StudyVerse Mistake Journal Diagnostic Engine. [Mode: diagnostic]",
-        "user": "I answered F/4 instead of 3F/8 on two charged spheres touched successively by sphere C. Diagnose my error."
+        "system": "You are StudyVerse AI diagnostic assistant. [Mode: diagnostic]",
+        "user": "Diagnose: I answered F/4 instead of 3F/8 on two touched spheres."
     },
     {
         "mode": "companion",
-        "system": "You are StudyVerse Calm Companion. [Mode: companion]",
-        "user": "I have my physics exam tomorrow and I haven't finished optics. I'm panicking."
+        "system": "You are StudyVerse AI calm companion. [Mode: companion]",
+        "user": "I have my physics exam tomorrow and I'm panicking. My mind feels completely blank."
     }
 ]
 
@@ -174,14 +178,15 @@ for test_item in test_eval_prompts:
         {"role": "user", "content": test_item["user"]}
     ]
     inputs = tokenizer.apply_chat_template(prompt_msgs, tokenize=True, add_generation_prompt=True, return_tensors="pt").to("cuda")
-    outputs = model.generate(input_ids=inputs, max_new_tokens=180, temperature=0.15, use_cache=True)
+    temp = 0.45 if test_item["mode"] == "companion" else 0.15
+    outputs = model.generate(input_ids=inputs, max_new_tokens=140, temperature=temp, use_cache=True)
     decoded = tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True)
     print(f"\\n--- [{test_item['mode'].upper()}] ---")
     print(decoded.strip())"""),
 
-        make_cell("code", """# 7. Configure SFTConfig and Train with Google Drive Checkpointing
-import glob
+        make_cell("code", """# 7. SFTTrainer Fine-Tuning with Auto-Resume
 from trl import SFTTrainer, SFTConfig
+import glob
 
 training_args = SFTConfig(
     output_dir=CHECKPOINT_DIR,
@@ -210,23 +215,22 @@ training_args = SFTConfig(
 trainer = SFTTrainer(
     model=model,
     tokenizer=tokenizer,
-    train_dataset=formatted_dataset["train"],
-    eval_dataset=formatted_dataset["validation"],
+    train_dataset=formatted_train,
+    eval_dataset=formatted_val,
     args=training_args,
 )
 
-# Auto-resume from Google Drive if a checkpoint exists
 existing_checkpoints = glob.glob(f"{CHECKPOINT_DIR}/checkpoint-*")
 latest_checkpoint = max(existing_checkpoints, key=os.path.getctime) if existing_checkpoints else None
 
 if latest_checkpoint:
-    print(f"🔁 Resuming training from Drive checkpoint: {latest_checkpoint}")
+    print(f"🔁 Resuming from existing checkpoint: {latest_checkpoint}")
     trainer.train(resume_from_checkpoint=latest_checkpoint)
 else:
-    print("🚀 Starting fine-tuning training...")
+    print("🚀 Starting fine-tuning from step 0...")
     trainer.train()"""),
 
-        make_cell("code", """# 8. Post-Training Qualitative Evaluation (Verify 4 Modes)
+        make_cell("code", """# 8. Post-Training Evaluation across 4 Modes
 FastLanguageModel.for_inference(model)
 
 print("=== FINE-TUNED RESPONSES (AFTER TRAINING) ===")
@@ -242,58 +246,23 @@ for test_item in test_eval_prompts:
     print(f"\\n--- [{test_item['mode'].upper()}] ---")
     print(decoded.strip())"""),
 
-        make_cell("code", """# 9. Push GGUF (q4_k_m) & Model Card to Hugging Face Hub
-from huggingface_hub import login, HfApi
+        make_cell("code", """# 9. Save LoRA Adapter for Modal Serving
+adapter_dir = os.path.join(CHECKPOINT_DIR, "studyverse-qwen-adapter")
+model.save_pretrained(adapter_dir)
+tokenizer.save_pretrained(adapter_dir)
+print(f"✅ LoRA adapter saved to: {adapter_dir}")
 
-# Step 1: Log in with your Hugging Face write token
-# HF_TOKEN = "hf_your_token_here"
-# login(token=HF_TOKEN)
-
-HF_REPO_ID = "Joshua8976/studyverse-qwen2.5-3b-gguf" # Change to your repo name
-
-print("Ready to export GGUF q4_k_m. Uncomment the lines below when token is configured:")
-# model.push_to_hub_gguf(
-#     HF_REPO_ID,
-#     tokenizer,
-#     quantization_method="q4_k_m",
-#     token=HF_TOKEN,
-# )
-
-# Step 2: Generate and upload Model Card
-model_card = f\"\"\"---
-language:
-- en
-license: apache-2.0
-tags:
-- studyverse
-- qwen2.5
-- qlora
-- unsloth
-- gguf
-- education
-- stem
-base_model: unsloth/Qwen2.5-3B-Instruct-bnb-4bit
-pipeline_tag: text-generation
----
-
-# StudyVerse Qwen 2.5 3B Instruct (GGUF q4_k_m)
-
-Fine-tuned on StudyVerse's academic curriculum, formulas, common exam mistakes, and student wellbeing support.
-
-### Supported Modes:
-1. `[Mode: tutor]`: Concise, syllabus-grounded academic explanations with KaTeX formatting.
-2. `[Mode: quiz]`: Strict JSON practice questions formatted for instant interactive quizzes.
-3. `[Mode: diagnostic]`: Root cause mistake analysis and remedial action steps.
-4. `[Mode: companion]`: Empathetic, grounded emotional support with zero toxic positivity and 24/7 crisis helplines.
-
-### Deployment:
-Deployable on free Hugging Face Spaces (CPU Basic) with `llama-cpp-python` or locally with Ollama.
-\"\"\"
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(model_card)
-
-print("✅ Model card written to README.md.")"""),
+print(\"\"\"
+=============================================================================
+🎉 Fine-Tuning Complete!
+To serve this model on Modal:
+  1. If running inside Modal JupyterLab: The adapter is already saved in the
+     persistent volume 'studyverse-checkpoints'.
+  2. Deploy the OpenAI-compatible server:
+     modal deploy ml-pipeline/serve_llm_modal.py
+  3. Set VITE_STUDY_LLM_URL in your StudyVerse app to the deployed Modal URL!
+=============================================================================
+\"\"\")"""),
     ]
 
     return {
