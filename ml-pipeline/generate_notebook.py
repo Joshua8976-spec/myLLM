@@ -43,11 +43,10 @@ This notebook trains **Qwen 2.5 3B Instruct** on StudyVerse's curated ChatML dat
 **Method:** Unsloth 4-bit QLoRA ($r=16, \\alpha=16$, max_seq_length=1024)  
 **Hosting & Inference:** Modal Serverless GPU (`ml-pipeline/serve_llm_modal.py`)"""),
 
-        make_cell("code", """# 1. Install Unsloth and compatible fine-tuning libraries
+        make_cell("code", """# 1. Install Unsloth and modern fine-tuning libraries (Official Colab setup)
 %%capture
-!pip install "transformers>=4.44.0,<4.48.0" "trl<0.13.0" peft accelerate bitsandbytes datasets
-!pip install --no-deps "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"
-!pip install --no-deps "unsloth @ git+https://github.com/unslothai/unsloth.git" """),
+!pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+!pip install --no-deps trl peft accelerate bitsandbytes"""),
 
         make_cell("code", """# 2. Checkpoint Storage: Modal Volume, Google Drive, or Local
 import os
@@ -247,20 +246,27 @@ for test_item in test_eval_prompts:
     print(decoded.strip())"""),
 
         make_cell("code", """# 9. Save LoRA Adapter for Modal Serving
+import shutil
+
 adapter_dir = os.path.join(CHECKPOINT_DIR, "studyverse-qwen-adapter")
 model.save_pretrained(adapter_dir)
 tokenizer.save_pretrained(adapter_dir)
 print(f"✅ LoRA adapter saved to: {adapter_dir}")
 
+# Create a zip archive for easy download to your local machine
+shutil.make_archive("studyverse-qwen-adapter", "zip", adapter_dir)
+print("✅ Created studyverse-qwen-adapter.zip in current directory.")
+
 print(\"\"\"
 =============================================================================
 🎉 Fine-Tuning Complete!
-To serve this model on Modal:
-  1. If running inside Modal JupyterLab: The adapter is already saved in the
-     persistent volume 'studyverse-checkpoints'.
-  2. Deploy the OpenAI-compatible server:
+Next Steps to serve on Modal:
+  1. Download 'studyverse-qwen-adapter.zip' (or access it from Google Drive).
+  2. Unzip it into your local repo: ml-pipeline/studyverse-qwen-adapter
+  3. Upload it to your Modal volume:
+     modal volume put studyverse-checkpoints ml-pipeline/studyverse-qwen-adapter /studyverse-qwen-adapter
+  4. Deploy your serverless inference endpoint on Modal:
      modal deploy ml-pipeline/serve_llm_modal.py
-  3. Set VITE_STUDY_LLM_URL in your StudyVerse app to the deployed Modal URL!
 =============================================================================
 \"\"\")"""),
     ]
