@@ -47,10 +47,16 @@ image = (
         "einops",
         "wheel",
         "packaging",
+        "requests",
+        "regex",
+        "tqdm",
+        "psutil",
+        "numpy",
+        "scipy",
         "jupyterlab~=4.2.0",
     )
     .run_commands(
-        'pip install --no-deps "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"',
+        'pip install "unsloth_zoo @ git+https://github.com/unslothai/unsloth-zoo.git"',
         'pip install --no-deps "unsloth @ git+https://github.com/unslothai/unsloth.git"',
     )
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1"})
