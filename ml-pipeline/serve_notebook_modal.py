@@ -33,9 +33,9 @@ image = (
         extra_options="--index-url https://download.pytorch.org/whl/cu124",
     )
     .pip_install(
-        "transformers==4.48.3",
+        "transformers>=4.50.3",
         "datasets",
-        "trl==0.13.0",
+        "trl",
         "peft",
         "accelerate",
         "bitsandbytes",
