@@ -38,6 +38,12 @@ venv.bak/
 .vscode/
 .idea/
 
+# Node & Frontend
+node_modules/
+dist/
+.vite/
+*.local
+
 # OS
 .DS_Store
 Thumbs.db
