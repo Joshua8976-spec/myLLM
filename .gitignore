@@ -47,3 +47,9 @@ dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# RAG & Model caches
+data/cache/
+*.npy
+checkpoints/
+
