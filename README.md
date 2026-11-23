@@ -10,7 +10,7 @@ A modern web application modeled after the Google Gemini chat experience, built 
 
 ### Features:
 - **Google Gemini Aesthetics**: Deep charcoal dark theme (`#131314`), gradient shimmer sparkles, greeting cards with animated typography, and a floating pill input bar.
-- **Direct Live Modal Integration**: Pre-configured to stream tokens from your deployed Modal endpoint (`https://rockefashy--studyverse-qwen-serve-modelserver-serve.us-east.modal.run/v1`).
+- **Direct Live Modal Integration**: Pre-configured to stream tokens from your deployed Modal endpoint (`https://rockefashy--studyverse-qwen-serve-serve.modal.run/v1`).
 - **Real-Time Token Streaming**: Server-Sent Events (SSE) streaming with stop generation controls and typing cursor animations.
 - **Task Mode Switcher**: Quick-toggle between the 4 fine-tuned modes:
   - 🎓 **Academic Tutor**: Socratic guidance with rendered LaTeX formulas ($...$).

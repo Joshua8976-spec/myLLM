@@ -138,7 +138,7 @@ modal deploy ml-pipeline/serve_llm_modal.py
 
 Modal will output your live URL, for example:
 ```
-https://<your-org>--studyverse-qwen-serve-modelserver-serve.modal.run
+https://<your-org>--studyverse-qwen-serve-serve.modal.run
 ```
 
 ---
@@ -149,7 +149,7 @@ In your StudyVerse frontend project root, update `.env` or set your environment 
 
 ```env
 # Modal Serverless Endpoint (append /v1):
-VITE_STUDY_LLM_URL=https://<your-org>--studyverse-qwen-serve-modelserver-serve.modal.run/v1
+VITE_STUDY_LLM_URL=https://<your-org>--studyverse-qwen-serve-serve.modal.run/v1
 VITE_STUDY_LLM_MODEL=studyverse-qwen-2.5-3b
 ```
 

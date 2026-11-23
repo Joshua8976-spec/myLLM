@@ -7,7 +7,7 @@ const STORAGE_KEYS = {
 };
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  apiUrl: 'https://rockefashy--studyverse-qwen-serve-modelserver-serve.us-east.modal.run/v1',
+  apiUrl: 'https://rockefashy--studyverse-qwen-serve-serve.modal.run/v1',
   model: 'studyverse-qwen-2.5-3b',
   temperature: 0.2,
   maxTokens: 512,
@@ -17,7 +17,13 @@ export function loadSettings(): AppSettings {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (raw) {
-      return { ...DEFAULT_SETTINGS, ...JSON.parse(raw) };
+      const parsed = JSON.parse(raw);
+      // Auto-correct stale or misnamed Modal URL if previously saved
+      if (parsed.apiUrl && (parsed.apiUrl.includes('modelserver-serve') || parsed.apiUrl.includes('us-east.modal.run'))) {
+        parsed.apiUrl = DEFAULT_SETTINGS.apiUrl;
+        saveSettings(parsed);
+      }
+      return { ...DEFAULT_SETTINGS, ...parsed };
     }
   } catch (err) {
     console.error('Failed to load settings:', err);

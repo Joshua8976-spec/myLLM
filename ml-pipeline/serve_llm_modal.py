@@ -7,7 +7,7 @@ Deploy:
   modal deploy ml-pipeline/serve_llm_modal.py
 
 Connect to StudyVerse:
-  Set VITE_STUDY_LLM_URL=https://<your-org>--studyverse-qwen-serve-modelserver-serve.modal.run/v1
+  Set VITE_STUDY_LLM_URL=https://<your-org>--studyverse-qwen-serve-serve.modal.run/v1
 """
 
 import os
