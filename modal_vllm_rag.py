@@ -56,7 +56,7 @@ image = (
         "sentence-transformers>=3.0.0",
         "httpx>=0.27.0",
         "torch>=2.4.0",
-        "transformers>=4.45.0",
+        "transformers>=4.45.0,<4.49.0",
         "accelerate",
         "peft",
         "bitsandbytes",
@@ -92,6 +92,7 @@ class RagChatRequest(BaseModel):
     minScore: Optional[float] = None
     min_score: Optional[float] = None
     stream: Optional[bool] = False
+    mode: Optional[str] = None
 
 
 class RagChatResponse(BaseModel):
@@ -119,12 +120,21 @@ class ChatCompletionRequest(BaseModel):
 def build_grounded_tutor_messages(
     question: str,
     retrieved_chunks: List[Dict[str, Any]],
+    mode: Optional[str] = None,
 ) -> List[Dict[str, str]]:
     """
     Constructs deterministic, strictly grounded tutor prompt for Qwen 2.5 3B.
+    Supports dual-mode contract:
+      - [MODE: CALM_CORNER]: Warm, deeply empathetic, zero productivity guilt, gentle grounding.
+      - [MODE: STRICT_COACH] (default): Firm, accountable, structured time blocks, exact formulas.
     Formats context cleanly with concise, high-signal fields and pre-trimmed explanations
     (~120-160 words) to minimize prompt prefill tokens and TTFT.
     """
+    is_calm_corner = (
+        (mode and mode.lower() in ("calm_corner", "calm", "companion"))
+        or "[MODE: CALM_CORNER]" in question
+    )
+
     context_lines = []
     for idx, chunk in enumerate(retrieved_chunks, 1):
         chunk_id = chunk.get("id", f"chunk_{idx}")
@@ -151,15 +161,26 @@ def build_grounded_tutor_messages(
 
     context_block = "\n".join(context_lines)
 
-    system_prompt = (
-        "You are the StudyVerse Academic AI Tutor, a concise and mathematically precise tutor.\n\n"
-        "STRICT GROUNDING & CITATION RULES:\n"
-        "1. GROUNDING: Use ONLY the verified Context Entries provided below for academic formulas, definitions, laws, and rules. Do not extrapolate or guess unverified equations.\n"
-        "2. INLINE CITATIONS: Every time you state or apply a formula, theorem, or syllabus rule, immediately append its exact citation tag in brackets, e.g. [chunk-id]. Cite ONLY IDs present in the retrieved list.\n"
-        "3. REFUSAL WHEN MISSING: If the retrieved Context Entries do not contain the formula or rule needed to answer the question, state clearly: 'The retrieved curriculum context does not contain the verified formula or rule for this topic.' Do not invent hypothetical equations.\n"
-        "4. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
-        "5. STYLE: Deterministic, structured, direct, and concise."
-    )
+    if is_calm_corner:
+        system_prompt = (
+            "You are StudyVerse Calm Corner Companion. [MODE: CALM_CORNER]\n\n"
+            "GENTLE GUIDELINES:\n"
+            "1. EMPATHETIC VALIDATION: Warmly and deeply validate feelings first with patience and non-judgmental acceptance. Never use toxic positivity or dismiss their struggle.\n"
+            "2. ZERO PRODUCTIVITY GUILT: Avoid lecturing, pushing study schedules, guilt-tripping about deadlines, or urging immediate work. Slow the pace down.\n"
+            "3. GENTLE GROUNDING: Offer optional calming grounding or breathing resets (e.g. 4-4-4 box breathing, unclenching jaw, sipping water, pausing).\n"
+            "4. ETHICAL SAFETY: Provide a soothing space without giving clinical or medical diagnoses.\n"
+            "5. TONE: Kind, soft, low-pressure, and understanding."
+        )
+    else:
+        system_prompt = (
+            "You are StudyVerse Academic AI Coach & Rigorous Tutor. [MODE: STRICT_COACH]\n\n"
+            "STRICT GROUNDING & CITATION RULES:\n"
+            "1. GROUNDING: Use ONLY the verified Context Entries provided below for academic formulas, definitions, laws, and rules. Do not extrapolate or guess unverified equations.\n"
+            "2. INLINE CITATIONS: Every time you state or apply a formula, theorem, or syllabus rule, immediately append its exact citation tag in brackets, e.g. [chunk-id]. Cite ONLY IDs present in the retrieved list.\n"
+            "3. REFUSAL WHEN MISSING: If the retrieved Context Entries do not contain the formula or rule needed to answer the question, state clearly: 'The retrieved curriculum context does not contain the verified formula or rule for this topic.' Do not invent hypothetical equations.\n"
+            "4. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
+            "5. TONE & ACCOUNTABILITY: Firm, structured, direct, and concise. Point out errors and schedule slips without sugarcoating."
+        )
 
     if context_block.strip():
         user_prompt = (
@@ -167,7 +188,7 @@ def build_grounded_tutor_messages(
             f"{context_block}\n"
             f"STUDENT QUESTION:\n"
             f"{question}\n\n"
-            f"Provide a clear, structured explanation adhering strictly to the citation rules above, citing [id] after each formula/rule, and ending with 'Quick Check: <question>'."
+            f"Provide a clear, structured explanation adhering strictly to your mode guidelines."
         )
     else:
         user_prompt = (
@@ -288,7 +309,7 @@ class RagVllmService:
             "--max-num-seqs", "32",
             "--enable-prefix-caching",
             "--enable-chunked-prefill",
-            "--dtype", "auto",
+            "--dtype", "half",
             "--trust-remote-code",
             "--served-model-name", MODEL_ID,
         ]
@@ -376,7 +397,7 @@ class RagVllmService:
             except subprocess.TimeoutExpired:
                 self.vllm_proc.kill()
 
-    @modal.asgi_app()
+    @modal.asgi_app(label="studyverse-rag-vllm-serve")
     def serve(self):
         """Exposes FastAPI ASGI app on Modal."""
         import httpx
@@ -389,9 +410,10 @@ class RagVllmService:
         web_app.add_middleware(
             CORSMiddleware,
             allow_origins=["*"],
-            allow_credentials=True,
+            allow_credentials=False,
             allow_methods=["*"],
             allow_headers=["*"],
+            expose_headers=["*"],
         )
 
         @web_app.get("/health")
@@ -484,7 +506,9 @@ class RagVllmService:
             )
 
             # 2. Build lean grounded prompt
-            messages = build_grounded_tutor_messages(req.question, retrieved_chunks)
+            messages = build_grounded_tutor_messages(req.question, retrieved_chunks, mode=req.mode)
+            is_calm = (req.mode and req.mode.lower() in ("calm_corner", "calm", "companion")) or "[MODE: CALM_CORNER]" in req.question
+            gen_temp = 0.45 if is_calm else 0.15
 
             # 3. Handle Streaming if requested by client
             if req.stream:
@@ -495,7 +519,7 @@ class RagVllmService:
                         vllm_payload = {
                             "model": MODEL_ID,
                             "messages": messages,
-                            "temperature": 0.15,
+                            "temperature": gen_temp,
                             "top_p": 0.9,
                             "repetition_penalty": 1.05,
                             "max_tokens": 500,
@@ -537,7 +561,7 @@ class RagVllmService:
             vllm_payload = {
                 "model": MODEL_ID,
                 "messages": messages,
-                "temperature": 0.15,
+                "temperature": gen_temp,
                 "top_p": 0.9,
                 "repetition_penalty": 1.05,
                 "max_tokens": 500,

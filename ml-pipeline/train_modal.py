@@ -63,7 +63,7 @@ image = (
     timeout=3600 * 2,
     volumes={"/root/checkpoints": volume},
 )
-def train():
+def train(use_dual_mode: bool = True):
     import torch
     from datasets import load_dataset
     from unsloth import FastLanguageModel
@@ -74,9 +74,21 @@ def train():
     os.makedirs(checkpoint_dir, exist_ok=True)
     print(f"✅ Checkpoint directory ready: {checkpoint_dir}")
 
-    # 1. Load dataset
-    train_path = "/root/ml-pipeline/train.jsonl"
-    val_path = "/root/ml-pipeline/val.jsonl"
+    # 1. Load dataset (Dual-Mode SFT dataset or standard curriculum dataset)
+    dual_train = "/root/ml-pipeline/dual_mode_train.jsonl"
+    dual_val = "/root/ml-pipeline/dual_mode_val.jsonl"
+    std_train = "/root/ml-pipeline/train.jsonl"
+    std_val = "/root/ml-pipeline/val.jsonl"
+
+    if use_dual_mode and os.path.exists(dual_train):
+        train_path = dual_train
+        val_path = dual_val if os.path.exists(dual_val) else std_val
+        print(f"🎯 Using Dual-Mode SFT Dataset ([MODE: STRICT_COACH] + [MODE: CALM_CORNER]): {train_path}")
+    else:
+        train_path = std_train
+        val_path = std_val
+        print(f"📖 Using Standard Curriculum Dataset: {train_path}")
+
     assert os.path.exists(train_path), f"Missing dataset: {train_path}"
     assert os.path.exists(val_path), f"Missing dataset: {val_path}"
 
@@ -128,6 +140,8 @@ def train():
         ("quiz", "Generate a medium difficulty MCQ on Coulomb's law."),
         ("diagnostic", "Diagnose: I answered F/4 instead of 3F/8 on two touched spheres."),
         ("companion", "I have my physics exam tomorrow and I'm panicking."),
+        ("strict_coach", "[MODE: STRICT_COACH] I was supposed to do 3 hours of Calculus today, but I scrolled on my phone for 3 hours and now it's 9 PM. What do I do?"),
+        ("calm_corner", "[MODE: CALM_CORNER] I just got my mock test result back and my score dropped 50 points from last week. I feel like an absolute failure."),
     ]
     for mode_name, user_query in test_eval_prompts:
         msgs = [
@@ -227,7 +241,8 @@ def train():
 
 
 @app.local_entrypoint()
-def main():
-    print("🌟 Submitting StudyVerse Qwen 2.5 3B fine-tuning job to Modal GPU...")
-    train.remote()
+def main(use_dual_mode: bool = True):
+    mode_label = "Dual-Mode (STRICT_COACH + CALM_CORNER)" if use_dual_mode else "Standard"
+    print(f"🌟 Submitting StudyVerse Qwen 2.5 3B fine-tuning job to Modal GPU ({mode_label})...")
+    train.remote(use_dual_mode=use_dual_mode)
     print("🎉 Training completed successfully on Modal!")
