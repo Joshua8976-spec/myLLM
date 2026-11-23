@@ -1,15 +1,18 @@
 """
-modal_vllm_rag.py - Modal vLLM + RAG Academic Tutor Service
+modal_vllm_rag.py - Tuned Modal vLLM + RAG Academic Tutor Service
 
 Exposes:
-  1. POST /rag/chat - Metadata-scoped retrieval, formula grounding, [id] citation enforcement,
-                      and active-recall question generation.
+  1. POST /rag/chat - Metadata-scoped retrieval, formula grounding, deterministic Qwen 2.5 3B prompting,
+                      citation sanitization (stripping hallucinated tags & tracking verified IDs),
+                      and 'Quick Check:' active recall.
   2. POST /v1/chat/completions - OpenAI-compatible chat completion (with full streaming SSE support).
   3. GET /v1/models - OpenAI-compatible model catalog.
   4. GET /health - Server and corpus health check.
 
-Persistent Volumes:
-  - Cache volume mounted at /root/checkpoints (holds weights, LoRA adapter, embeddings cache, vLLM cache).
+Performance & Grounding:
+  - vLLM Prefix Caching enabled (--enable-prefix-caching)
+  - max-model-len capped cleanly at 4096
+  - Deterministic sampling: temperature=0.15, top_p=0.9, repetition_penalty=1.05, max_tokens=650
 
 Deploy:
   modal deploy modal_vllm_rag.py
@@ -24,10 +27,10 @@ import sys
 import json
 import time
 import subprocess
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 
 import modal
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, StreamingResponse
@@ -83,6 +86,8 @@ class RagChatRequest(BaseModel):
     subject_filter: Optional[str] = None
     topK: Optional[int] = None
     top_k: Optional[int] = None
+    minScore: Optional[float] = None
+    min_score: Optional[float] = None
 
 
 class RagChatResponse(BaseModel):
@@ -99,7 +104,9 @@ class ChatMessage(BaseModel):
 class ChatCompletionRequest(BaseModel):
     model: Optional[str] = MODEL_ID
     messages: List[ChatMessage]
-    temperature: Optional[float] = 0.2
+    temperature: Optional[float] = 0.15
+    top_p: Optional[float] = 0.9
+    repetition_penalty: Optional[float] = 1.05
     max_tokens: Optional[int] = 650
     stream: Optional[bool] = False
 
@@ -110,9 +117,9 @@ def build_grounded_tutor_messages(
     retrieved_chunks: List[Dict[str, Any]],
 ) -> List[Dict[str, str]]:
     """
-    Constructs the grounded tutor prompt instructing the model to use ONLY retrieved context,
-    cite exact [id] tags next to every formula/rule, refuse to guess when missing from context,
-    and end with one short active-recall check question.
+    Constructs deterministic, strictly grounded tutor prompt for Qwen 2.5 3B.
+    Formats context cleanly with ID, Subject / Topic, Title, Formula/Rule, Key Terms, and Explanation.
+    Instructs the model to cite [exact-id] inline, refuse when not covered, and end with 'Quick Check:'.
     """
     context_lines = []
     for idx, chunk in enumerate(retrieved_chunks, 1):
@@ -125,36 +132,29 @@ def build_grounded_tutor_messages(
         formula = chunk.get("formulaOrRule", "")
         explanation = chunk.get("derivationOrExplanation", "")
         variables = chunk.get("variablesOrTerms", {})
-        flashcard = chunk.get("flashcard", {})
 
-        vars_str = "; ".join([f"{k} = {v}" for k, v in variables.items()]) if variables else ""
+        vars_str = "; ".join([f"{k} = {v}" for k, v in variables.items()]) if variables else "None specified"
 
         entry_text = (
-            f"--- Context Entry [{chunk_id}] ---\n"
+            f"[Context Entry: {chunk_id}]\n"
+            f"Subject / Topic: {subject} ({stream} - {level}) / {topic}\n"
             f"Title: {title}\n"
-            f"Subject: {subject} ({stream} - {level})\n"
-            f"Topic: {topic}\n"
             f"Formula/Rule: {formula}\n"
+            f"Key Terms: {vars_str}\n"
+            f"Explanation: {explanation}\n"
         )
-        if vars_str:
-            entry_text += f"Variables: {vars_str}\n"
-        if explanation:
-            entry_text += f"Explanation: {explanation}\n"
-        if flashcard and flashcard.get("front"):
-            entry_text += f"Active Recall Reference: Q: {flashcard.get('front')} | A: {flashcard.get('back')}\n"
-
         context_lines.append(entry_text)
 
     context_block = "\n".join(context_lines)
 
     system_prompt = (
-        "You are the StudyVerse Academic AI Tutor, an expert tutor grounded in official curriculum formulas and syllabus guidelines.\n\n"
+        "You are the StudyVerse Academic AI Tutor, a concise and mathematically precise tutor.\n\n"
         "STRICT GROUNDING & CITATION RULES:\n"
-        "1. GROUNDING: Rely ONLY on the verified Context Entries provided below for academic formulas, laws, equations, definitions, and rules.\n"
-        "2. CITATIONS: Every single time you state a formula, law, equation, identity, or syllabus definition, you MUST cite its exact chunk ID tag in brackets immediately adjacent to it, e.g., [chunk-id]. Never invent or alter citation tags.\n"
-        "3. REFUSAL TO GUESS: If the formula or specific rule requested is NOT present in the provided Context Entries, refuse to guess or hallucinate unverified formulas. State clearly what is missing from the curriculum context.\n"
-        "4. ACTIVE RECALL: Conclude your explanation with exactly ONE short, targeted active-recall question to test the student's understanding.\n"
-        "5. TONE: Clear, encouraging, mathematically precise, and pedagogical."
+        "1. GROUNDING: Use ONLY the verified Context Entries provided below for academic formulas, definitions, laws, and rules. Do not extrapolate or guess unverified equations.\n"
+        "2. INLINE CITATIONS: Every time you state or apply a formula, theorem, or syllabus rule, immediately append its exact citation tag in brackets, e.g. [chunk-id]. Cite ONLY IDs present in the retrieved list.\n"
+        "3. REFUSAL WHEN MISSING: If the retrieved Context Entries do not contain the formula or rule needed to answer the question, state clearly: 'The retrieved curriculum context does not contain the verified formula or rule for this topic.' Do not invent hypothetical equations.\n"
+        "4. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
+        "5. STYLE: Deterministic, structured, direct, and concise."
     )
 
     if context_block.strip():
@@ -163,15 +163,15 @@ def build_grounded_tutor_messages(
             f"{context_block}\n"
             f"STUDENT QUESTION:\n"
             f"{question}\n\n"
-            f"Please teach the student step-by-step following the grounding instructions, cite exact [id] tags for all formulas/rules, and end with one active-recall question."
+            f"Provide a clear, structured explanation adhering strictly to the citation rules above, citing [id] after each formula/rule, and ending with 'Quick Check: <question>'."
         )
     else:
         user_prompt = (
             f"VERIFIED CURRICULUM CONTEXT ENTRIES:\n"
-            f"(No specific curriculum chunks matched this profile/query)\n\n"
+            f"(No relevant curriculum entries met the relevance threshold for this query)\n\n"
             f"STUDENT QUESTION:\n"
             f"{question}\n\n"
-            f"Note: Since no verified curriculum formulas were retrieved for this specific request, explain any general conceptual principles without fabricating unverified formula rules, and end with one active-recall check question."
+            f"State clearly that the retrieved curriculum context does not cover this request, and do not provide unverified formulas."
         )
 
     return [
@@ -180,27 +180,72 @@ def build_grounded_tutor_messages(
     ]
 
 
-def extract_citations(answer_text: str, retrieved_chunks: List[Dict[str, Any]]) -> List[str]:
+def sanitize_citations(
+    answer_text: str,
+    retrieved_chunks: List[Dict[str, Any]],
+) -> Tuple[str, List[str]]:
     """
-    Extracts cited [id] tags from the model's answer text and matches them against retrieved chunks.
+    Sanitizes citation tags in the answer text:
+    1. Extracts all [bracketed_ids] cited by the model.
+    2. Strips out any hallucinated [id] not present in retrieved_chunks.
+    3. Detects if retrieved chunks were used without brackets (matching key formulas or exact titles)
+       and ensures verified citations are tracked and appended if omitted.
+    Returns (cleaned_answer_text, verified_citations_list).
     """
-    retrieved_ids = {c["id"] for c in retrieved_chunks if c.get("id")}
-    cited_matches = re.findall(r"\[([a-zA-Z0-9_\-]+)\]", answer_text)
+    if not answer_text:
+        return "", []
 
-    citations: List[str] = []
+    retrieved_map = {c["id"]: c for c in retrieved_chunks if c.get("id")}
+    retrieved_ids = set(retrieved_map.keys())
+
+    # Find all bracketed tags in the answer text
+    bracketed_tags = re.findall(r"\[([a-zA-Z0-9_\-]+)\]", answer_text)
+
+    cleaned_text = answer_text
+    verified_citations: List[str] = []
     seen = set()
 
-    for tag in cited_matches:
-        if tag in retrieved_ids and tag not in seen:
-            citations.append(tag)
-            seen.add(tag)
+    for tag in bracketed_tags:
+        if tag in retrieved_ids:
+            if tag not in seen:
+                verified_citations.append(tag)
+                seen.add(tag)
+        else:
+            # Strip hallucinated bracketed tag like [hallucinated-rule-999]
+            cleaned_text = re.sub(rf"\[{re.escape(tag)}\]", "", cleaned_text)
 
-    # Secondary check: if chunk ID appears explicitly in the text
-    for c_id in retrieved_ids:
-        if c_id not in seen and c_id in answer_text:
-            citations.append(c_id)
-            seen.add(c_id)
+    # Secondary check: If the model stated a formula or exact title from a retrieved chunk
+    # without its bracketed tag, recognize and verify it
+    for c_id, chunk in retrieved_map.items():
+        if c_id not in seen:
+            title = (chunk.get("title") or "").strip()
+            formula = (chunk.get("formulaOrRule") or "").strip()
+            # Clean formula for matching (e.g. strip $$, \text, spaces)
+            clean_formula = re.sub(r"[\$\\ ]", "", formula)
+            clean_answer = re.sub(r"[\$\\ ]", "", cleaned_text)
 
+            matched = False
+            if len(clean_formula) > 8 and clean_formula.lower() in clean_answer.lower():
+                matched = True
+            elif len(title) > 6 and title.lower() in cleaned_text.lower():
+                matched = True
+
+            if matched:
+                verified_citations.append(c_id)
+                seen.add(c_id)
+
+    # Clean up double spaces or floating punctuation left by stripped tags
+    cleaned_text = re.sub(r"[ \t]{2,}", " ", cleaned_text)
+    cleaned_text = re.sub(r" +([.,;?!])", r"\1", cleaned_text).strip()
+
+    return cleaned_text, verified_citations
+
+
+def extract_citations(answer_text: str, retrieved_chunks: List[Dict[str, Any]]) -> List[str]:
+    """
+    Convenience wrapper that returns verified citation IDs using sanitize_citations.
+    """
+    _, citations = sanitize_citations(answer_text, retrieved_chunks)
     return citations
 
 
@@ -229,7 +274,7 @@ class RagVllmService:
         self.retriever = RAGRetriever(corpus_path=corpus_file, cache_dir=cache_dir)
         print(f"✅ RAG Retriever initialized with {len(self.retriever.corpus)} chunks.")
 
-        # 2. Start local vLLM server process on port 8000
+        # 2. Start local vLLM server process with prefix caching & 4096 max-model-len
         adapter_path = "/root/checkpoints/studyverse-qwen-adapter"
         has_adapter = os.path.exists(adapter_path)
         print(f"📦 Checking for fine-tuned LoRA adapter: {adapter_path} (exists={has_adapter})")
@@ -240,7 +285,8 @@ class RagVllmService:
             "--host", "127.0.0.1",
             "--port", "8000",
             "--gpu-memory-utilization", "0.85",
-            "--max-model-len", "2048",
+            "--max-model-len", "4096",
+            "--enable-prefix-caching",
             "--trust-remote-code",
             "--served-model-name", MODEL_ID,
         ]
@@ -260,7 +306,6 @@ class RagVllmService:
         start_time = time.time()
         with httpx.Client(base_url="http://127.0.0.1:8000", timeout=5.0) as client:
             while time.time() - start_time < 90:
-                # Check if process died
                 if self.vllm_proc.poll() is not None:
                     print(f"❌ vLLM process exited unexpectedly with code {self.vllm_proc.returncode}")
                     break
@@ -322,7 +367,7 @@ class RagVllmService:
 
         web_app = FastAPI(
             title="StudyVerse Modal RAG + vLLM Academic Tutor Service",
-            version="1.0.0",
+            version="1.1.0",
         )
 
         web_app.add_middleware(
@@ -341,11 +386,11 @@ class RagVllmService:
                 "model": MODEL_ID,
                 "corpus_chunks": len(self.retriever.corpus),
                 "corpus_hash": self.retriever.corpus_hash[:12],
+                "prefix_caching": True,
             }
 
         @web_app.get("/v1/models")
         async def list_models():
-            # Proxy to local vLLM server if online
             try:
                 async with httpx.AsyncClient(base_url="http://127.0.0.1:8000", timeout=5.0) as client:
                     resp = await client.get("/v1/models")
@@ -386,7 +431,6 @@ class RagVllmService:
                     await client.aclose()
                     return JSONResponse(status_code=resp.status_code, content=resp.json())
             except Exception as e:
-                # Fallback to in-process HuggingFace if vLLM server unreachable
                 if getattr(self, "hf_model", None) is not None:
                     return self._generate_hf_completion(body)
                 raise HTTPException(status_code=503, detail=f"Inference server unavailable: {str(e)}")
@@ -394,14 +438,15 @@ class RagVllmService:
         @web_app.post("/rag/chat", response_model=RagChatResponse)
         async def rag_chat(req: RagChatRequest):
             """
-            Retrieval-Augmented Academic Tutor Endpoint:
-            1. Scoped retrieval with student profile & subject filters
-            2. Grounded prompt creation with citation instructions
-            3. Local vLLM completion call (temperature=0.2, max_tokens=650)
-            4. Citation extraction and structured response
+            High-Precision Retrieval-Augmented Academic Tutor Endpoint:
+            1. Scoped retrieval with student profile, subject filters, and min_score threshold
+            2. Grounded deterministic prompt creation for Qwen 2.5 3B
+            3. Local vLLM completion call (temp=0.15, top_p=0.9, repetition_penalty=1.05)
+            4. Post-generation citation sanitizer (stripping hallucinated tags, tracking verified IDs)
             """
             subject_filter = req.subjectFilter or req.subject_filter
             top_k = req.topK or req.top_k or 4
+            min_score = req.minScore if req.minScore is not None else (req.min_score if req.min_score is not None else 0.35)
 
             profile_dict = None
             if req.profile:
@@ -412,22 +457,25 @@ class RagVllmService:
                     "enrolledSubjects": req.profile.enrolledSubjects,
                 }
 
-            # 1. Retrieve top-k chunks with metadata scoping & hybrid ranking
+            # 1. Scoped retrieval with prefix instruction, hybrid ranking & deduplication
             retrieved_chunks = self.retriever.retrieve(
                 query=req.question,
                 profile=profile_dict,
                 subject_filter=subject_filter,
                 top_k=top_k,
+                min_score=min_score,
             )
 
-            # 2. Build grounded tutor prompt
+            # 2. Build deterministic grounded prompt
             messages = build_grounded_tutor_messages(req.question, retrieved_chunks)
 
-            # 3. Call local vLLM completions endpoint
+            # 3. Call local vLLM completions endpoint with deterministic parameters
             vllm_payload = {
                 "model": MODEL_ID,
                 "messages": messages,
-                "temperature": 0.2,
+                "temperature": 0.15,
+                "top_p": 0.9,
+                "repetition_penalty": 1.05,
                 "max_tokens": 650,
                 "stream": False,
             }
@@ -444,15 +492,15 @@ class RagVllmService:
             except Exception as vllm_err:
                 print(f"⚠️ Local vLLM endpoint call error: {vllm_err}. Using fallback...")
                 if getattr(self, "hf_model", None) is not None:
-                    answer_text = self._generate_hf_text(messages, temperature=0.2, max_tokens=650)
+                    answer_text = self._generate_hf_text(messages, temperature=0.15, max_tokens=650)
                 else:
                     raise HTTPException(status_code=502, detail=f"vLLM generation error: {str(vllm_err)}")
 
-            # 4. Extract citations and return response
-            citations = extract_citations(answer_text, retrieved_chunks)
+            # 4. Post-generation citation sanitizer
+            cleaned_answer, citations = sanitize_citations(answer_text, retrieved_chunks)
 
             return RagChatResponse(
-                answer=answer_text.strip(),
+                answer=cleaned_answer.strip(),
                 citations=citations,
                 retrievedChunks=retrieved_chunks,
             )
@@ -471,6 +519,8 @@ class RagVllmService:
                 **inputs,
                 max_new_tokens=max_tokens,
                 temperature=max(temperature, 0.01),
+                top_p=0.9,
+                repetition_penalty=1.05,
                 do_sample=True,
                 pad_token_id=self.tokenizer.eos_token_id,
             )
@@ -481,7 +531,7 @@ class RagVllmService:
     def _generate_hf_completion(self, body: Dict[str, Any]):
         """Helper for non-RAG OpenAI chat completions using fallback HuggingFace model."""
         messages = body.get("messages", [])
-        temp = body.get("temperature", 0.2)
+        temp = body.get("temperature", 0.15)
         max_tokens = body.get("max_tokens", 650)
         text = self._generate_hf_text(messages, temp, max_tokens)
 
