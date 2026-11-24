@@ -7,7 +7,7 @@ const STORAGE_KEYS = {
 };
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  apiUrl: 'https://rockefashy--studyverse-qwen-serve-serve.modal.run/v1',
+  apiUrl: 'https://rockefashy--studyverse-rag-vllm-serve.modal.run/v1',
   model: 'studyverse-qwen-2.5-3b',
   temperature: 0.2,
   maxTokens: 512,
