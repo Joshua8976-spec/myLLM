@@ -8054,8 +8054,8 @@
   },
   {
     "id": "cbse-g6-math-perimeter-area",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Perimeter & Area Formulas",
     "title": "Mensuration: Perimeter and Area of Rectangles & Squares",
@@ -8073,12 +8073,12 @@
       "back": "$P = 2(l + b)$ (Perimeter of a rectangle is twice the sum of its length and breadth.)\n$A = l \\times b$ (Area of a planar rectangle given length and breadth.)\n$P = 4s \\quad \\text{and} \\quad A = s^2$ (Boundary perimeter and internal enclosed surface area of a regular square.)",
       "hint": "Perimeter & Area Formulas"
     },
-    "searchableText": "Title: Mensuration: Perimeter and Area of Rectangles & Squares\nSubject: Mathematics (Science - cbse)\nTopic: Perimeter & Area Formulas\nFormula / Rule: Perimeter of Rectangle: $P = 2(l + b)$;\nArea of Rectangle: $A = l \\times b$;\nPerimeter & Area of Square: $P = 4s \\quad \\text{and} \\quad A = s^2$\nVariables: P = Perimeter of square (m); l = Length (metres, m); b = Breadth (metres, m); A = Area of square (m²); s = Side length of square (m)\nExplanation: Derived directly from Euclidean 2D planar perimeter and Cartesian square-unit tiling axioms.\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter and Area of Rectangles & Squares? | A: $P = 2(l + b)$ (Perimeter of a rectangle is twice the sum of its length and breadth.)\n$A = l \\times b$ (Area of a planar rectangle given length and breadth.)\n$P = 4s \\quad \\text{and} \\quad A = s^2$ (Boundary perimeter and internal enclosed surface area of a regular square.)"
+    "searchableText": "Title: Mensuration: Perimeter and Area of Rectangles & Squares\nSubject: Mathematics (General - class_6)\nTopic: Perimeter & Area Formulas\nFormula / Rule: Perimeter of Rectangle: $P = 2(l + b)$;\nArea of Rectangle: $A = l \\times b$;\nPerimeter & Area of Square: $P = 4s \\quad \\text{and} \\quad A = s^2$\nVariables: P = Perimeter of square (m); l = Length (metres, m); b = Breadth (metres, m); A = Area of square (m²); s = Side length of square (m)\nExplanation: Derived directly from Euclidean 2D planar perimeter and Cartesian square-unit tiling axioms.\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter and Area of Rectangles & Squares? | A: $P = 2(l + b)$ (Perimeter of a rectangle is twice the sum of its length and breadth.)\n$A = l \\times b$ (Area of a planar rectangle given length and breadth.)\n$P = 4s \\quad \\text{and} \\quad A = s^2$ (Boundary perimeter and internal enclosed surface area of a regular square.)"
   },
   {
     "id": "cbse-g6-math-ratio-proportion",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Proportion Equivalence",
     "title": "Ratio & Proportion: Extremes and Means",
@@ -8095,12 +8095,12 @@
       "back": "$a : b :: c : d \\iff a \\times d = b \\times c$ (Four quantities are in proportion if and only if cross products match.)",
       "hint": "Proportion Equivalence"
     },
-    "searchableText": "Title: Ratio & Proportion: Extremes and Means\nSubject: Mathematics (Science - cbse)\nTopic: Proportion Equivalence\nFormula / Rule: Product of Extremes = Product of Means: $a : b :: c : d \\iff a \\times d = b \\times c$\nVariables: a = First term / Extreme (scalar); b = Second term / Mean (scalar); c = Third term / Mean (scalar); d = Fourth term / Extreme (scalar)\nExplanation: Proportion means equal fractions: a/b = c/d. Multiplying both sides by (b × d) gives a × d = b × c.\nDrill: Check if 3, 9, 7, 21 form a valid proportion using the cross-product rule.\nActive Recall: Q: What are the core equations and laws for Ratio & Proportion: Extremes and Means? | A: $a : b :: c : d \\iff a \\times d = b \\times c$ (Four quantities are in proportion if and only if cross products match.)"
+    "searchableText": "Title: Ratio & Proportion: Extremes and Means\nSubject: Mathematics (General - class_6)\nTopic: Proportion Equivalence\nFormula / Rule: Product of Extremes = Product of Means: $a : b :: c : d \\iff a \\times d = b \\times c$\nVariables: a = First term / Extreme (scalar); b = Second term / Mean (scalar); c = Third term / Mean (scalar); d = Fourth term / Extreme (scalar)\nExplanation: Proportion means equal fractions: a/b = c/d. Multiplying both sides by (b × d) gives a × d = b × c.\nDrill: Check if 3, 9, 7, 21 form a valid proportion using the cross-product rule.\nActive Recall: Q: What are the core equations and laws for Ratio & Proportion: Extremes and Means? | A: $a : b :: c : d \\iff a \\times d = b \\times c$ (Four quantities are in proportion if and only if cross products match.)"
   },
   {
     "id": "cbse-g6-science-motion-measurement",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Science",
     "topic": "Mechanics & Materials (Clubbed Science)",
     "title": "Science: Speed, Distance and Material Density",
@@ -8119,12 +8119,12 @@
       "back": "$v = \\frac{d}{t} \\quad \\iff \\quad d = v \\times t$ (Rate of change of distance with time in rectilinear motion.)\n$\\rho = \\frac{m}{V}$ (Mass packed per unit volume in a homogeneous substance.)",
       "hint": "Mechanics & Materials (Clubbed Science)"
     },
-    "searchableText": "Title: Science: Speed, Distance and Material Density\nSubject: Science (Science - cbse)\nTopic: Mechanics & Materials (Clubbed Science)\nFormula / Rule: Speed Equation: $v = \\frac{d}{t} \\quad \\iff \\quad d = v \\times t$;\nDensity of Matter: $\\rho = \\frac{m}{V}$\nVariables: v = Speed (metres per second, m/s or km/h); d = Distance traversed (metres, m or kilometres, km); t = Time elapsed (seconds, s or hours, h); \\rho = Density (kg/m³ or g/cm³); m = Mass of sample (kg or g); V = Volume occupied (m³ or cm³)\nExplanation: Speed is defined as distance traversed per unit duration. Dividing total path length d by time t yields v = d/t.\nDrill: An electric scooter travels 180 m in 30 s. Calculate its speed in m/s and km/h.\n\nDensity characterizes material compactness: total sample mass divided by capacity volume.\nDrill: A stone of mass 240 g occupies 80 cm³. Find its density and state if it sinks in water.\nActive Recall: Q: What are the core equations and laws for Science: Speed, Distance and Material Density? | A: $v = \\frac{d}{t} \\quad \\iff \\quad d = v \\times t$ (Rate of change of distance with time in rectilinear motion.)\n$\\rho = \\frac{m}{V}$ (Mass packed per unit volume in a homogeneous substance.)"
+    "searchableText": "Title: Science: Speed, Distance and Material Density\nSubject: Science (General - class_6)\nTopic: Mechanics & Materials (Clubbed Science)\nFormula / Rule: Speed Equation: $v = \\frac{d}{t} \\quad \\iff \\quad d = v \\times t$;\nDensity of Matter: $\\rho = \\frac{m}{V}$\nVariables: v = Speed (metres per second, m/s or km/h); d = Distance traversed (metres, m or kilometres, km); t = Time elapsed (seconds, s or hours, h); \\rho = Density (kg/m³ or g/cm³); m = Mass of sample (kg or g); V = Volume occupied (m³ or cm³)\nExplanation: Speed is defined as distance traversed per unit duration. Dividing total path length d by time t yields v = d/t.\nDrill: An electric scooter travels 180 m in 30 s. Calculate its speed in m/s and km/h.\n\nDensity characterizes material compactness: total sample mass divided by capacity volume.\nDrill: A stone of mass 240 g occupies 80 cm³. Find its density and state if it sinks in water.\nActive Recall: Q: What are the core equations and laws for Science: Speed, Distance and Material Density? | A: $v = \\frac{d}{t} \\quad \\iff \\quad d = v \\times t$ (Rate of change of distance with time in rectilinear motion.)\n$\\rho = \\frac{m}{V}$ (Mass packed per unit volume in a homogeneous substance.)"
   },
   {
     "id": "cbse-g6-social-science-maps-scale",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Social Science",
     "topic": "Cartographic Scales & Earth Rotation",
     "title": "Social Science: Map Scales & Longitude Time Zones",
@@ -8141,12 +8141,12 @@
       "back": "$\\text{Scale} = \\frac{\\text{Distance on Map } (d_m)}{\\text{Ground Distance } (d_g)}$ (Representative Fraction ratio converting 2D cartography to Earth surface distances.)\n$\\Delta t = \\frac{\\Delta \\text{Longitude}}{15^\\circ} \\text{ hours} \\quad (1^\\circ = 4 \\text{ minutes})$ (Local time variance based on Earth's 360-degree daily rotation.)",
       "hint": "Cartographic Scales & Earth Rotation"
     },
-    "searchableText": "Title: Social Science: Map Scales & Longitude Time Zones\nSubject: Social Science (Science - cbse)\nTopic: Cartographic Scales & Earth Rotation\nFormula / Rule: Map Scale Ratio: $\\text{Scale} = \\frac{\\text{Distance on Map } (d_m)}{\\text{Ground Distance } (d_g)}$;\nLongitude to Local Time Relation: $\\Delta t = \\frac{\\Delta \\text{Longitude}}{15^\\circ} \\text{ hours} \\quad (1^\\circ = 4 \\text{ minutes})$\nVariables: d_m = Map measurement (centimetres, cm); d_g = Actual terrestrial distance on ground (km or m, converted to cm); \\Delta t = Time difference between two terrestrial meridians (hours / minutes); \\Delta \\text{Longitude} = Longitudinal angular difference (degrees, °)\nExplanation: Normalizing both dimensions to centimetres (1 km = 100,000 cm) creates a dimensionless RF fraction.\nDrill: If 2.5 cm on a map equals 50 km in reality, find the Representative Fraction scale.\n\nEarth completes 360° rotation in 24 hours. Rate = 360° / 24 h = 15° per hour, or 4 minutes per 1°.\nDrill: When it is 12:00 noon at Greenwich (0°), compute standard local solar time at 82.5° E (IST).\nActive Recall: Q: What are the core equations and laws for Social Science: Map Scales & Longitude Time Zones? | A: $\\text{Scale} = \\frac{\\text{Distance on Map } (d_m)}{\\text{Ground Distance } (d_g)}$ (Representative Fraction ratio converting 2D cartography to Earth surface distances.)\n$\\Delta t = \\frac{\\Delta \\text{Longitude}}{15^\\circ} \\text{ hours} \\quad (1^\\circ = 4 \\text{ minutes})$ (Local time variance based on Earth's 360-degree daily rotation.)"
+    "searchableText": "Title: Social Science: Map Scales & Longitude Time Zones\nSubject: Social Science (General - class_6)\nTopic: Cartographic Scales & Earth Rotation\nFormula / Rule: Map Scale Ratio: $\\text{Scale} = \\frac{\\text{Distance on Map } (d_m)}{\\text{Ground Distance } (d_g)}$;\nLongitude to Local Time Relation: $\\Delta t = \\frac{\\Delta \\text{Longitude}}{15^\\circ} \\text{ hours} \\quad (1^\\circ = 4 \\text{ minutes})$\nVariables: d_m = Map measurement (centimetres, cm); d_g = Actual terrestrial distance on ground (km or m, converted to cm); \\Delta t = Time difference between two terrestrial meridians (hours / minutes); \\Delta \\text{Longitude} = Longitudinal angular difference (degrees, °)\nExplanation: Normalizing both dimensions to centimetres (1 km = 100,000 cm) creates a dimensionless RF fraction.\nDrill: If 2.5 cm on a map equals 50 km in reality, find the Representative Fraction scale.\n\nEarth completes 360° rotation in 24 hours. Rate = 360° / 24 h = 15° per hour, or 4 minutes per 1°.\nDrill: When it is 12:00 noon at Greenwich (0°), compute standard local solar time at 82.5° E (IST).\nActive Recall: Q: What are the core equations and laws for Social Science: Map Scales & Longitude Time Zones? | A: $\\text{Scale} = \\frac{\\text{Distance on Map } (d_m)}{\\text{Ground Distance } (d_g)}$ (Representative Fraction ratio converting 2D cartography to Earth surface distances.)\n$\\Delta t = \\frac{\\Delta \\text{Longitude}}{15^\\circ} \\text{ hours} \\quad (1^\\circ = 4 \\text{ minutes})$ (Local time variance based on Earth's 360-degree daily rotation.)"
   },
   {
     "id": "cbse-g6-english-grammar-syntax",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "English",
     "topic": "Syntactic Transformation Rules",
     "title": "English: Active to Passive Voice Syntax Structure",
@@ -8164,12 +8164,12 @@
       "back": "$S + V_1(s/es) + O \\implies O + (\\text{is/am/are}) + V_3 + \\text{by} + S_{\\text{obj}}$ (Structural formula for transforming active statements into passive voice in Present Simple.)",
       "hint": "Syntactic Transformation Rules"
     },
-    "searchableText": "Title: English: Active to Passive Voice Syntax Structure\nSubject: English (Science - cbse)\nTopic: Syntactic Transformation Rules\nFormula / Rule: Simple Present Voice Shift Formula: $S + V_1(s/es) + O \\implies O + (\\text{is/am/are}) + V_3 + \\text{by} + S_{\\text{obj}}$\nVariables: S = Original subject agent; V_1 = Base present verb form; O = Object patient receiving action; V_3 = Past participle verb form; S_obj = Objective pronoun (e.g., he -> him, they -> them)\nExplanation: Passive shifts communicative focus from agent to recipient by fronting object and adding auxiliary be + V3.\nDrill: Convert into passive: 'Rohan writes informative science articles every week.'\nActive Recall: Q: What are the core equations and laws for English: Active to Passive Voice Syntax Structure? | A: $S + V_1(s/es) + O \\implies O + (\\text{is/am/are}) + V_3 + \\text{by} + S_{\\text{obj}}$ (Structural formula for transforming active statements into passive voice in Present Simple.)"
+    "searchableText": "Title: English: Active to Passive Voice Syntax Structure\nSubject: English (General - class_6)\nTopic: Syntactic Transformation Rules\nFormula / Rule: Simple Present Voice Shift Formula: $S + V_1(s/es) + O \\implies O + (\\text{is/am/are}) + V_3 + \\text{by} + S_{\\text{obj}}$\nVariables: S = Original subject agent; V_1 = Base present verb form; O = Object patient receiving action; V_3 = Past participle verb form; S_obj = Objective pronoun (e.g., he -> him, they -> them)\nExplanation: Passive shifts communicative focus from agent to recipient by fronting object and adding auxiliary be + V3.\nDrill: Convert into passive: 'Rohan writes informative science articles every week.'\nActive Recall: Q: What are the core equations and laws for English: Active to Passive Voice Syntax Structure? | A: $S + V_1(s/es) + O \\implies O + (\\text{is/am/are}) + V_3 + \\text{by} + S_{\\text{obj}}$ (Structural formula for transforming active statements into passive voice in Present Simple.)"
   },
   {
     "id": "cbse-g6-computer-memory-units",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Computer",
     "topic": "Binary Storage Hierarchy",
     "title": "Computer: Binary Units and Storage Capacity",
@@ -8186,12 +8186,12 @@
       "back": "$1\\text{ Byte} = 8\\text{ bits}, \\quad 1\\text{ KB} = 1024\\text{ Bytes}, \\quad 1\\text{ MB} = 1024\\text{ KB}$ (Powers of two binary memory multipliers in modern computer architectures.)",
       "hint": "Binary Storage Hierarchy"
     },
-    "searchableText": "Title: Computer: Binary Units and Storage Capacity\nSubject: Computer (Science - cbse)\nTopic: Binary Storage Hierarchy\nFormula / Rule: Data Storage Multipliers: $1\\text{ Byte} = 8\\text{ bits}, \\quad 1\\text{ KB} = 1024\\text{ Bytes}, \\quad 1\\text{ MB} = 1024\\text{ KB}$\nVariables: bit = Smallest binary unit (0 or 1); Byte = 8 continuous bits (encodes 1 ASCII character); KB = Kilobyte (2^10 = 1024 Bytes); MB = Megabyte (2^20 Bytes)\nExplanation: Digital memory address lines use binary logic (base 2). 2^10 = 1024 is the standard binary kilobyte.\nDrill: How many individual Bytes are contained in a 2.5 MB study notes file?\nActive Recall: Q: What are the core equations and laws for Computer: Binary Units and Storage Capacity? | A: $1\\text{ Byte} = 8\\text{ bits}, \\quad 1\\text{ KB} = 1024\\text{ Bytes}, \\quad 1\\text{ MB} = 1024\\text{ KB}$ (Powers of two binary memory multipliers in modern computer architectures.)"
+    "searchableText": "Title: Computer: Binary Units and Storage Capacity\nSubject: Computer (General - class_6)\nTopic: Binary Storage Hierarchy\nFormula / Rule: Data Storage Multipliers: $1\\text{ Byte} = 8\\text{ bits}, \\quad 1\\text{ KB} = 1024\\text{ Bytes}, \\quad 1\\text{ MB} = 1024\\text{ KB}$\nVariables: bit = Smallest binary unit (0 or 1); Byte = 8 continuous bits (encodes 1 ASCII character); KB = Kilobyte (2^10 = 1024 Bytes); MB = Megabyte (2^20 Bytes)\nExplanation: Digital memory address lines use binary logic (base 2). 2^10 = 1024 is the standard binary kilobyte.\nDrill: How many individual Bytes are contained in a 2.5 MB study notes file?\nActive Recall: Q: What are the core equations and laws for Computer: Binary Units and Storage Capacity? | A: $1\\text{ Byte} = 8\\text{ bits}, \\quad 1\\text{ KB} = 1024\\text{ Bytes}, \\quad 1\\text{ MB} = 1024\\text{ KB}$ (Powers of two binary memory multipliers in modern computer architectures.)"
   },
   {
     "id": "icse-g6-physics-matter-density",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Physics",
     "topic": "Matter & Density",
     "title": "Physics: Volume by Displacement and Solid Density",
@@ -8209,12 +8209,12 @@
       "back": "$V_{\\text{solid}} = V_2 - V_1 \\quad \\implies \\quad \\rho = \\frac{M}{V_2 - V_1}$ (Measuring volume and density of an irregular insoluble solid using a measuring cylinder.)",
       "hint": "Matter & Density"
     },
-    "searchableText": "Title: Physics: Volume by Displacement and Solid Density\nSubject: Physics (Science - icse)\nTopic: Matter & Density\nFormula / Rule: Displacement Volume of Irregular Solid: $V_{\\text{solid}} = V_2 - V_1 \\quad \\implies \\quad \\rho = \\frac{M}{V_2 - V_1}$\nVariables: V_solid = Net volume of submerged solid (cm³ or mL); V_1 = Initial water level reading (mL); V_2 = Final water level after immersion (mL); M = Mass of solid on physical balance (grams, g); \\rho = Density of solid (g/cm³)\nExplanation: By Archimedes exclusion, a fully submerged insoluble solid displaces its exact geometric volume of water.\nDrill: A stone of mass 84 g causes water level to rise from 45 mL to 55 mL. Find its density.\nActive Recall: Q: What are the core equations and laws for Physics: Volume by Displacement and Solid Density? | A: $V_{\\text{solid}} = V_2 - V_1 \\quad \\implies \\quad \\rho = \\frac{M}{V_2 - V_1}$ (Measuring volume and density of an irregular insoluble solid using a measuring cylinder.)"
+    "searchableText": "Title: Physics: Volume by Displacement and Solid Density\nSubject: Physics (General - class_6)\nTopic: Matter & Density\nFormula / Rule: Displacement Volume of Irregular Solid: $V_{\\text{solid}} = V_2 - V_1 \\quad \\implies \\quad \\rho = \\frac{M}{V_2 - V_1}$\nVariables: V_solid = Net volume of submerged solid (cm³ or mL); V_1 = Initial water level reading (mL); V_2 = Final water level after immersion (mL); M = Mass of solid on physical balance (grams, g); \\rho = Density of solid (g/cm³)\nExplanation: By Archimedes exclusion, a fully submerged insoluble solid displaces its exact geometric volume of water.\nDrill: A stone of mass 84 g causes water level to rise from 45 mL to 55 mL. Find its density.\nActive Recall: Q: What are the core equations and laws for Physics: Volume by Displacement and Solid Density? | A: $V_{\\text{solid}} = V_2 - V_1 \\quad \\implies \\quad \\rho = \\frac{M}{V_2 - V_1}$ (Measuring volume and density of an irregular insoluble solid using a measuring cylinder.)"
   },
   {
     "id": "icse-g6-chemistry-mixtures-solubility",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Chemistry",
     "topic": "Solution Concentrations",
     "title": "Chemistry: Solubility of Solute in Saturated Solution",
@@ -8230,12 +8230,12 @@
       "back": "$S = \\frac{m_{\\text{solute}}}{m_{\\text{solvent}}} \\times 100$ (Maximum mass of solute capable of dissolving in 100 g solvent at specified temperature.)",
       "hint": "Solution Concentrations"
     },
-    "searchableText": "Title: Chemistry: Solubility of Solute in Saturated Solution\nSubject: Chemistry (Science - icse)\nTopic: Solution Concentrations\nFormula / Rule: Solubility Formula: $S = \\frac{m_{\\text{solute}}}{m_{\\text{solvent}}} \\times 100$\nVariables: S = Solubility (grams solute per 100 g solvent); m_solute = Mass of dissolved solute in saturated state (g); m_solvent = Mass of pure water solvent (g)\nExplanation: Solubility is standardized per 100 g solvent: if m_solvent dissolves m_solute, 100 g dissolves (m_solute/m_solvent) * 100.\nDrill: At 30°C, 14 g of potassium nitrate saturates 40 g of water. Calculate its solubility.\nActive Recall: Q: What are the core equations and laws for Chemistry: Solubility of Solute in Saturated Solution? | A: $S = \\frac{m_{\\text{solute}}}{m_{\\text{solvent}}} \\times 100$ (Maximum mass of solute capable of dissolving in 100 g solvent at specified temperature.)"
+    "searchableText": "Title: Chemistry: Solubility of Solute in Saturated Solution\nSubject: Chemistry (General - class_6)\nTopic: Solution Concentrations\nFormula / Rule: Solubility Formula: $S = \\frac{m_{\\text{solute}}}{m_{\\text{solvent}}} \\times 100$\nVariables: S = Solubility (grams solute per 100 g solvent); m_solute = Mass of dissolved solute in saturated state (g); m_solvent = Mass of pure water solvent (g)\nExplanation: Solubility is standardized per 100 g solvent: if m_solvent dissolves m_solute, 100 g dissolves (m_solute/m_solvent) * 100.\nDrill: At 30°C, 14 g of potassium nitrate saturates 40 g of water. Calculate its solubility.\nActive Recall: Q: What are the core equations and laws for Chemistry: Solubility of Solute in Saturated Solution? | A: $S = \\frac{m_{\\text{solute}}}{m_{\\text{solvent}}} \\times 100$ (Maximum mass of solute capable of dissolving in 100 g solvent at specified temperature.)"
   },
   {
     "id": "icse-g6-biology-cell-geometry",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Biology",
     "topic": "Cellular Geometry & Diffusion",
     "title": "Biology: Cell Surface Area to Volume Ratio Constraint",
@@ -8252,12 +8252,12 @@
       "back": "$\\text{SA:V} = \\frac{6s^2}{s^3} = \\frac{6}{s}$ (Diffusion efficiency scaling constraint governing cellular size and mitotic division.)",
       "hint": "Cellular Geometry & Diffusion"
     },
-    "searchableText": "Title: Biology: Cell Surface Area to Volume Ratio Constraint\nSubject: Biology (Science - icse)\nTopic: Cellular Geometry & Diffusion\nFormula / Rule: Cell Surface Area to Volume Ratio: $\\text{SA:V} = \\frac{6s^2}{s^3} = \\frac{6}{s}$\nVariables: SA:V = Surface Area to Volume ratio (µm⁻¹); s = Cell diameter / side dimension (micrometres, µm); 6s^2 = Membrane surface area for diffusion (µm²); s^3 = Cytoplasmic metabolic volume (µm³)\nExplanation: As cell side dimension s increases, volume scales cubically while surface area scales quadratically, reducing diffusion rate.\nDrill: Compare SA:V ratio for Cell A (s = 2 µm) versus Cell B (s = 6 µm). Explain why diffusion slows.\nActive Recall: Q: What are the core equations and laws for Biology: Cell Surface Area to Volume Ratio Constraint? | A: $\\text{SA:V} = \\frac{6s^2}{s^3} = \\frac{6}{s}$ (Diffusion efficiency scaling constraint governing cellular size and mitotic division.)"
+    "searchableText": "Title: Biology: Cell Surface Area to Volume Ratio Constraint\nSubject: Biology (General - class_6)\nTopic: Cellular Geometry & Diffusion\nFormula / Rule: Cell Surface Area to Volume Ratio: $\\text{SA:V} = \\frac{6s^2}{s^3} = \\frac{6}{s}$\nVariables: SA:V = Surface Area to Volume ratio (µm⁻¹); s = Cell diameter / side dimension (micrometres, µm); 6s^2 = Membrane surface area for diffusion (µm²); s^3 = Cytoplasmic metabolic volume (µm³)\nExplanation: As cell side dimension s increases, volume scales cubically while surface area scales quadratically, reducing diffusion rate.\nDrill: Compare SA:V ratio for Cell A (s = 2 µm) versus Cell B (s = 6 µm). Explain why diffusion slows.\nActive Recall: Q: What are the core equations and laws for Biology: Cell Surface Area to Volume Ratio Constraint? | A: $\\text{SA:V} = \\frac{6s^2}{s^3} = \\frac{6}{s}$ (Diffusion efficiency scaling constraint governing cellular size and mitotic division.)"
   },
   {
     "id": "icse-g6-math-unitary-method",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Direct Proportions",
     "title": "Mathematics: Unitary Method and Direct Proportions",
@@ -8274,12 +8274,12 @@
       "back": "$C_{\\text{target}} = \\left(\\frac{C_{\\text{given}}}{n_{\\text{given}}}\\right) \\times n_{\\text{target}}$ (Determining multi-unit value by resolving to unit price first.)",
       "hint": "Direct Proportions"
     },
-    "searchableText": "Title: Mathematics: Unitary Method and Direct Proportions\nSubject: Mathematics (Science - icse)\nTopic: Direct Proportions\nFormula / Rule: Two-Step Unitary Formula: $C_{\\text{target}} = \\left(\\frac{C_{\\text{given}}}{n_{\\text{given}}}\\right) \\times n_{\\text{target}}$\nVariables: C_target = Target total cost or output (currency / units); C_given = Initial aggregate total cost (currency / units); n_given = Initial item count (scalar); n_target = Desired item count to evaluate (scalar)\nExplanation: Dividing total by given items gives single unit cost u = C_given / n_given. Multiplying by target items yields final result.\nDrill: If 15 identical notebooks cost ₹750, find the cost of 24 such notebooks.\nActive Recall: Q: What are the core equations and laws for Mathematics: Unitary Method and Direct Proportions? | A: $C_{\\text{target}} = \\left(\\frac{C_{\\text{given}}}{n_{\\text{given}}}\\right) \\times n_{\\text{target}}$ (Determining multi-unit value by resolving to unit price first.)"
+    "searchableText": "Title: Mathematics: Unitary Method and Direct Proportions\nSubject: Mathematics (General - class_6)\nTopic: Direct Proportions\nFormula / Rule: Two-Step Unitary Formula: $C_{\\text{target}} = \\left(\\frac{C_{\\text{given}}}{n_{\\text{given}}}\\right) \\times n_{\\text{target}}$\nVariables: C_target = Target total cost or output (currency / units); C_given = Initial aggregate total cost (currency / units); n_given = Initial item count (scalar); n_target = Desired item count to evaluate (scalar)\nExplanation: Dividing total by given items gives single unit cost u = C_given / n_given. Multiplying by target items yields final result.\nDrill: If 15 identical notebooks cost ₹750, find the cost of 24 such notebooks.\nActive Recall: Q: What are the core equations and laws for Mathematics: Unitary Method and Direct Proportions? | A: $C_{\\text{target}} = \\left(\\frac{C_{\\text{given}}}{n_{\\text{given}}}\\right) \\times n_{\\text{target}}$ (Determining multi-unit value by resolving to unit price first.)"
   },
   {
     "id": "icse-g6-social-science-toposheet-grid",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Social Science",
     "topic": "Survey of India Toposheet Standards",
     "title": "Social Science: Toposheet Scale and Grid Conversion",
@@ -8294,12 +8294,12 @@
       "back": "$D_{\\text{ground}} = d_m \\times 0.5\\text{ km/cm} \\quad [2\\text{ cm on map} = 1\\text{ km on ground}]$ (Survey of India standard 1:50,000 toposheet metric conversion formula.)",
       "hint": "Survey of India Toposheet Standards"
     },
-    "searchableText": "Title: Social Science: Toposheet Scale and Grid Conversion\nSubject: Social Science (Science - icse)\nTopic: Survey of India Toposheet Standards\nFormula / Rule: Toposheet Scale 1:50,000 Metric Equivalence: $D_{\\text{ground}} = d_m \\times 0.5\\text{ km/cm} \\quad [2\\text{ cm on map} = 1\\text{ km on ground}]$\nVariables: D_ground = Actual geographical distance (kilometres, km); d_m = Toposheet measurement between coordinates (centimetres, cm)\nExplanation: Scale 1 : 50,000 means 1 cm = 50,000 cm = 500 m = 0.5 km. Hence 2 cm = 1.0 km exactly.\nDrill: Two settlements on an ICSE survey map are 7.4 cm apart. Compute true ground distance in km.\nActive Recall: Q: What are the core equations and laws for Social Science: Toposheet Scale and Grid Conversion? | A: $D_{\\text{ground}} = d_m \\times 0.5\\text{ km/cm} \\quad [2\\text{ cm on map} = 1\\text{ km on ground}]$ (Survey of India standard 1:50,000 toposheet metric conversion formula.)"
+    "searchableText": "Title: Social Science: Toposheet Scale and Grid Conversion\nSubject: Social Science (General - class_6)\nTopic: Survey of India Toposheet Standards\nFormula / Rule: Toposheet Scale 1:50,000 Metric Equivalence: $D_{\\text{ground}} = d_m \\times 0.5\\text{ km/cm} \\quad [2\\text{ cm on map} = 1\\text{ km on ground}]$\nVariables: D_ground = Actual geographical distance (kilometres, km); d_m = Toposheet measurement between coordinates (centimetres, cm)\nExplanation: Scale 1 : 50,000 means 1 cm = 50,000 cm = 500 m = 0.5 km. Hence 2 cm = 1.0 km exactly.\nDrill: Two settlements on an ICSE survey map are 7.4 cm apart. Compute true ground distance in km.\nActive Recall: Q: What are the core equations and laws for Social Science: Toposheet Scale and Grid Conversion? | A: $D_{\\text{ground}} = d_m \\times 0.5\\text{ km/cm} \\quad [2\\text{ cm on map} = 1\\text{ km on ground}]$ (Survey of India standard 1:50,000 toposheet metric conversion formula.)"
   },
   {
     "id": "icse-g6-english-concord-rules",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "English",
     "topic": "Subject-Verb Agreement",
     "title": "English: Proximity Rule for Correlative Conjunctions",
@@ -8315,12 +8315,12 @@
       "back": "$[S_1 + \\text{either/or, neither/nor} + S_2] \\implies V \\text{ agrees with proximate } S_2$ (When subjects are linked by correlative disjunctions, verb agrees in number with nearest subject.)",
       "hint": "Subject-Verb Agreement"
     },
-    "searchableText": "Title: English: Proximity Rule for Correlative Conjunctions\nSubject: English (Science - icse)\nTopic: Subject-Verb Agreement\nFormula / Rule: Proximity Concord with Either/Or and Neither/Nor: $[S_1 + \\text{either/or, neither/nor} + S_2] \\implies V \\text{ agrees with proximate } S_2$\nVariables: S_1 = First subject noun phrase; S_2 = Second subject noun phrase immediately preceding verb; V = Conjugated finite verb form\nExplanation: English proximity syntax requires finite verb inflection to agree with the immediately adjacent nominal head.\nDrill: Select correct verb: 'Neither the principal nor the teachers (was / were) present.'\nActive Recall: Q: What are the core equations and laws for English: Proximity Rule for Correlative Conjunctions? | A: $[S_1 + \\text{either/or, neither/nor} + S_2] \\implies V \\text{ agrees with proximate } S_2$ (When subjects are linked by correlative disjunctions, verb agrees in number with nearest subject.)"
+    "searchableText": "Title: English: Proximity Rule for Correlative Conjunctions\nSubject: English (General - class_6)\nTopic: Subject-Verb Agreement\nFormula / Rule: Proximity Concord with Either/Or and Neither/Nor: $[S_1 + \\text{either/or, neither/nor} + S_2] \\implies V \\text{ agrees with proximate } S_2$\nVariables: S_1 = First subject noun phrase; S_2 = Second subject noun phrase immediately preceding verb; V = Conjugated finite verb form\nExplanation: English proximity syntax requires finite verb inflection to agree with the immediately adjacent nominal head.\nDrill: Select correct verb: 'Neither the principal nor the teachers (was / were) present.'\nActive Recall: Q: What are the core equations and laws for English: Proximity Rule for Correlative Conjunctions? | A: $[S_1 + \\text{either/or, neither/nor} + S_2] \\implies V \\text{ agrees with proximate } S_2$ (When subjects are linked by correlative disjunctions, verb agrees in number with nearest subject.)"
   },
   {
     "id": "icse-g6-computer-binary-arithmetic",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Computer",
     "topic": "Number Systems",
     "title": "Computer: Binary to Decimal Positional Expansion",
@@ -8336,12 +8336,12 @@
       "back": "$N_{10} = \\sum_{i=0}^{n-1} b_i \\cdot 2^i = b_{n-1}2^{n-1} + \\dots + b_1 2^1 + b_0 2^0$ (Converting binary numbers to decimal base-10 integer representation.)",
       "hint": "Number Systems"
     },
-    "searchableText": "Title: Computer: Binary to Decimal Positional Expansion\nSubject: Computer (Science - icse)\nTopic: Number Systems\nFormula / Rule: Positional Radix-2 Expansion: $N_{10} = \\sum_{i=0}^{n-1} b_i \\cdot 2^i = b_{n-1}2^{n-1} + \\dots + b_1 2^1 + b_0 2^0$\nVariables: N_10 = Decimal base-10 value; b_i = Bit at position i (0 or 1); 2^i = Positional column weight (1, 2, 4, 8, 16, 32...)\nExplanation: Positional numeral systems assign each column a value of base^i. For base 2, column weights are powers of 2.\nDrill: Convert the 6-bit binary string (101101)₂ into decimal base-10.\nActive Recall: Q: What are the core equations and laws for Computer: Binary to Decimal Positional Expansion? | A: $N_{10} = \\sum_{i=0}^{n-1} b_i \\cdot 2^i = b_{n-1}2^{n-1} + \\dots + b_1 2^1 + b_0 2^0$ (Converting binary numbers to decimal base-10 integer representation.)"
+    "searchableText": "Title: Computer: Binary to Decimal Positional Expansion\nSubject: Computer (General - class_6)\nTopic: Number Systems\nFormula / Rule: Positional Radix-2 Expansion: $N_{10} = \\sum_{i=0}^{n-1} b_i \\cdot 2^i = b_{n-1}2^{n-1} + \\dots + b_1 2^1 + b_0 2^0$\nVariables: N_10 = Decimal base-10 value; b_i = Bit at position i (0 or 1); 2^i = Positional column weight (1, 2, 4, 8, 16, 32...)\nExplanation: Positional numeral systems assign each column a value of base^i. For base 2, column weights are powers of 2.\nDrill: Convert the 6-bit binary string (101101)₂ into decimal base-10.\nActive Recall: Q: What are the core equations and laws for Computer: Binary to Decimal Positional Expansion? | A: $N_{10} = \\sum_{i=0}^{n-1} b_i \\cdot 2^i = b_{n-1}2^{n-1} + \\dots + b_1 2^1 + b_0 2^0$ (Converting binary numbers to decimal base-10 integer representation.)"
   },
   {
     "id": "cbse-g7-math-simple-interest-circles",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Financial Math & Circles",
     "title": "Mathematics: Simple Interest and Circle Geometry",
@@ -8363,12 +8363,12 @@
       "back": "$\\text{SI} = \\frac{P \\times R \\times T}{100} \\quad \\text{and} \\quad A = P + \\text{SI}$ (Interest calculated uniformly on initial principal over tenure.)\n$C = 2\\pi r = \\pi d \\quad \\text{and} \\quad A = \\pi r^2$ (Boundary perimeter and planar disk area for radius r.)",
       "hint": "Financial Math & Circles"
     },
-    "searchableText": "Title: Mathematics: Simple Interest and Circle Geometry\nSubject: Mathematics (Science - cbse)\nTopic: Financial Math & Circles\nFormula / Rule: Simple Interest and Maturity Amount: $\\text{SI} = \\frac{P \\times R \\times T}{100} \\quad \\text{and} \\quad A = P + \\text{SI}$;\nCircle Circumference & Area: $C = 2\\pi r = \\pi d \\quad \\text{and} \\quad A = \\pi r^2$\nVariables: SI = Simple Interest earned or charged (₹); P = Principal invested sum (₹); R = Rate of annual interest (% p.a.); T = Tenure in years (yr); A = Area enclosed by circular disk (m²); C = Circumference of circle (metres, m); r = Radius of circle (m); d = Diameter (d = 2r, m); \\pi = Mathematical circle ratio constant (22/7 or 3.1416)\nExplanation: Interest on ₹100 for 1 year is R. On principal P for T years, interest is P × R × T / 100. Amount A = P + SI.\nDrill: ₹6,000 is deposited at 7.5% simple interest per annum for 3 years. Find SI and total Amount.\n\nBy definition π = C/d => C = 2πr. Dissecting circle into infinite sectors reassembles into rectangle with base πr and height r: A = πr².\nDrill: A circular running track has a radius of 14 m. Calculate its boundary perimeter and turf area.\nActive Recall: Q: What are the core equations and laws for Mathematics: Simple Interest and Circle Geometry? | A: $\\text{SI} = \\frac{P \\times R \\times T}{100} \\quad \\text{and} \\quad A = P + \\text{SI}$ (Interest calculated uniformly on initial principal over tenure.)\n$C = 2\\pi r = \\pi d \\quad \\text{and} \\quad A = \\pi r^2$ (Boundary perimeter and planar disk area for radius r.)"
+    "searchableText": "Title: Mathematics: Simple Interest and Circle Geometry\nSubject: Mathematics (General - class_7)\nTopic: Financial Math & Circles\nFormula / Rule: Simple Interest and Maturity Amount: $\\text{SI} = \\frac{P \\times R \\times T}{100} \\quad \\text{and} \\quad A = P + \\text{SI}$;\nCircle Circumference & Area: $C = 2\\pi r = \\pi d \\quad \\text{and} \\quad A = \\pi r^2$\nVariables: SI = Simple Interest earned or charged (₹); P = Principal invested sum (₹); R = Rate of annual interest (% p.a.); T = Tenure in years (yr); A = Area enclosed by circular disk (m²); C = Circumference of circle (metres, m); r = Radius of circle (m); d = Diameter (d = 2r, m); \\pi = Mathematical circle ratio constant (22/7 or 3.1416)\nExplanation: Interest on ₹100 for 1 year is R. On principal P for T years, interest is P × R × T / 100. Amount A = P + SI.\nDrill: ₹6,000 is deposited at 7.5% simple interest per annum for 3 years. Find SI and total Amount.\n\nBy definition π = C/d => C = 2πr. Dissecting circle into infinite sectors reassembles into rectangle with base πr and height r: A = πr².\nDrill: A circular running track has a radius of 14 m. Calculate its boundary perimeter and turf area.\nActive Recall: Q: What are the core equations and laws for Mathematics: Simple Interest and Circle Geometry? | A: $\\text{SI} = \\frac{P \\times R \\times T}{100} \\quad \\text{and} \\quad A = P + \\text{SI}$ (Interest calculated uniformly on initial principal over tenure.)\n$C = 2\\pi r = \\pi d \\quad \\text{and} \\quad A = \\pi r^2$ (Boundary perimeter and planar disk area for radius r.)"
   },
   {
     "id": "cbse-g7-science-heat-motion",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Science",
     "topic": "Thermal Physics & Periodic Motion",
     "title": "Science: Temperature Scale Conversion & Simple Pendulums",
@@ -8387,12 +8387,12 @@
       "back": "$\\frac{C}{5} = \\frac{F - 32}{9} \\quad \\iff \\quad F = \\left(\\frac{9}{5}C\\right) + 32$ (Standard thermometric conversion between Celsius and Fahrenheit scales.)\n$T = \\frac{t_{\\text{total}}}{n} \\quad \\text{and} \\quad f = \\frac{1}{T}$ (Time period of one complete back-and-forth oscillation cycle.)",
       "hint": "Thermal Physics & Periodic Motion"
     },
-    "searchableText": "Title: Science: Temperature Scale Conversion & Simple Pendulums\nSubject: Science (Science - cbse)\nTopic: Thermal Physics & Periodic Motion\nFormula / Rule: Celsius to Fahrenheit Scale Equivalence: $\\frac{C}{5} = \\frac{F - 32}{9} \\quad \\iff \\quad F = \\left(\\frac{9}{5}C\\right) + 32$;\nSimple Pendulum Time Period: $T = \\frac{t_{\\text{total}}}{n} \\quad \\text{and} \\quad f = \\frac{1}{T}$\nVariables: C = Temperature on Celsius metric scale (°C); F = Temperature on Fahrenheit thermometric scale (°F); T = Time period of single oscillation (seconds, s); t_total = Total stopwatch time for n complete oscillations (s); n = Number of full oscillation cycles counted (scalar); f = Oscillatory frequency (Hertz, Hz)\nExplanation: Equating fundamental thermometric intervals: (C - 0)/(100 - 0) = (F - 32)/(212 - 32) => C/100 = (F - 32)/180 => C/5 = (F - 32)/9.\nDrill: Human body temperature is 37°C. Convert this value accurately into degrees Fahrenheit.\n\nA complete oscillation passes from mean position to both extremes and back. Total time t divided by cycle count n yields period T.\nDrill: A pendulum takes 44 seconds to complete 20 full oscillations. Compute its period and frequency.\nActive Recall: Q: What are the core equations and laws for Science: Temperature Scale Conversion & Simple Pendulums? | A: $\\frac{C}{5} = \\frac{F - 32}{9} \\quad \\iff \\quad F = \\left(\\frac{9}{5}C\\right) + 32$ (Standard thermometric conversion between Celsius and Fahrenheit scales.)\n$T = \\frac{t_{\\text{total}}}{n} \\quad \\text{and} \\quad f = \\frac{1}{T}$ (Time period of one complete back-and-forth oscillation cycle.)"
+    "searchableText": "Title: Science: Temperature Scale Conversion & Simple Pendulums\nSubject: Science (General - class_7)\nTopic: Thermal Physics & Periodic Motion\nFormula / Rule: Celsius to Fahrenheit Scale Equivalence: $\\frac{C}{5} = \\frac{F - 32}{9} \\quad \\iff \\quad F = \\left(\\frac{9}{5}C\\right) + 32$;\nSimple Pendulum Time Period: $T = \\frac{t_{\\text{total}}}{n} \\quad \\text{and} \\quad f = \\frac{1}{T}$\nVariables: C = Temperature on Celsius metric scale (°C); F = Temperature on Fahrenheit thermometric scale (°F); T = Time period of single oscillation (seconds, s); t_total = Total stopwatch time for n complete oscillations (s); n = Number of full oscillation cycles counted (scalar); f = Oscillatory frequency (Hertz, Hz)\nExplanation: Equating fundamental thermometric intervals: (C - 0)/(100 - 0) = (F - 32)/(212 - 32) => C/100 = (F - 32)/180 => C/5 = (F - 32)/9.\nDrill: Human body temperature is 37°C. Convert this value accurately into degrees Fahrenheit.\n\nA complete oscillation passes from mean position to both extremes and back. Total time t divided by cycle count n yields period T.\nDrill: A pendulum takes 44 seconds to complete 20 full oscillations. Compute its period and frequency.\nActive Recall: Q: What are the core equations and laws for Science: Temperature Scale Conversion & Simple Pendulums? | A: $\\frac{C}{5} = \\frac{F - 32}{9} \\quad \\iff \\quad F = \\left(\\frac{9}{5}C\\right) + 32$ (Standard thermometric conversion between Celsius and Fahrenheit scales.)\n$T = \\frac{t_{\\text{total}}}{n} \\quad \\text{and} \\quad f = \\frac{1}{T}$ (Time period of one complete back-and-forth oscillation cycle.)"
   },
   {
     "id": "cbse-g7-social-science-population-density",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Social Science",
     "topic": "Human Demographics",
     "title": "Social Science: Demographic Population Density Formula",
@@ -8408,12 +8408,12 @@
       "back": "$D = \\frac{\\text{Total Population } (P)}{\\text{Total Geographic Land Area } (A)}$ (Number of human residents supported per square kilometre of terrestrial land.)",
       "hint": "Human Demographics"
     },
-    "searchableText": "Title: Social Science: Demographic Population Density Formula\nSubject: Social Science (Science - cbse)\nTopic: Human Demographics\nFormula / Rule: Crude Population Density: $D = \\frac{\\text{Total Population } (P)}{\\text{Total Geographic Land Area } (A)}$\nVariables: D = Population density (persons / km²); P = Total enumerated census population count; A = Total territorial surface area (km²)\nExplanation: Carrying capacity and human concentration are evaluated by spreading total headcount P across planar territory area A.\nDrill: A state district has 1,800,000 residents across 4,500 km². Find its population density.\nActive Recall: Q: What are the core equations and laws for Social Science: Demographic Population Density Formula? | A: $D = \\frac{\\text{Total Population } (P)}{\\text{Total Geographic Land Area } (A)}$ (Number of human residents supported per square kilometre of terrestrial land.)"
+    "searchableText": "Title: Social Science: Demographic Population Density Formula\nSubject: Social Science (General - class_7)\nTopic: Human Demographics\nFormula / Rule: Crude Population Density: $D = \\frac{\\text{Total Population } (P)}{\\text{Total Geographic Land Area } (A)}$\nVariables: D = Population density (persons / km²); P = Total enumerated census population count; A = Total territorial surface area (km²)\nExplanation: Carrying capacity and human concentration are evaluated by spreading total headcount P across planar territory area A.\nDrill: A state district has 1,800,000 residents across 4,500 km². Find its population density.\nActive Recall: Q: What are the core equations and laws for Social Science: Demographic Population Density Formula? | A: $D = \\frac{\\text{Total Population } (P)}{\\text{Total Geographic Land Area } (A)}$ (Number of human residents supported per square kilometre of terrestrial land.)"
   },
   {
     "id": "cbse-g7-english-reported-speech",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "English",
     "topic": "Reported Speech Tense Matrix",
     "title": "English: Tense Backshift in Indirect Reported Speech",
@@ -8429,12 +8429,12 @@
       "back": "$S + \\text{said, } \"\\dots V_1 \\dots\" \\implies S + \\text{said that } \\dots V_2 \\dots$ (When reporting verb is in past tense, present tense actions in direct quote backshift by one tense step.)",
       "hint": "Reported Speech Tense Matrix"
     },
-    "searchableText": "Title: English: Tense Backshift in Indirect Reported Speech\nSubject: English (Science - cbse)\nTopic: Reported Speech Tense Matrix\nFormula / Rule: Simple Present to Simple Past Backshift: $S + \\text{said, } \"\\dots V_1 \\dots\" \\implies S + \\text{said that } \\dots V_2 \\dots$\nVariables: S = Reporting speaker; V_1 = Direct quote present verb (e.g., study / studies); V_2 = Reported indirect past verb (e.g., studied)\nExplanation: Temporal deixis shifts statement perspective from speaker's contemporary moment into the historical past.\nDrill: Convert into indirect speech: Priya said, 'I prepare my formula notes every evening.'\nActive Recall: Q: What are the core equations and laws for English: Tense Backshift in Indirect Reported Speech? | A: $S + \\text{said, } \"\\dots V_1 \\dots\" \\implies S + \\text{said that } \\dots V_2 \\dots$ (When reporting verb is in past tense, present tense actions in direct quote backshift by one tense step.)"
+    "searchableText": "Title: English: Tense Backshift in Indirect Reported Speech\nSubject: English (General - class_7)\nTopic: Reported Speech Tense Matrix\nFormula / Rule: Simple Present to Simple Past Backshift: $S + \\text{said, } \"\\dots V_1 \\dots\" \\implies S + \\text{said that } \\dots V_2 \\dots$\nVariables: S = Reporting speaker; V_1 = Direct quote present verb (e.g., study / studies); V_2 = Reported indirect past verb (e.g., studied)\nExplanation: Temporal deixis shifts statement perspective from speaker's contemporary moment into the historical past.\nDrill: Convert into indirect speech: Priya said, 'I prepare my formula notes every evening.'\nActive Recall: Q: What are the core equations and laws for English: Tense Backshift in Indirect Reported Speech? | A: $S + \\text{said, } \"\\dots V_1 \\dots\" \\implies S + \\text{said that } \\dots V_2 \\dots$ (When reporting verb is in past tense, present tense actions in direct quote backshift by one tense step.)"
   },
   {
     "id": "cbse-g7-computer-network-transfer",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Computer",
     "topic": "Data Communication",
     "title": "Computer: File Transfer Time & Bandwidth Throughput",
@@ -8450,12 +8450,12 @@
       "back": "$t_{\\text{transfer}} = \\frac{\\text{File Size in bits } (S)}{\\text{Bandwidth Data Rate } (R)}$ (Time required to stream or download a file over an active digital channel.)",
       "hint": "Data Communication"
     },
-    "searchableText": "Title: Computer: File Transfer Time & Bandwidth Throughput\nSubject: Computer (Science - cbse)\nTopic: Data Communication\nFormula / Rule: Data Download Duration Equation: $t_{\\text{transfer}} = \\frac{\\text{File Size in bits } (S)}{\\text{Bandwidth Data Rate } (R)}$\nVariables: t_transfer = Transfer time (seconds, s); S = File size converted to bits (bits, where 1 Byte = 8 bits); R = Effective network bandwidth (bits per second, bps or Mbps)\nExplanation: Dividing total digital bits by channel transmission speed in bits per second yields download duration.\nDrill: Compute download time in seconds for a 30 MB video file on a 20 Mbps broadband connection.\nActive Recall: Q: What are the core equations and laws for Computer: File Transfer Time & Bandwidth Throughput? | A: $t_{\\text{transfer}} = \\frac{\\text{File Size in bits } (S)}{\\text{Bandwidth Data Rate } (R)}$ (Time required to stream or download a file over an active digital channel.)"
+    "searchableText": "Title: Computer: File Transfer Time & Bandwidth Throughput\nSubject: Computer (General - class_7)\nTopic: Data Communication\nFormula / Rule: Data Download Duration Equation: $t_{\\text{transfer}} = \\frac{\\text{File Size in bits } (S)}{\\text{Bandwidth Data Rate } (R)}$\nVariables: t_transfer = Transfer time (seconds, s); S = File size converted to bits (bits, where 1 Byte = 8 bits); R = Effective network bandwidth (bits per second, bps or Mbps)\nExplanation: Dividing total digital bits by channel transmission speed in bits per second yields download duration.\nDrill: Compute download time in seconds for a 30 MB video file on a 20 Mbps broadband connection.\nActive Recall: Q: What are the core equations and laws for Computer: File Transfer Time & Bandwidth Throughput? | A: $t_{\\text{transfer}} = \\frac{\\text{File Size in bits } (S)}{\\text{Bandwidth Data Rate } (R)}$ (Time required to stream or download a file over an active digital channel.)"
   },
   {
     "id": "icse-g7-physics-heat-energy",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Physics",
     "topic": "Calorimetry & Heat Transfer",
     "title": "Physics: Specific Heat Capacity and Thermal Equilibrium",
@@ -8472,12 +8472,12 @@
       "back": "$Q = mc\\Delta T \\quad \\text{and} \\quad Q_{\\text{lost}} = Q_{\\text{gained}}$ (Thermal energy gained or lost during temperature change without phase transition.)",
       "hint": "Calorimetry & Heat Transfer"
     },
-    "searchableText": "Title: Physics: Specific Heat Capacity and Thermal Equilibrium\nSubject: Physics (Science - icse)\nTopic: Calorimetry & Heat Transfer\nFormula / Rule: Sensible Heat Equation: $Q = mc\\Delta T \\quad \\text{and} \\quad Q_{\\text{lost}} = Q_{\\text{gained}}$\nVariables: Q = Thermal heat energy (Joules, J); m = Mass of substance (kg); c = Specific heat capacity (J/(kg·K)); \\Delta T = Temperature change (T_final - T_initial, K or °C)\nExplanation: Heat required is proportional to mass (Q ∝ m) and temperature change (Q ∝ ΔT). Combining with constant c gives Q = mcΔT.\nDrill: Calculate heat required to warm 0.5 kg of water (c = 4200 J/kg·K) from 20°C to 80°C.\nActive Recall: Q: What are the core equations and laws for Physics: Specific Heat Capacity and Thermal Equilibrium? | A: $Q = mc\\Delta T \\quad \\text{and} \\quad Q_{\\text{lost}} = Q_{\\text{gained}}$ (Thermal energy gained or lost during temperature change without phase transition.)"
+    "searchableText": "Title: Physics: Specific Heat Capacity and Thermal Equilibrium\nSubject: Physics (General - class_7)\nTopic: Calorimetry & Heat Transfer\nFormula / Rule: Sensible Heat Equation: $Q = mc\\Delta T \\quad \\text{and} \\quad Q_{\\text{lost}} = Q_{\\text{gained}}$\nVariables: Q = Thermal heat energy (Joules, J); m = Mass of substance (kg); c = Specific heat capacity (J/(kg·K)); \\Delta T = Temperature change (T_final - T_initial, K or °C)\nExplanation: Heat required is proportional to mass (Q ∝ m) and temperature change (Q ∝ ΔT). Combining with constant c gives Q = mcΔT.\nDrill: Calculate heat required to warm 0.5 kg of water (c = 4200 J/kg·K) from 20°C to 80°C.\nActive Recall: Q: What are the core equations and laws for Physics: Specific Heat Capacity and Thermal Equilibrium? | A: $Q = mc\\Delta T \\quad \\text{and} \\quad Q_{\\text{lost}} = Q_{\\text{gained}}$ (Thermal energy gained or lost during temperature change without phase transition.)"
   },
   {
     "id": "icse-g7-chemistry-percentage-composition",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Chemistry",
     "topic": "Chemical Formulae & Percentages",
     "title": "Chemistry: Percentage Mass Composition of Compounds",
@@ -8494,12 +8494,12 @@
       "back": "$\\%E = \\frac{n \\times A_r}{M_r} \\times 100$ (Percentage mass fraction contributed by an individual element in a pure chemical formula.)",
       "hint": "Chemical Formulae & Percentages"
     },
-    "searchableText": "Title: Chemistry: Percentage Mass Composition of Compounds\nSubject: Chemistry (Science - icse)\nTopic: Chemical Formulae & Percentages\nFormula / Rule: Percentage of Element in Compound: $\\%E = \\frac{n \\times A_r}{M_r} \\times 100$\nVariables: %E = Percentage by mass of constituent element (%); n = Number of atoms of element in chemical formula (subscript); A_r = Relative atomic mass of element (u or g/mol); M_r = Total relative molecular mass of compound (u or g/mol)\nExplanation: By the Law of Constant Proportions, element mass fraction equals total mass of element atoms divided by molar mass of compound.\nDrill: Compute the percentage of Nitrogen by mass in urea [NH2CONH2] (N=14, H=1, C=12, O=16).\nActive Recall: Q: What are the core equations and laws for Chemistry: Percentage Mass Composition of Compounds? | A: $\\%E = \\frac{n \\times A_r}{M_r} \\times 100$ (Percentage mass fraction contributed by an individual element in a pure chemical formula.)"
+    "searchableText": "Title: Chemistry: Percentage Mass Composition of Compounds\nSubject: Chemistry (General - class_7)\nTopic: Chemical Formulae & Percentages\nFormula / Rule: Percentage of Element in Compound: $\\%E = \\frac{n \\times A_r}{M_r} \\times 100$\nVariables: %E = Percentage by mass of constituent element (%); n = Number of atoms of element in chemical formula (subscript); A_r = Relative atomic mass of element (u or g/mol); M_r = Total relative molecular mass of compound (u or g/mol)\nExplanation: By the Law of Constant Proportions, element mass fraction equals total mass of element atoms divided by molar mass of compound.\nDrill: Compute the percentage of Nitrogen by mass in urea [NH2CONH2] (N=14, H=1, C=12, O=16).\nActive Recall: Q: What are the core equations and laws for Chemistry: Percentage Mass Composition of Compounds? | A: $\\%E = \\frac{n \\times A_r}{M_r} \\times 100$ (Percentage mass fraction contributed by an individual element in a pure chemical formula.)"
   },
   {
     "id": "icse-g7-biology-respiration-bioenergetics",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Biology",
     "topic": "Cellular Respiration",
     "title": "Biology: Aerobic Respiration Equation & ATP Output",
@@ -8516,12 +8516,12 @@
       "back": "$\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2 \\xrightarrow{\\text{enzymes}} 6\\text{CO}_2 + 6\\text{H}_2\\text{O} + 38\\text{ ATP}$ (Complete enzymatic oxidation of glucose generating cellular ATP energy packets.)",
       "hint": "Cellular Respiration"
     },
-    "searchableText": "Title: Biology: Aerobic Respiration Equation & ATP Output\nSubject: Biology (Science - icse)\nTopic: Cellular Respiration\nFormula / Rule: Aerobic Catabolism Equation: $\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2 \\xrightarrow{\\text{enzymes}} 6\\text{CO}_2 + 6\\text{H}_2\\text{O} + 38\\text{ ATP}$\nVariables: C_6H_12O_6 = Glucose substrate (mol); O_2 = Oxygen gas inhaled as electron acceptor (mol); CO_2 = Carbon dioxide metabolic waste (mol); ATP = Adenosine Triphosphate chemical energy currency\nExplanation: Glycolysis in cytoplasm followed by Krebs cycle in mitochondria releases energy stored in C-H bonds to synthesize 38 ATP.\nDrill: Write the balanced aerobic respiration equation and contrast ATP yield with anaerobic fermentation.\nActive Recall: Q: What are the core equations and laws for Biology: Aerobic Respiration Equation & ATP Output? | A: $\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2 \\xrightarrow{\\text{enzymes}} 6\\text{CO}_2 + 6\\text{H}_2\\text{O} + 38\\text{ ATP}$ (Complete enzymatic oxidation of glucose generating cellular ATP energy packets.)"
+    "searchableText": "Title: Biology: Aerobic Respiration Equation & ATP Output\nSubject: Biology (General - class_7)\nTopic: Cellular Respiration\nFormula / Rule: Aerobic Catabolism Equation: $\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2 \\xrightarrow{\\text{enzymes}} 6\\text{CO}_2 + 6\\text{H}_2\\text{O} + 38\\text{ ATP}$\nVariables: C_6H_12O_6 = Glucose substrate (mol); O_2 = Oxygen gas inhaled as electron acceptor (mol); CO_2 = Carbon dioxide metabolic waste (mol); ATP = Adenosine Triphosphate chemical energy currency\nExplanation: Glycolysis in cytoplasm followed by Krebs cycle in mitochondria releases energy stored in C-H bonds to synthesize 38 ATP.\nDrill: Write the balanced aerobic respiration equation and contrast ATP yield with anaerobic fermentation.\nActive Recall: Q: What are the core equations and laws for Biology: Aerobic Respiration Equation & ATP Output? | A: $\\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\text{O}_2 \\xrightarrow{\\text{enzymes}} 6\\text{CO}_2 + 6\\text{H}_2\\text{O} + 38\\text{ ATP}$ (Complete enzymatic oxidation of glucose generating cellular ATP energy packets.)"
   },
   {
     "id": "icse-g7-math-pythagoras-theorem",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Right-Angled Triangles",
     "title": "Mathematics: Pythagoras Theorem in Right Triangles",
@@ -8537,12 +8537,12 @@
       "back": "$c^2 = a^2 + b^2 \\quad \\iff \\quad c = \\sqrt{a^2 + b^2}$ (Relation between hypotenuse and the two perpendicular legs in any right-angled triangle.)",
       "hint": "Right-Angled Triangles"
     },
-    "searchableText": "Title: Mathematics: Pythagoras Theorem in Right Triangles\nSubject: Mathematics (Science - icse)\nTopic: Right-Angled Triangles\nFormula / Rule: Pythagorean Equation: $c^2 = a^2 + b^2 \\quad \\iff \\quad c = \\sqrt{a^2 + b^2}$\nVariables: c = Hypotenuse opposite to 90° angle (m); a = Base leg (m); b = Altitude perpendicular leg (m)\nExplanation: Area of square on hypotenuse equals sum of areas of squares on base and perpendicular legs.\nDrill: A 12 m flagpole has a stay wire anchored 5 m from its base. Find the length of the taut wire.\nActive Recall: Q: What are the core equations and laws for Mathematics: Pythagoras Theorem in Right Triangles? | A: $c^2 = a^2 + b^2 \\quad \\iff \\quad c = \\sqrt{a^2 + b^2}$ (Relation between hypotenuse and the two perpendicular legs in any right-angled triangle.)"
+    "searchableText": "Title: Mathematics: Pythagoras Theorem in Right Triangles\nSubject: Mathematics (General - class_7)\nTopic: Right-Angled Triangles\nFormula / Rule: Pythagorean Equation: $c^2 = a^2 + b^2 \\quad \\iff \\quad c = \\sqrt{a^2 + b^2}$\nVariables: c = Hypotenuse opposite to 90° angle (m); a = Base leg (m); b = Altitude perpendicular leg (m)\nExplanation: Area of square on hypotenuse equals sum of areas of squares on base and perpendicular legs.\nDrill: A 12 m flagpole has a stay wire anchored 5 m from its base. Find the length of the taut wire.\nActive Recall: Q: What are the core equations and laws for Mathematics: Pythagoras Theorem in Right Triangles? | A: $c^2 = a^2 + b^2 \\quad \\iff \\quad c = \\sqrt{a^2 + b^2}$ (Relation between hypotenuse and the two perpendicular legs in any right-angled triangle.)"
   },
   {
     "id": "icse-g7-social-science-relative-humidity",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Social Science",
     "topic": "Atmospheric Moisture",
     "title": "Social Science: Atmospheric Relative Humidity Formula",
@@ -8558,12 +8558,12 @@
       "back": "$\\text{RH} = \\frac{\\text{Actual Moisture Present } (m_v)}{\\text{Maximum Moisture Capacity } (M_v)} \\times 100\\%$ (Atmospheric saturation level expressed as percentage of max vapor capacity at same temperature.)",
       "hint": "Atmospheric Moisture"
     },
-    "searchableText": "Title: Social Science: Atmospheric Relative Humidity Formula\nSubject: Social Science (Science - icse)\nTopic: Atmospheric Moisture\nFormula / Rule: Relative Humidity (RH): $\\text{RH} = \\frac{\\text{Actual Moisture Present } (m_v)}{\\text{Maximum Moisture Capacity } (M_v)} \\times 100\\%$\nVariables: RH = Relative Humidity (%); m_v = Actual water vapour content (g/m³); M_v = Maximum saturation water vapour capacity at temperature T (g/m³)\nExplanation: Air can hold a temperature-dependent upper ceiling of water vapor. RH expresses actual vapor pressure as fraction of saturation pressure.\nDrill: Air at 25°C holds 11.5 g/m³ water vapour; maximum capacity is 23.0 g/m³. Compute relative humidity.\nActive Recall: Q: What are the core equations and laws for Social Science: Atmospheric Relative Humidity Formula? | A: $\\text{RH} = \\frac{\\text{Actual Moisture Present } (m_v)}{\\text{Maximum Moisture Capacity } (M_v)} \\times 100\\%$ (Atmospheric saturation level expressed as percentage of max vapor capacity at same temperature.)"
+    "searchableText": "Title: Social Science: Atmospheric Relative Humidity Formula\nSubject: Social Science (General - class_7)\nTopic: Atmospheric Moisture\nFormula / Rule: Relative Humidity (RH): $\\text{RH} = \\frac{\\text{Actual Moisture Present } (m_v)}{\\text{Maximum Moisture Capacity } (M_v)} \\times 100\\%$\nVariables: RH = Relative Humidity (%); m_v = Actual water vapour content (g/m³); M_v = Maximum saturation water vapour capacity at temperature T (g/m³)\nExplanation: Air can hold a temperature-dependent upper ceiling of water vapor. RH expresses actual vapor pressure as fraction of saturation pressure.\nDrill: Air at 25°C holds 11.5 g/m³ water vapour; maximum capacity is 23.0 g/m³. Compute relative humidity.\nActive Recall: Q: What are the core equations and laws for Social Science: Atmospheric Relative Humidity Formula? | A: $\\text{RH} = \\frac{\\text{Actual Moisture Present } (m_v)}{\\text{Maximum Moisture Capacity } (M_v)} \\times 100\\%$ (Atmospheric saturation level expressed as percentage of max vapor capacity at same temperature.)"
   },
   {
     "id": "icse-g7-english-first-conditional",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "English",
     "topic": "Conditional Sentences",
     "title": "English: First Conditional Real Future Syntax Formula",
@@ -8578,12 +8578,12 @@
       "back": "$\\text{If} + [S + V_1(s/es)] \\implies [S + \\text{will/shall} + V_1]$ (Syntactic structure expressing realistic, probable future causal outcomes.)",
       "hint": "Conditional Sentences"
     },
-    "searchableText": "Title: English: First Conditional Real Future Syntax Formula\nSubject: English (Science - icse)\nTopic: Conditional Sentences\nFormula / Rule: First Conditional Structure: $\\text{If} + [S + V_1(s/es)] \\implies [S + \\text{will/shall} + V_1]$\nVariables: If + V_1 = Present simple verb in conditional clause protasis; will + V_1 = Modal future indicative verb in consequence clause apodosis\nExplanation: Condition is set in simple present; causal future result is governed by modal 'will' + base infinitive.\nDrill: Combine into first conditional: 'Rohan practices his physics problems. He achieves full marks.'\nActive Recall: Q: What are the core equations and laws for English: First Conditional Real Future Syntax Formula? | A: $\\text{If} + [S + V_1(s/es)] \\implies [S + \\text{will/shall} + V_1]$ (Syntactic structure expressing realistic, probable future causal outcomes.)"
+    "searchableText": "Title: English: First Conditional Real Future Syntax Formula\nSubject: English (General - class_7)\nTopic: Conditional Sentences\nFormula / Rule: First Conditional Structure: $\\text{If} + [S + V_1(s/es)] \\implies [S + \\text{will/shall} + V_1]$\nVariables: If + V_1 = Present simple verb in conditional clause protasis; will + V_1 = Modal future indicative verb in consequence clause apodosis\nExplanation: Condition is set in simple present; causal future result is governed by modal 'will' + base infinitive.\nDrill: Combine into first conditional: 'Rohan practices his physics problems. He achieves full marks.'\nActive Recall: Q: What are the core equations and laws for English: First Conditional Real Future Syntax Formula? | A: $\\text{If} + [S + V_1(s/es)] \\implies [S + \\text{will/shall} + V_1]$ (Syntactic structure expressing realistic, probable future causal outcomes.)"
   },
   {
     "id": "icse-g7-computer-java-modulus-operator",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Computer",
     "topic": "Java Arithmetic Operators",
     "title": "Computer: Java Modulus Remainder Arithmetic",
@@ -8599,12 +8599,12 @@
       "back": "$r = a \\% b = a - \\left(\\left\\lfloor \\frac{a}{b} \\right\\rfloor \\times b\\right)$ (Evaluating the integer remainder after division in Java programming.)",
       "hint": "Java Arithmetic Operators"
     },
-    "searchableText": "Title: Computer: Java Modulus Remainder Arithmetic\nSubject: Computer (Science - icse)\nTopic: Java Arithmetic Operators\nFormula / Rule: Modulus Remainder Formula: $r = a \\% b = a - \\left(\\left\\lfloor \\frac{a}{b} \\right\\rfloor \\times b\\right)$\nVariables: a = Dividend integer operand; b = Divisor nonzero integer operand; r = Remainder integer result (0 <= r < b)\nExplanation: By Euclid's division theorem, a = b · q + r where q = floor(a / b). Rearranging isolates remainder r = a - (q · b).\nDrill: Evaluate the exact output in Java: int res = (29 % 6) + (14 / 4);\nActive Recall: Q: What are the core equations and laws for Computer: Java Modulus Remainder Arithmetic? | A: $r = a \\% b = a - \\left(\\left\\lfloor \\frac{a}{b} \\right\\rfloor \\times b\\right)$ (Evaluating the integer remainder after division in Java programming.)"
+    "searchableText": "Title: Computer: Java Modulus Remainder Arithmetic\nSubject: Computer (General - class_7)\nTopic: Java Arithmetic Operators\nFormula / Rule: Modulus Remainder Formula: $r = a \\% b = a - \\left(\\left\\lfloor \\frac{a}{b} \\right\\rfloor \\times b\\right)$\nVariables: a = Dividend integer operand; b = Divisor nonzero integer operand; r = Remainder integer result (0 <= r < b)\nExplanation: By Euclid's division theorem, a = b · q + r where q = floor(a / b). Rearranging isolates remainder r = a - (q · b).\nDrill: Evaluate the exact output in Java: int res = (29 % 6) + (14 / 4);\nActive Recall: Q: What are the core equations and laws for Computer: Java Modulus Remainder Arithmetic? | A: $r = a \\% b = a - \\left(\\left\\lfloor \\frac{a}{b} \\right\\rfloor \\times b\\right)$ (Evaluating the integer remainder after division in Java programming.)"
   },
   {
     "id": "cbse-g8-math-compound-interest-mensuration",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Compound Interest & Cylinders",
     "title": "Mathematics: Compound Interest & Cylinder Mensuration",
@@ -8627,12 +8627,12 @@
       "back": "$A = P\\left(1 + \\frac{R}{100}\\right)^n \\quad \\text{and} \\quad \\text{CI} = A - P$ (Amount and compound interest when interest compounds annually over n conversion periods.)\n$V = \\pi r^2 h, \\quad \\text{CSA} = 2\\pi rh, \\quad \\text{TSA} = 2\\pi r(h + r)$ (Volume and lateral / total surface area of a closed right circular cylinder.)",
       "hint": "Compound Interest & Cylinders"
     },
-    "searchableText": "Title: Mathematics: Compound Interest & Cylinder Mensuration\nSubject: Mathematics (Science - cbse)\nTopic: Compound Interest & Cylinders\nFormula / Rule: Compound Interest (Annual Compounding): $A = P\\left(1 + \\frac{R}{100}\\right)^n \\quad \\text{and} \\quad \\text{CI} = A - P$;\nRight Circular Cylinder Surface Area & Volume: $V = \\pi r^2 h, \\quad \\text{CSA} = 2\\pi rh, \\quad \\text{TSA} = 2\\pi r(h + r)$\nVariables: A = Maturity amount after n periods (₹); P = Principal capital invested (₹); R = Annual interest rate (% p.a.); n = Number of annual compounding periods; CI = Compound Interest accrued (₹); V = Volume of cylinder (cubic metres, m³); CSA = Curved surface area (square metres, m²); TSA = Total surface area including top and bottom lids (m²); r = Base radius (m); h = Height / length of cylinder (m)\nExplanation: Year 1 amount is P(1+R/100). Year 2 amount is P(1+R/100)². By mathematical induction, period n gives A = P(1+R/100)ⁿ.\nDrill: Compute compound interest on ₹10,000 for 2 years at 10% per annum compounded annually.\n\nUnrolling curved surface yields a rectangle of length 2πr and height h, giving CSA = 2πrh. Adding two circular end discs gives TSA = 2πrh + 2πr².\nDrill: A cylindrical tank has radius 7 m and height 10 m. Compute its CSA, TSA, and Volume.\nActive Recall: Q: What are the core equations and laws for Mathematics: Compound Interest & Cylinder Mensuration? | A: $A = P\\left(1 + \\frac{R}{100}\\right)^n \\quad \\text{and} \\quad \\text{CI} = A - P$ (Amount and compound interest when interest compounds annually over n conversion periods.)\n$V = \\pi r^2 h, \\quad \\text{CSA} = 2\\pi rh, \\quad \\text{TSA} = 2\\pi r(h + r)$ (Volume and lateral / total surface area of a closed right circular cylinder.)"
+    "searchableText": "Title: Mathematics: Compound Interest & Cylinder Mensuration\nSubject: Mathematics (General - class_8)\nTopic: Compound Interest & Cylinders\nFormula / Rule: Compound Interest (Annual Compounding): $A = P\\left(1 + \\frac{R}{100}\\right)^n \\quad \\text{and} \\quad \\text{CI} = A - P$;\nRight Circular Cylinder Surface Area & Volume: $V = \\pi r^2 h, \\quad \\text{CSA} = 2\\pi rh, \\quad \\text{TSA} = 2\\pi r(h + r)$\nVariables: A = Maturity amount after n periods (₹); P = Principal capital invested (₹); R = Annual interest rate (% p.a.); n = Number of annual compounding periods; CI = Compound Interest accrued (₹); V = Volume of cylinder (cubic metres, m³); CSA = Curved surface area (square metres, m²); TSA = Total surface area including top and bottom lids (m²); r = Base radius (m); h = Height / length of cylinder (m)\nExplanation: Year 1 amount is P(1+R/100). Year 2 amount is P(1+R/100)². By mathematical induction, period n gives A = P(1+R/100)ⁿ.\nDrill: Compute compound interest on ₹10,000 for 2 years at 10% per annum compounded annually.\n\nUnrolling curved surface yields a rectangle of length 2πr and height h, giving CSA = 2πrh. Adding two circular end discs gives TSA = 2πrh + 2πr².\nDrill: A cylindrical tank has radius 7 m and height 10 m. Compute its CSA, TSA, and Volume.\nActive Recall: Q: What are the core equations and laws for Mathematics: Compound Interest & Cylinder Mensuration? | A: $A = P\\left(1 + \\frac{R}{100}\\right)^n \\quad \\text{and} \\quad \\text{CI} = A - P$ (Amount and compound interest when interest compounds annually over n conversion periods.)\n$V = \\pi r^2 h, \\quad \\text{CSA} = 2\\pi rh, \\quad \\text{TSA} = 2\\pi r(h + r)$ (Volume and lateral / total surface area of a closed right circular cylinder.)"
   },
   {
     "id": "cbse-g8-science-force-pressure-sound",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Science",
     "topic": "Mechanics & Acoustics",
     "title": "Science: Pressure, Thrust and Acoustic Wave Speed",
@@ -8652,12 +8652,12 @@
       "back": "$P = \\frac{F_{\\perp}}{A} \\quad \\left(1\\text{ Pa} = 1\\text{ N/m}^2\\right)$ (Normal compressive force concentrated per unit planar contact area.)\n$v = f \\lambda = \\frac{\\lambda}{T}$ (Relation connecting wave speed, vibrational frequency, and wavelength.)",
       "hint": "Mechanics & Acoustics"
     },
-    "searchableText": "Title: Science: Pressure, Thrust and Acoustic Wave Speed\nSubject: Science (Science - cbse)\nTopic: Mechanics & Acoustics\nFormula / Rule: Pressure and Thrust Equation: $P = \\frac{F_{\\perp}}{A} \\quad \\left(1\\text{ Pa} = 1\\text{ N/m}^2\\right)$;\nAcoustic Wave Speed Equation: $v = f \\lambda = \\frac{\\lambda}{T}$\nVariables: P = Pressure (Pascals, Pa or N/m²); F_perp = Perpendicular thrust force (Newtons, N); A = Surface contact area (square metres, m²); v = Wave propagation speed (metres per second, m/s); f = Frequency of sounding source (Hertz, Hz); \\lambda = Wavelength between consecutive wave crests / compressions (metres, m); T = Time period of one complete oscillation cycle (seconds, s)\nExplanation: Pressure measures normal force concentration. Reducing contact area surcharges pressure for constant thrust.\nDrill: A wooden block weighing 600 N rests on contact dimensions 0.5 m × 0.2 m. Calculate pressure in Pa.\n\nSpeed is distance divided by time. In one period T, wave advances distance λ: v = λ/T. Since f = 1/T, v = fλ.\nDrill: A tuning fork vibrates at 512 Hz. In air with sound speed 340 m/s, find the sound wavelength.\nActive Recall: Q: What are the core equations and laws for Science: Pressure, Thrust and Acoustic Wave Speed? | A: $P = \\frac{F_{\\perp}}{A} \\quad \\left(1\\text{ Pa} = 1\\text{ N/m}^2\\right)$ (Normal compressive force concentrated per unit planar contact area.)\n$v = f \\lambda = \\frac{\\lambda}{T}$ (Relation connecting wave speed, vibrational frequency, and wavelength.)"
+    "searchableText": "Title: Science: Pressure, Thrust and Acoustic Wave Speed\nSubject: Science (General - class_8)\nTopic: Mechanics & Acoustics\nFormula / Rule: Pressure and Thrust Equation: $P = \\frac{F_{\\perp}}{A} \\quad \\left(1\\text{ Pa} = 1\\text{ N/m}^2\\right)$;\nAcoustic Wave Speed Equation: $v = f \\lambda = \\frac{\\lambda}{T}$\nVariables: P = Pressure (Pascals, Pa or N/m²); F_perp = Perpendicular thrust force (Newtons, N); A = Surface contact area (square metres, m²); v = Wave propagation speed (metres per second, m/s); f = Frequency of sounding source (Hertz, Hz); \\lambda = Wavelength between consecutive wave crests / compressions (metres, m); T = Time period of one complete oscillation cycle (seconds, s)\nExplanation: Pressure measures normal force concentration. Reducing contact area surcharges pressure for constant thrust.\nDrill: A wooden block weighing 600 N rests on contact dimensions 0.5 m × 0.2 m. Calculate pressure in Pa.\n\nSpeed is distance divided by time. In one period T, wave advances distance λ: v = λ/T. Since f = 1/T, v = fλ.\nDrill: A tuning fork vibrates at 512 Hz. In air with sound speed 340 m/s, find the sound wavelength.\nActive Recall: Q: What are the core equations and laws for Science: Pressure, Thrust and Acoustic Wave Speed? | A: $P = \\frac{F_{\\perp}}{A} \\quad \\left(1\\text{ Pa} = 1\\text{ N/m}^2\\right)$ (Normal compressive force concentrated per unit planar contact area.)\n$v = f \\lambda = \\frac{\\lambda}{T}$ (Relation connecting wave speed, vibrational frequency, and wavelength.)"
   },
   {
     "id": "cbse-g8-social-science-sex-ratio",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Social Science",
     "topic": "Demographic Indices",
     "title": "Social Science: Demographic Sex Ratio Index",
@@ -8673,12 +8673,12 @@
       "back": "$\\text{Sex Ratio} = \\left(\\frac{\\text{Number of Females}}{\\text{Number of Males}}\\right) \\times 1000$ (Standard census demographic index measuring gender proportion per 1,000 males.)",
       "hint": "Demographic Indices"
     },
-    "searchableText": "Title: Social Science: Demographic Sex Ratio Index\nSubject: Social Science (Science - cbse)\nTopic: Demographic Indices\nFormula / Rule: Sex Ratio Calculation: $\\text{Sex Ratio} = \\left(\\frac{\\text{Number of Females}}{\\text{Number of Males}}\\right) \\times 1000$\nVariables: Sex Ratio = Demographic ratio (females per 1,000 males); Females = Enumerated census female population; Males = Enumerated census male population\nExplanation: Indian census standards normalize female headcount against a base denominator of 1,000 male residents.\nDrill: A municipality has 48,000 females and 50,000 males. Find its demographic sex ratio.\nActive Recall: Q: What are the core equations and laws for Social Science: Demographic Sex Ratio Index? | A: $\\text{Sex Ratio} = \\left(\\frac{\\text{Number of Females}}{\\text{Number of Males}}\\right) \\times 1000$ (Standard census demographic index measuring gender proportion per 1,000 males.)"
+    "searchableText": "Title: Social Science: Demographic Sex Ratio Index\nSubject: Social Science (General - class_8)\nTopic: Demographic Indices\nFormula / Rule: Sex Ratio Calculation: $\\text{Sex Ratio} = \\left(\\frac{\\text{Number of Females}}{\\text{Number of Males}}\\right) \\times 1000$\nVariables: Sex Ratio = Demographic ratio (females per 1,000 males); Females = Enumerated census female population; Males = Enumerated census male population\nExplanation: Indian census standards normalize female headcount against a base denominator of 1,000 male residents.\nDrill: A municipality has 48,000 females and 50,000 males. Find its demographic sex ratio.\nActive Recall: Q: What are the core equations and laws for Social Science: Demographic Sex Ratio Index? | A: $\\text{Sex Ratio} = \\left(\\frac{\\text{Number of Females}}{\\text{Number of Males}}\\right) \\times 1000$ (Standard census demographic index measuring gender proportion per 1,000 males.)"
   },
   {
     "id": "cbse-g8-english-relative-clauses",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "English",
     "topic": "Complex Clause Syntax",
     "title": "English: Relative Pronoun Syntax in Complex Sentences",
@@ -8695,12 +8695,12 @@
       "back": "$[\\text{Main Clause } (N)] + [\\text{Relative Pronoun } (\\text{who/which/that})] + [\\text{Subordinate Clause}]$ (Syntactic structure embedding dependent adjective clauses linked to antecedent nouns.)",
       "hint": "Complex Clause Syntax"
     },
-    "searchableText": "Title: English: Relative Pronoun Syntax in Complex Sentences\nSubject: English (Science - cbse)\nTopic: Complex Clause Syntax\nFormula / Rule: Relative Pronoun Embedding Rule: $[\\text{Main Clause } (N)] + [\\text{Relative Pronoun } (\\text{who/which/that})] + [\\text{Subordinate Clause}]$\nVariables: N = Antecedent noun head; who = Used strictly for personal human antecedents; which = Used for inanimate objects and non-restrictive clauses; that = Used for restrictive defining clauses for persons or objects\nExplanation: Relative pronouns link dependent clauses by replacing repeated noun references, ensuring sentence economy and clarity.\nDrill: Combine using a relative pronoun: 'The scientist discovered a new comet. She received the gold medal.'\nActive Recall: Q: What are the core equations and laws for English: Relative Pronoun Syntax in Complex Sentences? | A: $[\\text{Main Clause } (N)] + [\\text{Relative Pronoun } (\\text{who/which/that})] + [\\text{Subordinate Clause}]$ (Syntactic structure embedding dependent adjective clauses linked to antecedent nouns.)"
+    "searchableText": "Title: English: Relative Pronoun Syntax in Complex Sentences\nSubject: English (General - class_8)\nTopic: Complex Clause Syntax\nFormula / Rule: Relative Pronoun Embedding Rule: $[\\text{Main Clause } (N)] + [\\text{Relative Pronoun } (\\text{who/which/that})] + [\\text{Subordinate Clause}]$\nVariables: N = Antecedent noun head; who = Used strictly for personal human antecedents; which = Used for inanimate objects and non-restrictive clauses; that = Used for restrictive defining clauses for persons or objects\nExplanation: Relative pronouns link dependent clauses by replacing repeated noun references, ensuring sentence economy and clarity.\nDrill: Combine using a relative pronoun: 'The scientist discovered a new comet. She received the gold medal.'\nActive Recall: Q: What are the core equations and laws for English: Relative Pronoun Syntax in Complex Sentences? | A: $[\\text{Main Clause } (N)] + [\\text{Relative Pronoun } (\\text{who/which/that})] + [\\text{Subordinate Clause}]$ (Syntactic structure embedding dependent adjective clauses linked to antecedent nouns.)"
   },
   {
     "id": "cbse-g8-computer-boolean-logic",
-    "stream": "Science",
-    "level": "cbse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Computer",
     "topic": "Boolean Logic Gates",
     "title": "Computer: Fundamental Logic Gates & Boolean Expressions",
@@ -8718,12 +8718,12 @@
       "back": "$\\text{AND: } Y = A \\cdot B, \\quad \\text{OR: } Y = A + B, \\quad \\text{NOT: } Y = \\overline{A}$ (Mathematical boolean expressions for digital AND, OR, and NOT gate hardware elements.)",
       "hint": "Boolean Logic Gates"
     },
-    "searchableText": "Title: Computer: Fundamental Logic Gates & Boolean Expressions\nSubject: Computer (Science - cbse)\nTopic: Boolean Logic Gates\nFormula / Rule: Primary Logic Gate Equations: $\\text{AND: } Y = A \\cdot B, \\quad \\text{OR: } Y = A + B, \\quad \\text{NOT: } Y = \\overline{A}$\nVariables: A, B = Digital binary inputs (0 or 1); Y = Boolean output state (0 or 1); \\cdot = Logical conjunction (True only when all inputs True); + = Logical disjunction (True when any input True); \\overline{\\phantom{A}} = Logical inverter / negation\nExplanation: AND models switches in series; OR models switches in parallel; NOT inverts digital signal polarity.\nDrill: Evaluate output Y = (A · B) + NOT(A) when A = 0 and B = 1.\nActive Recall: Q: What are the core equations and laws for Computer: Fundamental Logic Gates & Boolean Expressions? | A: $\\text{AND: } Y = A \\cdot B, \\quad \\text{OR: } Y = A + B, \\quad \\text{NOT: } Y = \\overline{A}$ (Mathematical boolean expressions for digital AND, OR, and NOT gate hardware elements.)"
+    "searchableText": "Title: Computer: Fundamental Logic Gates & Boolean Expressions\nSubject: Computer (General - class_8)\nTopic: Boolean Logic Gates\nFormula / Rule: Primary Logic Gate Equations: $\\text{AND: } Y = A \\cdot B, \\quad \\text{OR: } Y = A + B, \\quad \\text{NOT: } Y = \\overline{A}$\nVariables: A, B = Digital binary inputs (0 or 1); Y = Boolean output state (0 or 1); \\cdot = Logical conjunction (True only when all inputs True); + = Logical disjunction (True when any input True); \\overline{\\phantom{A}} = Logical inverter / negation\nExplanation: AND models switches in series; OR models switches in parallel; NOT inverts digital signal polarity.\nDrill: Evaluate output Y = (A · B) + NOT(A) when A = 0 and B = 1.\nActive Recall: Q: What are the core equations and laws for Computer: Fundamental Logic Gates & Boolean Expressions? | A: $\\text{AND: } Y = A \\cdot B, \\quad \\text{OR: } Y = A + B, \\quad \\text{NOT: } Y = \\overline{A}$ (Mathematical boolean expressions for digital AND, OR, and NOT gate hardware elements.)"
   },
   {
     "id": "icse-g8-physics-torque-pressure",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Physics",
     "topic": "Turning Forces & Liquid Pressure",
     "title": "Physics: Moment of Force (Torque) & Fluid Pressure",
@@ -8743,12 +8743,12 @@
       "back": "$\\tau = F \\times d_{\\perp} \\quad \\text{and} \\quad \\sum \\tau_{\\text{anticlockwise}} = \\sum \\tau_{\\text{clockwise}}$ (Rotational turning effect of force about a pivot axis and rotational equilibrium law.)\n$P = h \\rho g$ (Pressure exerted by a static liquid column at vertical depth h.)",
       "hint": "Turning Forces & Liquid Pressure"
     },
-    "searchableText": "Title: Physics: Moment of Force (Torque) & Fluid Pressure\nSubject: Physics (Science - icse)\nTopic: Turning Forces & Liquid Pressure\nFormula / Rule: Moment of Force (Torque) & Principle of Moments: $\\tau = F \\times d_{\\perp} \\quad \\text{and} \\quad \\sum \\tau_{\\text{anticlockwise}} = \\sum \\tau_{\\text{clockwise}}$;\nHydrostatic Liquid Pressure: $P = h \\rho g$\nVariables: \\tau = Moment of force / torque (Newton-metres, N·m); F = Applied perpendicular force (Newtons, N); d_perp = Perpendicular distance from pivot to line of action of force (metres, m); P = Hydrostatic pressure (Pascals, Pa); h = Depth below free liquid surface (m); \\rho = Density of liquid fluid (kg/m³); g = Gravitational acceleration (9.8 m/s²)\nExplanation: Turning efficacy scales with both force magnitude and lever arm length: τ = F × d. For equilibrium, clockwise moments equal anticlockwise moments.\nDrill: A mechanic applies 75 N force at the end of a 0.24 m spanner. Find the torque generated in N·m.\n\nWeight of liquid column is W = m·g = (A·h·ρ)·g. Dividing by base area A gives P = W/A = hρg.\nDrill: Find hydrostatic pressure at the bottom of a 15 m lake filled with water (ρ = 1000 kg/m³, g = 9.8 m/s²).\nActive Recall: Q: What are the core equations and laws for Physics: Moment of Force (Torque) & Fluid Pressure? | A: $\\tau = F \\times d_{\\perp} \\quad \\text{and} \\quad \\sum \\tau_{\\text{anticlockwise}} = \\sum \\tau_{\\text{clockwise}}$ (Rotational turning effect of force about a pivot axis and rotational equilibrium law.)\n$P = h \\rho g$ (Pressure exerted by a static liquid column at vertical depth h.)"
+    "searchableText": "Title: Physics: Moment of Force (Torque) & Fluid Pressure\nSubject: Physics (General - class_8)\nTopic: Turning Forces & Liquid Pressure\nFormula / Rule: Moment of Force (Torque) & Principle of Moments: $\\tau = F \\times d_{\\perp} \\quad \\text{and} \\quad \\sum \\tau_{\\text{anticlockwise}} = \\sum \\tau_{\\text{clockwise}}$;\nHydrostatic Liquid Pressure: $P = h \\rho g$\nVariables: \\tau = Moment of force / torque (Newton-metres, N·m); F = Applied perpendicular force (Newtons, N); d_perp = Perpendicular distance from pivot to line of action of force (metres, m); P = Hydrostatic pressure (Pascals, Pa); h = Depth below free liquid surface (m); \\rho = Density of liquid fluid (kg/m³); g = Gravitational acceleration (9.8 m/s²)\nExplanation: Turning efficacy scales with both force magnitude and lever arm length: τ = F × d. For equilibrium, clockwise moments equal anticlockwise moments.\nDrill: A mechanic applies 75 N force at the end of a 0.24 m spanner. Find the torque generated in N·m.\n\nWeight of liquid column is W = m·g = (A·h·ρ)·g. Dividing by base area A gives P = W/A = hρg.\nDrill: Find hydrostatic pressure at the bottom of a 15 m lake filled with water (ρ = 1000 kg/m³, g = 9.8 m/s²).\nActive Recall: Q: What are the core equations and laws for Physics: Moment of Force (Torque) & Fluid Pressure? | A: $\\tau = F \\times d_{\\perp} \\quad \\text{and} \\quad \\sum \\tau_{\\text{anticlockwise}} = \\sum \\tau_{\\text{clockwise}}$ (Rotational turning effect of force about a pivot axis and rotational equilibrium law.)\n$P = h \\rho g$ (Pressure exerted by a static liquid column at vertical depth h.)"
   },
   {
     "id": "icse-g8-chemistry-stoichiometry",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Chemistry",
     "topic": "Chemical Mass Conservation",
     "title": "Chemistry: Conservation of Mass and Chemical Stoichiometry",
@@ -8763,12 +8763,12 @@
       "back": "$\\sum m_{\\text{reactants}} = \\sum m_{\\text{products}} \\quad [2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}]$ (Total mass of substances undergoing chemical transformation is conserved identically.)",
       "hint": "Chemical Mass Conservation"
     },
-    "searchableText": "Title: Chemistry: Conservation of Mass and Chemical Stoichiometry\nSubject: Chemistry (Science - icse)\nTopic: Chemical Mass Conservation\nFormula / Rule: Conservation of Mass in Reactions: $\\sum m_{\\text{reactants}} = \\sum m_{\\text{products}} \\quad [2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}]$\nVariables: m_reactants = Sum of masses of initial reactants (g); m_products = Sum of masses of resulting products (g)\nExplanation: Lavoisier's Law states atoms cannot be created or destroyed in chemical reactions. 48 g Mg + 32 g O2 produces exactly 80 g MgO.\nDrill: When 6 g of carbon is burned completely in 16 g of oxygen, find the exact mass of CO2 gas formed.\nActive Recall: Q: What are the core equations and laws for Chemistry: Conservation of Mass and Chemical Stoichiometry? | A: $\\sum m_{\\text{reactants}} = \\sum m_{\\text{products}} \\quad [2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}]$ (Total mass of substances undergoing chemical transformation is conserved identically.)"
+    "searchableText": "Title: Chemistry: Conservation of Mass and Chemical Stoichiometry\nSubject: Chemistry (General - class_8)\nTopic: Chemical Mass Conservation\nFormula / Rule: Conservation of Mass in Reactions: $\\sum m_{\\text{reactants}} = \\sum m_{\\text{products}} \\quad [2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}]$\nVariables: m_reactants = Sum of masses of initial reactants (g); m_products = Sum of masses of resulting products (g)\nExplanation: Lavoisier's Law states atoms cannot be created or destroyed in chemical reactions. 48 g Mg + 32 g O2 produces exactly 80 g MgO.\nDrill: When 6 g of carbon is burned completely in 16 g of oxygen, find the exact mass of CO2 gas formed.\nActive Recall: Q: What are the core equations and laws for Chemistry: Conservation of Mass and Chemical Stoichiometry? | A: $\\sum m_{\\text{reactants}} = \\sum m_{\\text{products}} \\quad [2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}]$ (Total mass of substances undergoing chemical transformation is conserved identically.)"
   },
   {
     "id": "icse-g8-biology-plant-transport",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Biology",
     "topic": "Plant Physiology Indices",
     "title": "Biology: Transpiration Rate and Stomatal Frequency Index",
@@ -8784,12 +8784,12 @@
       "back": "$I_{\\text{stomatal}} = \\left(\\frac{S}{E + S}\\right) \\times 100$ (Standard physiological index measuring proportion of stomata to total epidermal cell count.)",
       "hint": "Plant Physiology Indices"
     },
-    "searchableText": "Title: Biology: Transpiration Rate and Stomatal Frequency Index\nSubject: Biology (Science - icse)\nTopic: Plant Physiology Indices\nFormula / Rule: Stomatal Index Equation: $I_{\\text{stomatal}} = \\left(\\frac{S}{E + S}\\right) \\times 100$\nVariables: I_stomatal = Stomatal Index percentage (%); S = Number of stomata counted in unit microscope field; E = Number of epidermal pavement cells in identical field\nExplanation: Stomatal count alone fluctuates with cell expansion. Salisbury's index normalizes stomata against total epidermal cells (E + S).\nDrill: An epidermal peel reveals 24 stomata and 96 epidermal pavement cells. Calculate the stomatal index.\nActive Recall: Q: What are the core equations and laws for Biology: Transpiration Rate and Stomatal Frequency Index? | A: $I_{\\text{stomatal}} = \\left(\\frac{S}{E + S}\\right) \\times 100$ (Standard physiological index measuring proportion of stomata to total epidermal cell count.)"
+    "searchableText": "Title: Biology: Transpiration Rate and Stomatal Frequency Index\nSubject: Biology (General - class_8)\nTopic: Plant Physiology Indices\nFormula / Rule: Stomatal Index Equation: $I_{\\text{stomatal}} = \\left(\\frac{S}{E + S}\\right) \\times 100$\nVariables: I_stomatal = Stomatal Index percentage (%); S = Number of stomata counted in unit microscope field; E = Number of epidermal pavement cells in identical field\nExplanation: Stomatal count alone fluctuates with cell expansion. Salisbury's index normalizes stomata against total epidermal cells (E + S).\nDrill: An epidermal peel reveals 24 stomata and 96 epidermal pavement cells. Calculate the stomatal index.\nActive Recall: Q: What are the core equations and laws for Biology: Transpiration Rate and Stomatal Frequency Index? | A: $I_{\\text{stomatal}} = \\left(\\frac{S}{E + S}\\right) \\times 100$ (Standard physiological index measuring proportion of stomata to total epidermal cell count.)"
   },
   {
     "id": "icse-g8-math-algebraic-expansions",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Binomial Expansions & Identities",
     "title": "Mathematics: Special Products & Difference of Squares",
@@ -8804,12 +8804,12 @@
       "back": "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2 \\quad \\text{and} \\quad a^2 - b^2 = (a - b)(a + b)$ (Fundamental polynomial expansions and factorization identities.)",
       "hint": "Binomial Expansions & Identities"
     },
-    "searchableText": "Title: Mathematics: Special Products & Difference of Squares\nSubject: Mathematics (Science - icse)\nTopic: Binomial Expansions & Identities\nFormula / Rule: Standard Algebraic Binomial Identities: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2 \\quad \\text{and} \\quad a^2 - b^2 = (a - b)(a + b)$\nVariables: a = First monomial or scalar term; b = Second monomial or scalar term\nExplanation: By distributive multiplication: (a+b)(a+b) = a(a+b) + b(a+b) = a² + 2ab + b². For (a-b)(a+b), middle cross-terms cancel: a² - b².\nDrill: Expand and simplify the algebraic polynomial: (3x + 4y)² - (3x - 4y)².\nActive Recall: Q: What are the core equations and laws for Mathematics: Special Products & Difference of Squares? | A: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2 \\quad \\text{and} \\quad a^2 - b^2 = (a - b)(a + b)$ (Fundamental polynomial expansions and factorization identities.)"
+    "searchableText": "Title: Mathematics: Special Products & Difference of Squares\nSubject: Mathematics (General - class_8)\nTopic: Binomial Expansions & Identities\nFormula / Rule: Standard Algebraic Binomial Identities: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2 \\quad \\text{and} \\quad a^2 - b^2 = (a - b)(a + b)$\nVariables: a = First monomial or scalar term; b = Second monomial or scalar term\nExplanation: By distributive multiplication: (a+b)(a+b) = a(a+b) + b(a+b) = a² + 2ab + b². For (a-b)(a+b), middle cross-terms cancel: a² - b².\nDrill: Expand and simplify the algebraic polynomial: (3x + 4y)² - (3x - 4y)².\nActive Recall: Q: What are the core equations and laws for Mathematics: Special Products & Difference of Squares? | A: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2 \\quad \\text{and} \\quad a^2 - b^2 = (a - b)(a + b)$ (Fundamental polynomial expansions and factorization identities.)"
   },
   {
     "id": "icse-g8-social-science-contour-gradient",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Social Science",
     "topic": "Contour Topography",
     "title": "Social Science: Toposheet Slope Gradient Formula",
@@ -8824,12 +8824,12 @@
       "back": "$\\text{Gradient} = \\frac{\\text{Vertical Interval (VI)}}{\\text{Horizontal Equivalent (HE)}}$ (Tangent of terrain slope expressing elevation rise per horizontal distance traversed.)",
       "hint": "Contour Topography"
     },
-    "searchableText": "Title: Social Science: Toposheet Slope Gradient Formula\nSubject: Social Science (Science - icse)\nTopic: Contour Topography\nFormula / Rule: Toposheet Terrain Gradient: $\\text{Gradient} = \\frac{\\text{Vertical Interval (VI)}}{\\text{Horizontal Equivalent (HE)}}$\nVariables: VI = Vertical Interval: elevation difference between contour lines (metres, m); HE = Horizontal Equivalent: scaled terrestrial ground distance between contours (metres, m)\nExplanation: Slope angle theta satisfies tan(theta) = rise / run. Rise is contour elevation interval VI; run is ground distance HE.\nDrill: Point A is at 400 m elevation; Point B is at 280 m. Ground distance is 2.4 km. Express gradient as 1 : N.\nActive Recall: Q: What are the core equations and laws for Social Science: Toposheet Slope Gradient Formula? | A: $\\text{Gradient} = \\frac{\\text{Vertical Interval (VI)}}{\\text{Horizontal Equivalent (HE)}}$ (Tangent of terrain slope expressing elevation rise per horizontal distance traversed.)"
+    "searchableText": "Title: Social Science: Toposheet Slope Gradient Formula\nSubject: Social Science (General - class_8)\nTopic: Contour Topography\nFormula / Rule: Toposheet Terrain Gradient: $\\text{Gradient} = \\frac{\\text{Vertical Interval (VI)}}{\\text{Horizontal Equivalent (HE)}}$\nVariables: VI = Vertical Interval: elevation difference between contour lines (metres, m); HE = Horizontal Equivalent: scaled terrestrial ground distance between contours (metres, m)\nExplanation: Slope angle theta satisfies tan(theta) = rise / run. Rise is contour elevation interval VI; run is ground distance HE.\nDrill: Point A is at 400 m elevation; Point B is at 280 m. Ground distance is 2.4 km. Express gradient as 1 : N.\nActive Recall: Q: What are the core equations and laws for Social Science: Toposheet Slope Gradient Formula? | A: $\\text{Gradient} = \\frac{\\text{Vertical Interval (VI)}}{\\text{Horizontal Equivalent (HE)}}$ (Tangent of terrain slope expressing elevation rise per horizontal distance traversed.)"
   },
   {
     "id": "icse-g8-english-sentence-transformation",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "English",
     "topic": "Sentence Synthesis",
     "title": "English: Compound to Complex Sentence Transformation",
@@ -8844,12 +8844,12 @@
       "back": "$[C_1 + \\text{and/so/but} + C_2] \\iff [\\text{Although/Because/Since} + C_1, C_2]$ (Transforming coordinating compound clauses into subordinate complex sentences without meaning shift.)",
       "hint": "Sentence Synthesis"
     },
-    "searchableText": "Title: English: Compound to Complex Sentence Transformation\nSubject: English (Science - icse)\nTopic: Sentence Synthesis\nFormula / Rule: Subordinating Conjunction Synthesis: $[C_1 + \\text{and/so/but} + C_2] \\iff [\\text{Although/Because/Since} + C_1, C_2]$\nVariables: C_1 = First coordinate proposition clause; C_2 = Second consequence or concession coordinate clause\nExplanation: Compound sentences link independent clauses via FANBOYS coordinating conjunctions. Complex synthesis demotes one proposition to a subordinate adverbial clause.\nDrill: Transform: 'The student revised her formula flashcards every evening, and so she scored full marks.'\nActive Recall: Q: What are the core equations and laws for English: Compound to Complex Sentence Transformation? | A: $[C_1 + \\text{and/so/but} + C_2] \\iff [\\text{Although/Because/Since} + C_1, C_2]$ (Transforming coordinating compound clauses into subordinate complex sentences without meaning shift.)"
+    "searchableText": "Title: English: Compound to Complex Sentence Transformation\nSubject: English (General - class_8)\nTopic: Sentence Synthesis\nFormula / Rule: Subordinating Conjunction Synthesis: $[C_1 + \\text{and/so/but} + C_2] \\iff [\\text{Although/Because/Since} + C_1, C_2]$\nVariables: C_1 = First coordinate proposition clause; C_2 = Second consequence or concession coordinate clause\nExplanation: Compound sentences link independent clauses via FANBOYS coordinating conjunctions. Complex synthesis demotes one proposition to a subordinate adverbial clause.\nDrill: Transform: 'The student revised her formula flashcards every evening, and so she scored full marks.'\nActive Recall: Q: What are the core equations and laws for English: Compound to Complex Sentence Transformation? | A: $[C_1 + \\text{and/so/but} + C_2] \\iff [\\text{Although/Because/Since} + C_1, C_2]$ (Transforming coordinating compound clauses into subordinate complex sentences without meaning shift.)"
   },
   {
     "id": "icse-g8-computer-java-type-ranges",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Computer",
     "topic": "JVM Memory & Primitive Types",
     "title": "Computer: Two's Complement Integer Ranges in Java",
@@ -8865,12 +8865,12 @@
       "back": "$\\text{Range} = \\left[-2^{n-1}, \\; 2^{n-1} - 1\\right] \\quad [\\text{for } n\\text{-bit integer}]$ (Representable minimum and maximum values for n-bit two's complement JVM integer types.)",
       "hint": "JVM Memory & Primitive Types"
     },
-    "searchableText": "Title: Computer: Two's Complement Integer Ranges in Java\nSubject: Computer (Science - icse)\nTopic: JVM Memory & Primitive Types\nFormula / Rule: Signed Integer Numerical Range Formula: $\\text{Range} = \\left[-2^{n-1}, \\; 2^{n-1} - 1\\right] \\quad [\\text{for } n\\text{-bit integer}]$\nVariables: n = Bit allocation (byte: 8 bits, short: 16 bits, int: 32 bits, long: 64 bits); -2^{n-1} = Minimum signed negative limit; 2^{n-1} - 1 = Maximum signed positive limit (accounting for zero)\nExplanation: Most significant bit is reserved for sign (0 = pos, 1 = neg). Remaining n-1 bits represent magnitude. One state represents 0, leaving 2^(n-1)-1 positives.\nDrill: Calculate the exact minimum and maximum value bounds for Java's byte primitive type (n = 8 bits).\nActive Recall: Q: What are the core equations and laws for Computer: Two's Complement Integer Ranges in Java? | A: $\\text{Range} = \\left[-2^{n-1}, \\; 2^{n-1} - 1\\right] \\quad [\\text{for } n\\text{-bit integer}]$ (Representable minimum and maximum values for n-bit two's complement JVM integer types.)"
+    "searchableText": "Title: Computer: Two's Complement Integer Ranges in Java\nSubject: Computer (General - class_8)\nTopic: JVM Memory & Primitive Types\nFormula / Rule: Signed Integer Numerical Range Formula: $\\text{Range} = \\left[-2^{n-1}, \\; 2^{n-1} - 1\\right] \\quad [\\text{for } n\\text{-bit integer}]$\nVariables: n = Bit allocation (byte: 8 bits, short: 16 bits, int: 32 bits, long: 64 bits); -2^{n-1} = Minimum signed negative limit; 2^{n-1} - 1 = Maximum signed positive limit (accounting for zero)\nExplanation: Most significant bit is reserved for sign (0 = pos, 1 = neg). Remaining n-1 bits represent magnitude. One state represents 0, leaving 2^(n-1)-1 positives.\nDrill: Calculate the exact minimum and maximum value bounds for Java's byte primitive type (n = 8 bits).\nActive Recall: Q: What are the core equations and laws for Computer: Two's Complement Integer Ranges in Java? | A: $\\text{Range} = \\left[-2^{n-1}, \\; 2^{n-1} - 1\\right] \\quad [\\text{for } n\\text{-bit integer}]$ (Representable minimum and maximum values for n-bit two's complement JVM integer types.)"
   },
   {
     "id": "formula-cisce-6-mathematics-01",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Natural Numbers, Whole Numbers, Integers & Divisibility",
     "title": "Number System: Natural Numbers, Whole Numbers, Integers & Divisibility",
@@ -8882,12 +8882,12 @@
       "back": "$B \\rightarrow O \\rightarrow D \\rightarrow M \\rightarrow A \\rightarrow S$ (BODMAS Rule)\n$HCF(a, b) \\times LCM(a, b) = a \\times b$ (Relationship between HCF and LCM)\n$|\\sum \\text{odd digits} - \\sum \\text{even digits}| = 11k$ (Divisibility by 11)",
       "hint": "Natural Numbers, Whole Numbers, Integers & Divisibility"
     },
-    "searchableText": "Title: Number System: Natural Numbers, Whole Numbers, Integers & Divisibility\nSubject: Mathematics (Science - icse)\nTopic: Natural Numbers, Whole Numbers, Integers & Divisibility\nFormula / Rule: $B \\rightarrow O \\rightarrow D \\rightarrow M \\rightarrow A \\rightarrow S$;\n$HCF(a, b) \\times LCM(a, b) = a \\times b$;\n$|\\sum \\text{odd digits} - \\sum \\text{even digits}| = 11k$\nExplanation: Core CISCE definition (Order of operations: Brackets, Orders/Of, Division, Multiplication, Addition, Subtraction.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\n\nCore CISCE definition (The product of two positive integers equals the product of their HCF and LCM.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\n\nCore CISCE definition (A number is divisible by 11 if the difference between the sum of digits at odd places and even places is 0 or a multiple of 11.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\nActive Recall: Q: What are the core equations and laws for Number System: Natural Numbers, Whole Numbers, Integers & Divisibility? | A: $B \\rightarrow O \\rightarrow D \\rightarrow M \\rightarrow A \\rightarrow S$ (BODMAS Rule)\n$HCF(a, b) \\times LCM(a, b) = a \\times b$ (Relationship between HCF and LCM)\n$|\\sum \\text{odd digits} - \\sum \\text{even digits}| = 11k$ (Divisibility by 11)"
+    "searchableText": "Title: Number System: Natural Numbers, Whole Numbers, Integers & Divisibility\nSubject: Mathematics (General - class_6)\nTopic: Natural Numbers, Whole Numbers, Integers & Divisibility\nFormula / Rule: $B \\rightarrow O \\rightarrow D \\rightarrow M \\rightarrow A \\rightarrow S$;\n$HCF(a, b) \\times LCM(a, b) = a \\times b$;\n$|\\sum \\text{odd digits} - \\sum \\text{even digits}| = 11k$\nExplanation: Core CISCE definition (Order of operations: Brackets, Orders/Of, Division, Multiplication, Addition, Subtraction.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\n\nCore CISCE definition (The product of two positive integers equals the product of their HCF and LCM.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\n\nCore CISCE definition (A number is divisible by 11 if the difference between the sum of digits at odd places and even places is 0 or a multiple of 11.). Common exam pitfall: Adding integers with unlike signs incorrectly (e.g. calculating -7 + 4 as -11 instead of -3), or neglecting the correct bracket order in multi-step BODMAS calculations.\nActive Recall: Q: What are the core equations and laws for Number System: Natural Numbers, Whole Numbers, Integers & Divisibility? | A: $B \\rightarrow O \\rightarrow D \\rightarrow M \\rightarrow A \\rightarrow S$ (BODMAS Rule)\n$HCF(a, b) \\times LCM(a, b) = a \\times b$ (Relationship between HCF and LCM)\n$|\\sum \\text{odd digits} - \\sum \\text{even digits}| = 11k$ (Divisibility by 11)"
   },
   {
     "id": "formula-cisce-6-mathematics-02",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Concept of Ratio, Proportion & Unitary Method",
     "title": "Ratio and Proportion: Concept of Ratio, Proportion & Unitary Method",
@@ -8899,12 +8899,12 @@
       "back": "$a : b = \\frac{a}{b} \\quad (b \\neq 0)$ (Ratio Definition)\n$a : b :: c : d \\iff a \\times d = b \\times c$ (Cross Product Rule of Proportion)",
       "hint": "Concept of Ratio, Proportion & Unitary Method"
     },
-    "searchableText": "Title: Ratio and Proportion: Concept of Ratio, Proportion & Unitary Method\nSubject: Mathematics (Science - icse)\nTopic: Concept of Ratio, Proportion & Unitary Method\nFormula / Rule: $a : b = \\frac{a}{b} \\quad (b \\neq 0)$;\n$a : b :: c : d \\iff a \\times d = b \\times c$\nExplanation: Core CISCE definition (Comparison of two quantities of the same kind and in the same units by division.). Common exam pitfall: Comparing quantities with different units without converting them first (e.g. finding the ratio of 50 paise to 2 rupees as 50:2 instead of 50:200 = 1:4).\n\nCore CISCE definition (Four quantities a, b, c, d are in proportion if and only if the product of extremes equals the product of means.). Common exam pitfall: Comparing quantities with different units without converting them first (e.g. finding the ratio of 50 paise to 2 rupees as 50:2 instead of 50:200 = 1:4).\nActive Recall: Q: What are the core equations and laws for Ratio and Proportion: Concept of Ratio, Proportion & Unitary Method? | A: $a : b = \\frac{a}{b} \\quad (b \\neq 0)$ (Ratio Definition)\n$a : b :: c : d \\iff a \\times d = b \\times c$ (Cross Product Rule of Proportion)"
+    "searchableText": "Title: Ratio and Proportion: Concept of Ratio, Proportion & Unitary Method\nSubject: Mathematics (General - class_6)\nTopic: Concept of Ratio, Proportion & Unitary Method\nFormula / Rule: $a : b = \\frac{a}{b} \\quad (b \\neq 0)$;\n$a : b :: c : d \\iff a \\times d = b \\times c$\nExplanation: Core CISCE definition (Comparison of two quantities of the same kind and in the same units by division.). Common exam pitfall: Comparing quantities with different units without converting them first (e.g. finding the ratio of 50 paise to 2 rupees as 50:2 instead of 50:200 = 1:4).\n\nCore CISCE definition (Four quantities a, b, c, d are in proportion if and only if the product of extremes equals the product of means.). Common exam pitfall: Comparing quantities with different units without converting them first (e.g. finding the ratio of 50 paise to 2 rupees as 50:2 instead of 50:200 = 1:4).\nActive Recall: Q: What are the core equations and laws for Ratio and Proportion: Concept of Ratio, Proportion & Unitary Method? | A: $a : b = \\frac{a}{b} \\quad (b \\neq 0)$ (Ratio Definition)\n$a : b :: c : d \\iff a \\times d = b \\times c$ (Cross Product Rule of Proportion)"
   },
   {
     "id": "formula-cisce-6-mathematics-03",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Fundamental Concepts, Variables & Simple Equations",
     "title": "Algebra: Fundamental Concepts, Variables & Simple Equations",
@@ -8916,12 +8916,12 @@
       "back": "$ax + b$ (Algebraic Expression)\n$ax + b = c \\quad (a \\neq 0)$ (Linear Equation in One Variable)",
       "hint": "Fundamental Concepts, Variables & Simple Equations"
     },
-    "searchableText": "Title: Algebra: Fundamental Concepts, Variables & Simple Equations\nSubject: Mathematics (Science - icse)\nTopic: Fundamental Concepts, Variables & Simple Equations\nFormula / Rule: $ax + b$;\n$ax + b = c \\quad (a \\neq 0)$\nExplanation: Core CISCE definition (A combination of constants and variables connected by basic arithmetic operations (+, -, x, /).). Common exam pitfall: Adding unlike algebraic terms together, such as writing 3x + 4 = 7x (unlike terms cannot be combined into a single term).\n\nCore CISCE definition (An algebraic equation where the highest exponent of the variable is 1.). Common exam pitfall: Adding unlike algebraic terms together, such as writing 3x + 4 = 7x (unlike terms cannot be combined into a single term).\nActive Recall: Q: What are the core equations and laws for Algebra: Fundamental Concepts, Variables & Simple Equations? | A: $ax + b$ (Algebraic Expression)\n$ax + b = c \\quad (a \\neq 0)$ (Linear Equation in One Variable)"
+    "searchableText": "Title: Algebra: Fundamental Concepts, Variables & Simple Equations\nSubject: Mathematics (General - class_6)\nTopic: Fundamental Concepts, Variables & Simple Equations\nFormula / Rule: $ax + b$;\n$ax + b = c \\quad (a \\neq 0)$\nExplanation: Core CISCE definition (A combination of constants and variables connected by basic arithmetic operations (+, -, x, /).). Common exam pitfall: Adding unlike algebraic terms together, such as writing 3x + 4 = 7x (unlike terms cannot be combined into a single term).\n\nCore CISCE definition (An algebraic equation where the highest exponent of the variable is 1.). Common exam pitfall: Adding unlike algebraic terms together, such as writing 3x + 4 = 7x (unlike terms cannot be combined into a single term).\nActive Recall: Q: What are the core equations and laws for Algebra: Fundamental Concepts, Variables & Simple Equations? | A: $ax + b$ (Algebraic Expression)\n$ax + b = c \\quad (a \\neq 0)$ (Linear Equation in One Variable)"
   },
   {
     "id": "formula-cisce-6-mathematics-04",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Basic Geometrical Ideas, Lines, Angles & Polygons",
     "title": "Geometry: Basic Geometrical Ideas, Lines, Angles & Polygons",
@@ -8933,12 +8933,12 @@
       "back": "$\\angle A + \\angle B + \\angle C = 180^\\circ$ (Angle Sum Property of a Triangle)\n$d = 2r$ (Diameter of Circle)",
       "hint": "Basic Geometrical Ideas, Lines, Angles & Polygons"
     },
-    "searchableText": "Title: Geometry: Basic Geometrical Ideas, Lines, Angles & Polygons\nSubject: Mathematics (Science - icse)\nTopic: Basic Geometrical Ideas, Lines, Angles & Polygons\nFormula / Rule: $\\angle A + \\angle B + \\angle C = 180^\\circ$;\n$d = 2r$\nExplanation: Core CISCE definition (The sum of the three interior angles of any triangle is always 180 degrees.). Common exam pitfall: Confusing line segments (fixed length, two endpoints), rays (infinite in one direction, one endpoint), and lines (infinite in both directions, zero endpoints).\n\nCore CISCE definition (The longest chord passing through the center of a circle, equal to twice the radius.). Common exam pitfall: Confusing line segments (fixed length, two endpoints), rays (infinite in one direction, one endpoint), and lines (infinite in both directions, zero endpoints).\nActive Recall: Q: What are the core equations and laws for Geometry: Basic Geometrical Ideas, Lines, Angles & Polygons? | A: $\\angle A + \\angle B + \\angle C = 180^\\circ$ (Angle Sum Property of a Triangle)\n$d = 2r$ (Diameter of Circle)"
+    "searchableText": "Title: Geometry: Basic Geometrical Ideas, Lines, Angles & Polygons\nSubject: Mathematics (General - class_6)\nTopic: Basic Geometrical Ideas, Lines, Angles & Polygons\nFormula / Rule: $\\angle A + \\angle B + \\angle C = 180^\\circ$;\n$d = 2r$\nExplanation: Core CISCE definition (The sum of the three interior angles of any triangle is always 180 degrees.). Common exam pitfall: Confusing line segments (fixed length, two endpoints), rays (infinite in one direction, one endpoint), and lines (infinite in both directions, zero endpoints).\n\nCore CISCE definition (The longest chord passing through the center of a circle, equal to twice the radius.). Common exam pitfall: Confusing line segments (fixed length, two endpoints), rays (infinite in one direction, one endpoint), and lines (infinite in both directions, zero endpoints).\nActive Recall: Q: What are the core equations and laws for Geometry: Basic Geometrical Ideas, Lines, Angles & Polygons? | A: $\\angle A + \\angle B + \\angle C = 180^\\circ$ (Angle Sum Property of a Triangle)\n$d = 2r$ (Diameter of Circle)"
   },
   {
     "id": "formula-cisce-6-mathematics-05",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Perimeter and Area of Plane Figures",
     "title": "Mensuration: Perimeter and Area of Plane Figures",
@@ -8950,12 +8950,12 @@
       "back": "$P = 2(l + b)$ (Perimeter of Rectangle)\n$P = 4s$ (Perimeter of Square)\n$A = l \\times b$ (Area of Rectangle)\n$A = s^2$ (Area of Square)",
       "hint": "Perimeter and Area of Plane Figures"
     },
-    "searchableText": "Title: Mensuration: Perimeter and Area of Plane Figures\nSubject: Mathematics (Science - icse)\nTopic: Perimeter and Area of Plane Figures\nFormula / Rule: $P = 2(l + b)$;\n$P = 4s$;\n$A = l \\times b$;\n$A = s^2$\nExplanation: Core CISCE definition (Twice the sum of length and breadth.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Four times the length of its side.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Product of length and breadth.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Square of the side length.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter and Area of Plane Figures? | A: $P = 2(l + b)$ (Perimeter of Rectangle)\n$P = 4s$ (Perimeter of Square)\n$A = l \\times b$ (Area of Rectangle)\n$A = s^2$ (Area of Square)"
+    "searchableText": "Title: Mensuration: Perimeter and Area of Plane Figures\nSubject: Mathematics (General - class_6)\nTopic: Perimeter and Area of Plane Figures\nFormula / Rule: $P = 2(l + b)$;\n$P = 4s$;\n$A = l \\times b$;\n$A = s^2$\nExplanation: Core CISCE definition (Twice the sum of length and breadth.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Four times the length of its side.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Product of length and breadth.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\n\nCore CISCE definition (Square of the side length.). Common exam pitfall: Writing perimeter units for area (e.g. writing Area = 28 m instead of 28 m²), or confusing perimeter (length of wire/fence needed) with area (grass/tiles to cover surface).\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter and Area of Plane Figures? | A: $P = 2(l + b)$ (Perimeter of Rectangle)\n$P = 4s$ (Perimeter of Square)\n$A = l \\times b$ (Area of Rectangle)\n$A = s^2$ (Area of Square)"
   },
   {
     "id": "formula-cisce-6-mathematics-06",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_6",
     "subject": "Mathematics",
     "topic": "Recording Data, Tally Marks, Bar Graphs & Mean",
     "title": "Data Handling: Recording Data, Tally Marks, Bar Graphs & Mean",
@@ -8967,12 +8967,12 @@
       "back": "$\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{\\text{Sum of all observations}}{\\text{Total number of observations}}$ (Arithmetic Mean)\n$\\text{Range} = x_{\\max} - x_{\\min}$ (Range)",
       "hint": "Recording Data, Tally Marks, Bar Graphs & Mean"
     },
-    "searchableText": "Title: Data Handling: Recording Data, Tally Marks, Bar Graphs & Mean\nSubject: Mathematics (Science - icse)\nTopic: Recording Data, Tally Marks, Bar Graphs & Mean\nFormula / Rule: $\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{\\text{Sum of all observations}}{\\text{Total number of observations}}$;\n$\\text{Range} = x_{\\max} - x_{\\min}$\nExplanation: Core CISCE definition (The sum of all observations divided by the total number of observations.). Common exam pitfall: Neglecting the scale when reading bar graphs or pictographs (e.g. counting 1 symbol as 1 item when the key specifies 1 symbol = 10 items).\n\nCore CISCE definition (The difference between the maximum and minimum observation values.). Common exam pitfall: Neglecting the scale when reading bar graphs or pictographs (e.g. counting 1 symbol as 1 item when the key specifies 1 symbol = 10 items).\nActive Recall: Q: What are the core equations and laws for Data Handling: Recording Data, Tally Marks, Bar Graphs & Mean? | A: $\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{\\text{Sum of all observations}}{\\text{Total number of observations}}$ (Arithmetic Mean)\n$\\text{Range} = x_{\\max} - x_{\\min}$ (Range)"
+    "searchableText": "Title: Data Handling: Recording Data, Tally Marks, Bar Graphs & Mean\nSubject: Mathematics (General - class_6)\nTopic: Recording Data, Tally Marks, Bar Graphs & Mean\nFormula / Rule: $\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{\\text{Sum of all observations}}{\\text{Total number of observations}}$;\n$\\text{Range} = x_{\\max} - x_{\\min}$\nExplanation: Core CISCE definition (The sum of all observations divided by the total number of observations.). Common exam pitfall: Neglecting the scale when reading bar graphs or pictographs (e.g. counting 1 symbol as 1 item when the key specifies 1 symbol = 10 items).\n\nCore CISCE definition (The difference between the maximum and minimum observation values.). Common exam pitfall: Neglecting the scale when reading bar graphs or pictographs (e.g. counting 1 symbol as 1 item when the key specifies 1 symbol = 10 items).\nActive Recall: Q: What are the core equations and laws for Data Handling: Recording Data, Tally Marks, Bar Graphs & Mean? | A: $\\text{Mean} = \\frac{\\sum x_i}{n} = \\frac{\\text{Sum of all observations}}{\\text{Total number of observations}}$ (Arithmetic Mean)\n$\\text{Range} = x_{\\max} - x_{\\min}$ (Range)"
   },
   {
     "id": "formula-cisce-7-mathematics-01",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Integers, Rational Numbers & Number Line Representation",
     "title": "Number System: Integers, Rational Numbers & Number Line Representation",
@@ -8984,12 +8984,12 @@
       "back": "$\\mathbb{Q} = \\left\\{ \\frac{p}{q} \\;\\middle|\\; p, q \\in \\mathbb{Z}, q \\neq 0 \\right\\}$ (Rational Number Definition)\n$a \\times (b + c) = (a \\times b) + (a \\times c)$ (Distributive Property of Multiplication over Addition)",
       "hint": "Integers, Rational Numbers & Number Line Representation"
     },
-    "searchableText": "Title: Number System: Integers, Rational Numbers & Number Line Representation\nSubject: Mathematics (Science - icse)\nTopic: Integers, Rational Numbers & Number Line Representation\nFormula / Rule: $\\mathbb{Q} = \\left\\{ \\frac{p}{q} \\;\\middle|\\; p, q \\in \\mathbb{Z}, q \\neq 0 \\right\\}$;\n$a \\times (b + c) = (a \\times b) + (a \\times c)$\nExplanation: Core CISCE definition (Any number that can be expressed in the form p/q where p and q are integers and q is not zero.). Common exam pitfall: Believing that negative signs in denominators do not affect value, or forgetting that division by zero is undefined.\n\nCore CISCE definition (Multiplying an integer by the sum of two integers equals multiplying by each addend separately.). Common exam pitfall: Believing that negative signs in denominators do not affect value, or forgetting that division by zero is undefined.\nActive Recall: Q: What are the core equations and laws for Number System: Integers, Rational Numbers & Number Line Representation? | A: $\\mathbb{Q} = \\left\\{ \\frac{p}{q} \\;\\middle|\\; p, q \\in \\mathbb{Z}, q \\neq 0 \\right\\}$ (Rational Number Definition)\n$a \\times (b + c) = (a \\times b) + (a \\times c)$ (Distributive Property of Multiplication over Addition)"
+    "searchableText": "Title: Number System: Integers, Rational Numbers & Number Line Representation\nSubject: Mathematics (General - class_7)\nTopic: Integers, Rational Numbers & Number Line Representation\nFormula / Rule: $\\mathbb{Q} = \\left\\{ \\frac{p}{q} \\;\\middle|\\; p, q \\in \\mathbb{Z}, q \\neq 0 \\right\\}$;\n$a \\times (b + c) = (a \\times b) + (a \\times c)$\nExplanation: Core CISCE definition (Any number that can be expressed in the form p/q where p and q are integers and q is not zero.). Common exam pitfall: Believing that negative signs in denominators do not affect value, or forgetting that division by zero is undefined.\n\nCore CISCE definition (Multiplying an integer by the sum of two integers equals multiplying by each addend separately.). Common exam pitfall: Believing that negative signs in denominators do not affect value, or forgetting that division by zero is undefined.\nActive Recall: Q: What are the core equations and laws for Number System: Integers, Rational Numbers & Number Line Representation? | A: $\\mathbb{Q} = \\left\\{ \\frac{p}{q} \\;\\middle|\\; p, q \\in \\mathbb{Z}, q \\neq 0 \\right\\}$ (Rational Number Definition)\n$a \\times (b + c) = (a \\times b) + (a \\times c)$ (Distributive Property of Multiplication over Addition)"
   },
   {
     "id": "formula-cisce-7-mathematics-02",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Operations on Fractions, Decimals & Word Problems",
     "title": "Fractions and Decimals: Operations on Fractions, Decimals & Word Problems",
@@ -9001,12 +9001,12 @@
       "back": "$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$ (Division of Fractions by Reciprocal)",
       "hint": "Operations on Fractions, Decimals & Word Problems"
     },
-    "searchableText": "Title: Fractions and Decimals: Operations on Fractions, Decimals & Word Problems\nSubject: Mathematics (Science - icse)\nTopic: Operations on Fractions, Decimals & Word Problems\nFormula / Rule: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$\nExplanation: Core CISCE definition (To divide a fraction by another fraction, multiply the first fraction by the reciprocal of the second.). Common exam pitfall: Misplacing the decimal point when multiplying two decimal numbers (the total decimal places in the product must equal the sum of decimal places in the factors).\nActive Recall: Q: What are the core equations and laws for Fractions and Decimals: Operations on Fractions, Decimals & Word Problems? | A: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$ (Division of Fractions by Reciprocal)"
+    "searchableText": "Title: Fractions and Decimals: Operations on Fractions, Decimals & Word Problems\nSubject: Mathematics (General - class_7)\nTopic: Operations on Fractions, Decimals & Word Problems\nFormula / Rule: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$\nExplanation: Core CISCE definition (To divide a fraction by another fraction, multiply the first fraction by the reciprocal of the second.). Common exam pitfall: Misplacing the decimal point when multiplying two decimal numbers (the total decimal places in the product must equal the sum of decimal places in the factors).\nActive Recall: Q: What are the core equations and laws for Fractions and Decimals: Operations on Fractions, Decimals & Word Problems? | A: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}$ (Division of Fractions by Reciprocal)"
   },
   {
     "id": "formula-cisce-7-mathematics-03",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Laws of Exponents & Scientific / Standard Form",
     "title": "Exponents and Powers: Laws of Exponents & Scientific / Standard Form",
@@ -9018,12 +9018,12 @@
       "back": "$a^m \\times a^n = a^{m+n}$ (Product Law of Exponents)\n$a^m \\div a^n = a^{m-n} \\quad (a \\neq 0)$ (Quotient Law of Exponents)\n$a^0 = 1 \\quad (a \\neq 0)$ (Zero Power Law)",
       "hint": "Laws of Exponents & Scientific / Standard Form"
     },
-    "searchableText": "Title: Exponents and Powers: Laws of Exponents & Scientific / Standard Form\nSubject: Mathematics (Science - icse)\nTopic: Laws of Exponents & Scientific / Standard Form\nFormula / Rule: $a^m \\times a^n = a^{m+n}$;\n$a^m \\div a^n = a^{m-n} \\quad (a \\neq 0)$;\n$a^0 = 1 \\quad (a \\neq 0)$\nExplanation: Core CISCE definition (When multiplying powers with the same base, add their exponents.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\n\nCore CISCE definition (When dividing powers with the same base, subtract the exponent of denominator from numerator.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\n\nCore CISCE definition (Any non-zero real number raised to the power 0 is equal to 1.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\nActive Recall: Q: What are the core equations and laws for Exponents and Powers: Laws of Exponents & Scientific / Standard Form? | A: $a^m \\times a^n = a^{m+n}$ (Product Law of Exponents)\n$a^m \\div a^n = a^{m-n} \\quad (a \\neq 0)$ (Quotient Law of Exponents)\n$a^0 = 1 \\quad (a \\neq 0)$ (Zero Power Law)"
+    "searchableText": "Title: Exponents and Powers: Laws of Exponents & Scientific / Standard Form\nSubject: Mathematics (General - class_7)\nTopic: Laws of Exponents & Scientific / Standard Form\nFormula / Rule: $a^m \\times a^n = a^{m+n}$;\n$a^m \\div a^n = a^{m-n} \\quad (a \\neq 0)$;\n$a^0 = 1 \\quad (a \\neq 0)$\nExplanation: Core CISCE definition (When multiplying powers with the same base, add their exponents.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\n\nCore CISCE definition (When dividing powers with the same base, subtract the exponent of denominator from numerator.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\n\nCore CISCE definition (Any non-zero real number raised to the power 0 is equal to 1.). Common exam pitfall: Multiplying the bases when multiplying terms with exponents, e.g., erroneously writing 2^3 x 2^4 = 4^7 instead of 2^7.\nActive Recall: Q: What are the core equations and laws for Exponents and Powers: Laws of Exponents & Scientific / Standard Form? | A: $a^m \\times a^n = a^{m+n}$ (Product Law of Exponents)\n$a^m \\div a^n = a^{m-n} \\quad (a \\neq 0)$ (Quotient Law of Exponents)\n$a^0 = 1 \\quad (a \\neq 0)$ (Zero Power Law)"
   },
   {
     "id": "formula-cisce-7-mathematics-04",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Ratio, Percentage, Profit & Loss, and Simple Interest",
     "title": "Commercial Arithmetic: Ratio, Percentage, Profit & Loss, and Simple Interest",
@@ -9035,12 +9035,12 @@
       "back": "$\\text{Profit \\%} = \\frac{\\text{Profit}}{\\text{CP}} \\times 100, \\quad \\text{Loss \\%} = \\frac{\\text{Loss}}{\\text{CP}} \\times 100$ (Profit and Loss Percentage)\n$\\text{SI} = \\frac{P \\times R \\times T}{100}, \\quad A = P + \\text{SI}$ (Simple Interest Formula)",
       "hint": "Ratio, Percentage, Profit & Loss, and Simple Interest"
     },
-    "searchableText": "Title: Commercial Arithmetic: Ratio, Percentage, Profit & Loss, and Simple Interest\nSubject: Mathematics (Science - icse)\nTopic: Ratio, Percentage, Profit & Loss, and Simple Interest\nFormula / Rule: $\\text{Profit \\%} = \\frac{\\text{Profit}}{\\text{CP}} \\times 100, \\quad \\text{Loss \\%} = \\frac{\\text{Loss}}{\\text{CP}} \\times 100$;\n$\\text{SI} = \\frac{P \\times R \\times T}{100}, \\quad A = P + \\text{SI}$\nExplanation: Core CISCE definition (Profit or loss percentage is always calculated on the Cost Price (CP).). Common exam pitfall: Calculating profit or loss percentage on Selling Price instead of Cost Price, or entering time in months without converting to years in SI.\n\nCore CISCE definition (Interest computed on the initial principal over a given time period in years.). Common exam pitfall: Calculating profit or loss percentage on Selling Price instead of Cost Price, or entering time in months without converting to years in SI.\nActive Recall: Q: What are the core equations and laws for Commercial Arithmetic: Ratio, Percentage, Profit & Loss, and Simple Interest? | A: $\\text{Profit \\%} = \\frac{\\text{Profit}}{\\text{CP}} \\times 100, \\quad \\text{Loss \\%} = \\frac{\\text{Loss}}{\\text{CP}} \\times 100$ (Profit and Loss Percentage)\n$\\text{SI} = \\frac{P \\times R \\times T}{100}, \\quad A = P + \\text{SI}$ (Simple Interest Formula)"
+    "searchableText": "Title: Commercial Arithmetic: Ratio, Percentage, Profit & Loss, and Simple Interest\nSubject: Mathematics (General - class_7)\nTopic: Ratio, Percentage, Profit & Loss, and Simple Interest\nFormula / Rule: $\\text{Profit \\%} = \\frac{\\text{Profit}}{\\text{CP}} \\times 100, \\quad \\text{Loss \\%} = \\frac{\\text{Loss}}{\\text{CP}} \\times 100$;\n$\\text{SI} = \\frac{P \\times R \\times T}{100}, \\quad A = P + \\text{SI}$\nExplanation: Core CISCE definition (Profit or loss percentage is always calculated on the Cost Price (CP).). Common exam pitfall: Calculating profit or loss percentage on Selling Price instead of Cost Price, or entering time in months without converting to years in SI.\n\nCore CISCE definition (Interest computed on the initial principal over a given time period in years.). Common exam pitfall: Calculating profit or loss percentage on Selling Price instead of Cost Price, or entering time in months without converting to years in SI.\nActive Recall: Q: What are the core equations and laws for Commercial Arithmetic: Ratio, Percentage, Profit & Loss, and Simple Interest? | A: $\\text{Profit \\%} = \\frac{\\text{Profit}}{\\text{CP}} \\times 100, \\quad \\text{Loss \\%} = \\frac{\\text{Loss}}{\\text{CP}} \\times 100$ (Profit and Loss Percentage)\n$\\text{SI} = \\frac{P \\times R \\times T}{100}, \\quad A = P + \\text{SI}$ (Simple Interest Formula)"
   },
   {
     "id": "formula-cisce-7-mathematics-05",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Algebraic Expressions, Operations & Simple Linear Equations",
     "title": "Algebra: Algebraic Expressions, Operations & Simple Linear Equations",
@@ -9052,12 +9052,12 @@
       "back": "$ax + b = c \\Rightarrow x = \\frac{c - b}{a}$ (Linear Equation in One Variable)",
       "hint": "Algebraic Expressions, Operations & Simple Linear Equations"
     },
-    "searchableText": "Title: Algebra: Algebraic Expressions, Operations & Simple Linear Equations\nSubject: Mathematics (Science - icse)\nTopic: Algebraic Expressions, Operations & Simple Linear Equations\nFormula / Rule: $ax + b = c \\Rightarrow x = \\frac{c - b}{a}$\nExplanation: Core CISCE definition (An equation with one variable having degree 1, solvable by transposition.). Common exam pitfall: Failing to reverse signs when transposing terms across the equals sign (+ becomes - and - becomes +).\nActive Recall: Q: What are the core equations and laws for Algebra: Algebraic Expressions, Operations & Simple Linear Equations? | A: $ax + b = c \\Rightarrow x = \\frac{c - b}{a}$ (Linear Equation in One Variable)"
+    "searchableText": "Title: Algebra: Algebraic Expressions, Operations & Simple Linear Equations\nSubject: Mathematics (General - class_7)\nTopic: Algebraic Expressions, Operations & Simple Linear Equations\nFormula / Rule: $ax + b = c \\Rightarrow x = \\frac{c - b}{a}$\nExplanation: Core CISCE definition (An equation with one variable having degree 1, solvable by transposition.). Common exam pitfall: Failing to reverse signs when transposing terms across the equals sign (+ becomes - and - becomes +).\nActive Recall: Q: What are the core equations and laws for Algebra: Algebraic Expressions, Operations & Simple Linear Equations? | A: $ax + b = c \\Rightarrow x = \\frac{c - b}{a}$ (Linear Equation in One Variable)"
   },
   {
     "id": "formula-cisce-7-mathematics-06",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Lines, Angles, Transversals & Triangle Properties",
     "title": "Geometry: Lines, Angles, Transversals & Triangle Properties",
@@ -9069,12 +9069,12 @@
       "back": "$\\angle \\text{ext} = \\angle \\text{opp}_1 + \\angle \\text{opp}_2$ (Exterior Angle Theorem)\n$h^2 = p^2 + b^2$ (Pythagoras Theorem)\n$a + b > c, \\quad b + c > a, \\quad c + a > b$ (Triangle Inequality Theorem)",
       "hint": "Lines, Angles, Transversals & Triangle Properties"
     },
-    "searchableText": "Title: Geometry: Lines, Angles, Transversals & Triangle Properties\nSubject: Mathematics (Science - icse)\nTopic: Lines, Angles, Transversals & Triangle Properties\nFormula / Rule: $\\angle \\text{ext} = \\angle \\text{opp}_1 + \\angle \\text{opp}_2$;\n$h^2 = p^2 + b^2$;\n$a + b > c, \\quad b + c > a, \\quad c + a > b$\nExplanation: Core CISCE definition (The exterior angle of a triangle equals the sum of its two interior opposite angles.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\n\nCore CISCE definition (In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\n\nCore CISCE definition (The sum of the lengths of any two sides of a triangle is always greater than the third side.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\nActive Recall: Q: What are the core equations and laws for Geometry: Lines, Angles, Transversals & Triangle Properties? | A: $\\angle \\text{ext} = \\angle \\text{opp}_1 + \\angle \\text{opp}_2$ (Exterior Angle Theorem)\n$h^2 = p^2 + b^2$ (Pythagoras Theorem)\n$a + b > c, \\quad b + c > a, \\quad c + a > b$ (Triangle Inequality Theorem)"
+    "searchableText": "Title: Geometry: Lines, Angles, Transversals & Triangle Properties\nSubject: Mathematics (General - class_7)\nTopic: Lines, Angles, Transversals & Triangle Properties\nFormula / Rule: $\\angle \\text{ext} = \\angle \\text{opp}_1 + \\angle \\text{opp}_2$;\n$h^2 = p^2 + b^2$;\n$a + b > c, \\quad b + c > a, \\quad c + a > b$\nExplanation: Core CISCE definition (The exterior angle of a triangle equals the sum of its two interior opposite angles.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\n\nCore CISCE definition (In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\n\nCore CISCE definition (The sum of the lengths of any two sides of a triangle is always greater than the third side.). Common exam pitfall: Applying Pythagoras theorem to triangles that are not right-angled, or confusing corresponding angles with co-interior angles (which add to 180°).\nActive Recall: Q: What are the core equations and laws for Geometry: Lines, Angles, Transversals & Triangle Properties? | A: $\\angle \\text{ext} = \\angle \\text{opp}_1 + \\angle \\text{opp}_2$ (Exterior Angle Theorem)\n$h^2 = p^2 + b^2$ (Pythagoras Theorem)\n$a + b > c, \\quad b + c > a, \\quad c + a > b$ (Triangle Inequality Theorem)"
   },
   {
     "id": "formula-cisce-7-mathematics-07",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Perimeter & Area of Triangles, Parallelograms & Circles",
     "title": "Mensuration: Perimeter & Area of Triangles, Parallelograms & Circles",
@@ -9086,12 +9086,12 @@
       "back": "$A = \\frac{1}{2} \\times b \\times h$ (Area of Triangle)\n$A = b \\times h$ (Area of Parallelogram)\n$C = 2\\pi r, \\quad A = \\pi r^2 \\quad \\left(\\pi \\approx \\frac{22}{7}\\right)$ (Circumference and Area of Circle)",
       "hint": "Perimeter & Area of Triangles, Parallelograms & Circles"
     },
-    "searchableText": "Title: Mensuration: Perimeter & Area of Triangles, Parallelograms & Circles\nSubject: Mathematics (Science - icse)\nTopic: Perimeter & Area of Triangles, Parallelograms & Circles\nFormula / Rule: $A = \\frac{1}{2} \\times b \\times h$;\n$A = b \\times h$;\n$C = 2\\pi r, \\quad A = \\pi r^2 \\quad \\left(\\pi \\approx \\frac{22}{7}\\right)$\nExplanation: Core CISCE definition (Half the product of base and corresponding height.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\n\nCore CISCE definition (Product of base and corresponding altitude.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\n\nCore CISCE definition (Circumference is the boundary perimeter of a circle; area is the interior region.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter & Area of Triangles, Parallelograms & Circles? | A: $A = \\frac{1}{2} \\times b \\times h$ (Area of Triangle)\n$A = b \\times h$ (Area of Parallelogram)\n$C = 2\\pi r, \\quad A = \\pi r^2 \\quad \\left(\\pi \\approx \\frac{22}{7}\\right)$ (Circumference and Area of Circle)"
+    "searchableText": "Title: Mensuration: Perimeter & Area of Triangles, Parallelograms & Circles\nSubject: Mathematics (General - class_7)\nTopic: Perimeter & Area of Triangles, Parallelograms & Circles\nFormula / Rule: $A = \\frac{1}{2} \\times b \\times h$;\n$A = b \\times h$;\n$C = 2\\pi r, \\quad A = \\pi r^2 \\quad \\left(\\pi \\approx \\frac{22}{7}\\right)$\nExplanation: Core CISCE definition (Half the product of base and corresponding height.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\n\nCore CISCE definition (Product of base and corresponding altitude.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\n\nCore CISCE definition (Circumference is the boundary perimeter of a circle; area is the interior region.). Common exam pitfall: Squaring the diameter instead of the radius when computing circle area (using πd² instead of πr²), or confusing diameter with radius.\nActive Recall: Q: What are the core equations and laws for Mensuration: Perimeter & Area of Triangles, Parallelograms & Circles? | A: $A = \\frac{1}{2} \\times b \\times h$ (Area of Triangle)\n$A = b \\times h$ (Area of Parallelogram)\n$C = 2\\pi r, \\quad A = \\pi r^2 \\quad \\left(\\pi \\approx \\frac{22}{7}\\right)$ (Circumference and Area of Circle)"
   },
   {
     "id": "formula-cisce-7-mathematics-08",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_7",
     "subject": "Mathematics",
     "topic": "Representative Values (Mean, Median, Mode) & Chance",
     "title": "Data Handling and Probability: Representative Values (Mean, Median, Mode) & Chance",
@@ -9103,12 +9103,12 @@
       "back": "$\\text{Median} = \\begin{cases} x_{\\frac{n+1}{2}} & \\text{if } n \\text{ is odd} \\\\ \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & \\text{if } n \\text{ is even} \\end{cases}$ (Median)\n$P(E) = \\frac{\\text{Favourable Outcomes}}{\\text{Total Possible Outcomes}}$ (Probability of an Event)",
       "hint": "Representative Values (Mean, Median, Mode) & Chance"
     },
-    "searchableText": "Title: Data Handling and Probability: Representative Values (Mean, Median, Mode) & Chance\nSubject: Mathematics (Science - icse)\nTopic: Representative Values (Mean, Median, Mode) & Chance\nFormula / Rule: $\\text{Median} = \\begin{cases} x_{\\frac{n+1}{2}} & \\text{if } n \\text{ is odd} \\\\ \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & \\text{if } n \\text{ is even} \\end{cases}$;\n$P(E) = \\frac{\\text{Favourable Outcomes}}{\\text{Total Possible Outcomes}}$\nExplanation: Core CISCE definition (The middle value in data arranged in ascending order. If n is odd, ((n+1)/2)th term; if n is even, average of (n/2)th and (n/2 + 1)th terms.). Common exam pitfall: Finding the median without first sorting the data in ascending or descending order.\n\nCore CISCE definition (Ratio of favorable outcomes to the total number of possible outcomes.). Common exam pitfall: Finding the median without first sorting the data in ascending or descending order.\nActive Recall: Q: What are the core equations and laws for Data Handling and Probability: Representative Values (Mean, Median, Mode) & Chance? | A: $\\text{Median} = \\begin{cases} x_{\\frac{n+1}{2}} & \\text{if } n \\text{ is odd} \\\\ \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & \\text{if } n \\text{ is even} \\end{cases}$ (Median)\n$P(E) = \\frac{\\text{Favourable Outcomes}}{\\text{Total Possible Outcomes}}$ (Probability of an Event)"
+    "searchableText": "Title: Data Handling and Probability: Representative Values (Mean, Median, Mode) & Chance\nSubject: Mathematics (General - class_7)\nTopic: Representative Values (Mean, Median, Mode) & Chance\nFormula / Rule: $\\text{Median} = \\begin{cases} x_{\\frac{n+1}{2}} & \\text{if } n \\text{ is odd} \\\\ \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & \\text{if } n \\text{ is even} \\end{cases}$;\n$P(E) = \\frac{\\text{Favourable Outcomes}}{\\text{Total Possible Outcomes}}$\nExplanation: Core CISCE definition (The middle value in data arranged in ascending order. If n is odd, ((n+1)/2)th term; if n is even, average of (n/2)th and (n/2 + 1)th terms.). Common exam pitfall: Finding the median without first sorting the data in ascending or descending order.\n\nCore CISCE definition (Ratio of favorable outcomes to the total number of possible outcomes.). Common exam pitfall: Finding the median without first sorting the data in ascending or descending order.\nActive Recall: Q: What are the core equations and laws for Data Handling and Probability: Representative Values (Mean, Median, Mode) & Chance? | A: $\\text{Median} = \\begin{cases} x_{\\frac{n+1}{2}} & \\text{if } n \\text{ is odd} \\\\ \\frac{x_{\\frac{n}{2}} + x_{\\frac{n}{2}+1}}{2} & \\text{if } n \\text{ is even} \\end{cases}$ (Median)\n$P(E) = \\frac{\\text{Favourable Outcomes}}{\\text{Total Possible Outcomes}}$ (Probability of an Event)"
   },
   {
     "id": "formula-cisce-8-mathematics-01",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Properties of Rational Numbers & Density Property",
     "title": "Rational Numbers: Properties of Rational Numbers & Density Property",
@@ -9120,12 +9120,12 @@
       "back": "$q = \\frac{a + b}{2}$ (Density Property of Rational Numbers)\n$\\frac{a}{b} \\times \\frac{b}{a} = 1 \\quad (a, b \\neq 0)$ (Multiplicative Inverse (Reciprocal))",
       "hint": "Properties of Rational Numbers & Density Property"
     },
-    "searchableText": "Title: Rational Numbers: Properties of Rational Numbers & Density Property\nSubject: Mathematics (Science - icse)\nTopic: Properties of Rational Numbers & Density Property\nFormula / Rule: $q = \\frac{a + b}{2}$;\n$\\frac{a}{b} \\times \\frac{b}{a} = 1 \\quad (a, b \\neq 0)$\nExplanation: Core CISCE definition (Between any two distinct rational numbers a and b, there exist infinitely many rational numbers.). Common exam pitfall: Claiming that zero has a reciprocal (division by zero is undefined).\n\nCore CISCE definition (For any non-zero rational number a/b, its reciprocal is b/a such that their product is 1.). Common exam pitfall: Claiming that zero has a reciprocal (division by zero is undefined).\nActive Recall: Q: What are the core equations and laws for Rational Numbers: Properties of Rational Numbers & Density Property? | A: $q = \\frac{a + b}{2}$ (Density Property of Rational Numbers)\n$\\frac{a}{b} \\times \\frac{b}{a} = 1 \\quad (a, b \\neq 0)$ (Multiplicative Inverse (Reciprocal))"
+    "searchableText": "Title: Rational Numbers: Properties of Rational Numbers & Density Property\nSubject: Mathematics (General - class_8)\nTopic: Properties of Rational Numbers & Density Property\nFormula / Rule: $q = \\frac{a + b}{2}$;\n$\\frac{a}{b} \\times \\frac{b}{a} = 1 \\quad (a, b \\neq 0)$\nExplanation: Core CISCE definition (Between any two distinct rational numbers a and b, there exist infinitely many rational numbers.). Common exam pitfall: Claiming that zero has a reciprocal (division by zero is undefined).\n\nCore CISCE definition (For any non-zero rational number a/b, its reciprocal is b/a such that their product is 1.). Common exam pitfall: Claiming that zero has a reciprocal (division by zero is undefined).\nActive Recall: Q: What are the core equations and laws for Rational Numbers: Properties of Rational Numbers & Density Property? | A: $q = \\frac{a + b}{2}$ (Density Property of Rational Numbers)\n$\\frac{a}{b} \\times \\frac{b}{a} = 1 \\quad (a, b \\neq 0)$ (Multiplicative Inverse (Reciprocal))"
   },
   {
     "id": "formula-cisce-8-mathematics-02",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Finding Roots by Prime Factorisation & Long Division",
     "title": "Squares and Square Roots, Cubes and Cube Roots: Finding Roots by Prime Factorisation & Long Division",
@@ -9137,12 +9137,12 @@
       "back": "$(2m)^2 + (m^2 - 1)^2 = (m^2 + 1)^2$ (Pythagorean Triplet)\n$\\sqrt[3]{a \\times b} = \\sqrt[3]{a} \\times \\sqrt[3]{b}$ (Cube Root of Product)",
       "hint": "Finding Roots by Prime Factorisation & Long Division"
     },
-    "searchableText": "Title: Squares and Square Roots, Cubes and Cube Roots: Finding Roots by Prime Factorisation & Long Division\nSubject: Mathematics (Science - icse)\nTopic: Finding Roots by Prime Factorisation & Long Division\nFormula / Rule: $(2m)^2 + (m^2 - 1)^2 = (m^2 + 1)^2$;\n$\\sqrt[3]{a \\times b} = \\sqrt[3]{a} \\times \\sqrt[3]{b}$\nExplanation: Core CISCE definition (For any natural number m > 1, the three numbers 2m, m² - 1, and m² + 1 form a Pythagorean triplet.). Common exam pitfall: Forgetting to pair digits from the right (or from the decimal point) in long division for square roots.\n\nCore CISCE definition (The cube root of a product equals the product of their individual cube roots.). Common exam pitfall: Forgetting to pair digits from the right (or from the decimal point) in long division for square roots.\nActive Recall: Q: What are the core equations and laws for Squares and Square Roots, Cubes and Cube Roots: Finding Roots by Prime Factorisation & Long Division? | A: $(2m)^2 + (m^2 - 1)^2 = (m^2 + 1)^2$ (Pythagorean Triplet)\n$\\sqrt[3]{a \\times b} = \\sqrt[3]{a} \\times \\sqrt[3]{b}$ (Cube Root of Product)"
+    "searchableText": "Title: Squares and Square Roots, Cubes and Cube Roots: Finding Roots by Prime Factorisation & Long Division\nSubject: Mathematics (General - class_8)\nTopic: Finding Roots by Prime Factorisation & Long Division\nFormula / Rule: $(2m)^2 + (m^2 - 1)^2 = (m^2 + 1)^2$;\n$\\sqrt[3]{a \\times b} = \\sqrt[3]{a} \\times \\sqrt[3]{b}$\nExplanation: Core CISCE definition (For any natural number m > 1, the three numbers 2m, m² - 1, and m² + 1 form a Pythagorean triplet.). Common exam pitfall: Forgetting to pair digits from the right (or from the decimal point) in long division for square roots.\n\nCore CISCE definition (The cube root of a product equals the product of their individual cube roots.). Common exam pitfall: Forgetting to pair digits from the right (or from the decimal point) in long division for square roots.\nActive Recall: Q: What are the core equations and laws for Squares and Square Roots, Cubes and Cube Roots: Finding Roots by Prime Factorisation & Long Division? | A: $(2m)^2 + (m^2 - 1)^2 = (m^2 + 1)^2$ (Pythagorean Triplet)\n$\\sqrt[3]{a \\times b} = \\sqrt[3]{a} \\times \\sqrt[3]{b}$ (Cube Root of Product)"
   },
   {
     "id": "formula-cisce-8-mathematics-03",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Negative Exponents, Fractional Powers & Scientific Notation",
     "title": "Exponents and Radicals: Negative Exponents, Fractional Powers & Scientific Notation",
@@ -9154,12 +9154,12 @@
       "back": "$a^{-n} = \\frac{1}{a^n} \\quad (a \\neq 0)$ (Negative Exponent Rule)\n$m \\times 10^k \\quad (1 \\le m < 10, \\; k \\in \\mathbb{Z})$ (Scientific Notation)",
       "hint": "Negative Exponents, Fractional Powers & Scientific Notation"
     },
-    "searchableText": "Title: Exponents and Radicals: Negative Exponents, Fractional Powers & Scientific Notation\nSubject: Mathematics (Science - icse)\nTopic: Negative Exponents, Fractional Powers & Scientific Notation\nFormula / Rule: $a^{-n} = \\frac{1}{a^n} \\quad (a \\neq 0)$;\n$m \\times 10^k \\quad (1 \\le m < 10, \\; k \\in \\mathbb{Z})$\nExplanation: Core CISCE definition (A base with a negative exponent is equal to its reciprocal with a positive exponent.). Common exam pitfall: Confusing a negative exponent with a negative number (e.g. thinking 2^(-3) = -8 instead of 1/8).\n\nCore CISCE definition (Expression of numbers in the form m x 10^k where 1 <= m < 10 and k is an integer.). Common exam pitfall: Confusing a negative exponent with a negative number (e.g. thinking 2^(-3) = -8 instead of 1/8).\nActive Recall: Q: What are the core equations and laws for Exponents and Radicals: Negative Exponents, Fractional Powers & Scientific Notation? | A: $a^{-n} = \\frac{1}{a^n} \\quad (a \\neq 0)$ (Negative Exponent Rule)\n$m \\times 10^k \\quad (1 \\le m < 10, \\; k \\in \\mathbb{Z})$ (Scientific Notation)"
+    "searchableText": "Title: Exponents and Radicals: Negative Exponents, Fractional Powers & Scientific Notation\nSubject: Mathematics (General - class_8)\nTopic: Negative Exponents, Fractional Powers & Scientific Notation\nFormula / Rule: $a^{-n} = \\frac{1}{a^n} \\quad (a \\neq 0)$;\n$m \\times 10^k \\quad (1 \\le m < 10, \\; k \\in \\mathbb{Z})$\nExplanation: Core CISCE definition (A base with a negative exponent is equal to its reciprocal with a positive exponent.). Common exam pitfall: Confusing a negative exponent with a negative number (e.g. thinking 2^(-3) = -8 instead of 1/8).\n\nCore CISCE definition (Expression of numbers in the form m x 10^k where 1 <= m < 10 and k is an integer.). Common exam pitfall: Confusing a negative exponent with a negative number (e.g. thinking 2^(-3) = -8 instead of 1/8).\nActive Recall: Q: What are the core equations and laws for Exponents and Radicals: Negative Exponents, Fractional Powers & Scientific Notation? | A: $a^{-n} = \\frac{1}{a^n} \\quad (a \\neq 0)$ (Negative Exponent Rule)\n$m \\times 10^k \\quad (1 \\le m < 10, \\; k \\in \\mathbb{Z})$ (Scientific Notation)"
   },
   {
     "id": "formula-cisce-8-mathematics-04",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Solving Linear Equations, Reducible Forms & Word Problems",
     "title": "Linear Equations in One Variable: Solving Linear Equations, Reducible Forms & Word Problems",
@@ -9171,12 +9171,12 @@
       "back": "$\\frac{ax + b}{cx + d} = \\frac{m}{n} \\Rightarrow n(ax + b) = m(cx + d)$ (Cross-Multiplication for Linear Forms)",
       "hint": "Solving Linear Equations, Reducible Forms & Word Problems"
     },
-    "searchableText": "Title: Linear Equations in One Variable: Solving Linear Equations, Reducible Forms & Word Problems\nSubject: Mathematics (Science - icse)\nTopic: Solving Linear Equations, Reducible Forms & Word Problems\nFormula / Rule: $\\frac{ax + b}{cx + d} = \\frac{m}{n} \\Rightarrow n(ax + b) = m(cx + d)$\nExplanation: Core CISCE definition (Equations of the form (ax + b)/(cx + d) = m/n are solved by cross-multiplying.). Common exam pitfall: Failing to distribute negative signs across parentheses when removing brackets (e.g. writing -(2x - 3) as -2x - 3 instead of -2x + 3).\nActive Recall: Q: What are the core equations and laws for Linear Equations in One Variable: Solving Linear Equations, Reducible Forms & Word Problems? | A: $\\frac{ax + b}{cx + d} = \\frac{m}{n} \\Rightarrow n(ax + b) = m(cx + d)$ (Cross-Multiplication for Linear Forms)"
+    "searchableText": "Title: Linear Equations in One Variable: Solving Linear Equations, Reducible Forms & Word Problems\nSubject: Mathematics (General - class_8)\nTopic: Solving Linear Equations, Reducible Forms & Word Problems\nFormula / Rule: $\\frac{ax + b}{cx + d} = \\frac{m}{n} \\Rightarrow n(ax + b) = m(cx + d)$\nExplanation: Core CISCE definition (Equations of the form (ax + b)/(cx + d) = m/n are solved by cross-multiplying.). Common exam pitfall: Failing to distribute negative signs across parentheses when removing brackets (e.g. writing -(2x - 3) as -2x - 3 instead of -2x + 3).\nActive Recall: Q: What are the core equations and laws for Linear Equations in One Variable: Solving Linear Equations, Reducible Forms & Word Problems? | A: $\\frac{ax + b}{cx + d} = \\frac{m}{n} \\Rightarrow n(ax + b) = m(cx + d)$ (Cross-Multiplication for Linear Forms)"
   },
   {
     "id": "formula-cisce-8-mathematics-05",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Polynomial Multiplication, Standard Identities & Factorisation",
     "title": "Algebraic Expressions and Identities: Polynomial Multiplication, Standard Identities & Factorisation",
@@ -9188,12 +9188,12 @@
       "back": "$(a \\pm b)^2 = a^2 \\pm 2ab + b^2, \\quad a^2 - b^2 = (a - b)(a + b)$ (Standard Algebraic Identities)\n$x^2 + (a+b)x + ab = (x + a)(x + b)$ (Splitting the Middle Term)",
       "hint": "Polynomial Multiplication, Standard Identities & Factorisation"
     },
-    "searchableText": "Title: Algebraic Expressions and Identities: Polynomial Multiplication, Standard Identities & Factorisation\nSubject: Mathematics (Science - icse)\nTopic: Polynomial Multiplication, Standard Identities & Factorisation\nFormula / Rule: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2, \\quad a^2 - b^2 = (a - b)(a + b)$;\n$x^2 + (a+b)x + ab = (x + a)(x + b)$\nExplanation: Core CISCE definition (Equations true for all values of the variables involved.). Common exam pitfall: Writing (a + b)² as a² + b² and omitting the crucial middle term +2ab.\n\nCore CISCE definition (Factorising x² + (a + b)x + ab into (x + a)(x + b).). Common exam pitfall: Writing (a + b)² as a² + b² and omitting the crucial middle term +2ab.\nActive Recall: Q: What are the core equations and laws for Algebraic Expressions and Identities: Polynomial Multiplication, Standard Identities & Factorisation? | A: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2, \\quad a^2 - b^2 = (a - b)(a + b)$ (Standard Algebraic Identities)\n$x^2 + (a+b)x + ab = (x + a)(x + b)$ (Splitting the Middle Term)"
+    "searchableText": "Title: Algebraic Expressions and Identities: Polynomial Multiplication, Standard Identities & Factorisation\nSubject: Mathematics (General - class_8)\nTopic: Polynomial Multiplication, Standard Identities & Factorisation\nFormula / Rule: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2, \\quad a^2 - b^2 = (a - b)(a + b)$;\n$x^2 + (a+b)x + ab = (x + a)(x + b)$\nExplanation: Core CISCE definition (Equations true for all values of the variables involved.). Common exam pitfall: Writing (a + b)² as a² + b² and omitting the crucial middle term +2ab.\n\nCore CISCE definition (Factorising x² + (a + b)x + ab into (x + a)(x + b).). Common exam pitfall: Writing (a + b)² as a² + b² and omitting the crucial middle term +2ab.\nActive Recall: Q: What are the core equations and laws for Algebraic Expressions and Identities: Polynomial Multiplication, Standard Identities & Factorisation? | A: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2, \\quad a^2 - b^2 = (a - b)(a + b)$ (Standard Algebraic Identities)\n$x^2 + (a+b)x + ab = (x + a)(x + b)$ (Splitting the Middle Term)"
   },
   {
     "id": "formula-cisce-8-mathematics-06",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Compound Interest, Successive Discounts & Variations",
     "title": "Comparing Quantities and Commercial Arithmetic: Compound Interest, Successive Discounts & Variations",
@@ -9205,12 +9205,12 @@
       "back": "$A = P\\left(1 + \\frac{R}{100}\\right)^n, \\quad \\text{CI} = A - P$ (Compound Interest Formula)\n$y = kx \\quad \\text{(Direct)}, \\quad xy = k \\quad \\text{(Inverse)}$ (Direct and Inverse Variation)",
       "hint": "Compound Interest, Successive Discounts & Variations"
     },
-    "searchableText": "Title: Comparing Quantities and Commercial Arithmetic: Compound Interest, Successive Discounts & Variations\nSubject: Mathematics (Science - icse)\nTopic: Compound Interest, Successive Discounts & Variations\nFormula / Rule: $A = P\\left(1 + \\frac{R}{100}\\right)^n, \\quad \\text{CI} = A - P$;\n$y = kx \\quad \\text{(Direct)}, \\quad xy = k \\quad \\text{(Inverse)}$\nExplanation: Core CISCE definition (Amount when interest is compounded annually.). Common exam pitfall: Confusing semi-annual compounding rules (rate is halved R/2 and periods are doubled 2n).\n\nCore CISCE definition (In direct variation, y/x = k; in inverse variation, xy = k.). Common exam pitfall: Confusing semi-annual compounding rules (rate is halved R/2 and periods are doubled 2n).\nActive Recall: Q: What are the core equations and laws for Comparing Quantities and Commercial Arithmetic: Compound Interest, Successive Discounts & Variations? | A: $A = P\\left(1 + \\frac{R}{100}\\right)^n, \\quad \\text{CI} = A - P$ (Compound Interest Formula)\n$y = kx \\quad \\text{(Direct)}, \\quad xy = k \\quad \\text{(Inverse)}$ (Direct and Inverse Variation)"
+    "searchableText": "Title: Comparing Quantities and Commercial Arithmetic: Compound Interest, Successive Discounts & Variations\nSubject: Mathematics (General - class_8)\nTopic: Compound Interest, Successive Discounts & Variations\nFormula / Rule: $A = P\\left(1 + \\frac{R}{100}\\right)^n, \\quad \\text{CI} = A - P$;\n$y = kx \\quad \\text{(Direct)}, \\quad xy = k \\quad \\text{(Inverse)}$\nExplanation: Core CISCE definition (Amount when interest is compounded annually.). Common exam pitfall: Confusing semi-annual compounding rules (rate is halved R/2 and periods are doubled 2n).\n\nCore CISCE definition (In direct variation, y/x = k; in inverse variation, xy = k.). Common exam pitfall: Confusing semi-annual compounding rules (rate is halved R/2 and periods are doubled 2n).\nActive Recall: Q: What are the core equations and laws for Comparing Quantities and Commercial Arithmetic: Compound Interest, Successive Discounts & Variations? | A: $A = P\\left(1 + \\frac{R}{100}\\right)^n, \\quad \\text{CI} = A - P$ (Compound Interest Formula)\n$y = kx \\quad \\text{(Direct)}, \\quad xy = k \\quad \\text{(Inverse)}$ (Direct and Inverse Variation)"
   },
   {
     "id": "formula-cisce-8-mathematics-07",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Polygons, Parallelograms, Special Quadrilaterals & Constructions",
     "title": "Geometry and Understanding Quadrilaterals: Polygons, Parallelograms, Special Quadrilaterals & Constructions",
@@ -9222,12 +9222,12 @@
       "back": "$S = (n - 2) \\times 180^\\circ$ (Interior Angle Sum of n-sided Polygon)\n$\\sum \\angle_{\\text{ext}} = 360^\\circ$ (Exterior Angle Sum of any Polygon)",
       "hint": "Polygons, Parallelograms, Special Quadrilaterals & Constructions"
     },
-    "searchableText": "Title: Geometry and Understanding Quadrilaterals: Polygons, Parallelograms, Special Quadrilaterals & Constructions\nSubject: Mathematics (Science - icse)\nTopic: Polygons, Parallelograms, Special Quadrilaterals & Constructions\nFormula / Rule: $S = (n - 2) \\times 180^\\circ$;\n$\\sum \\angle_{\\text{ext}} = 360^\\circ$\nExplanation: Core CISCE definition (The sum of interior angles of any convex n-gon.). Common exam pitfall: Confusing properties of rhombuses (diagonals bisect at 90°) with rectangles (diagonals are equal but do not necessarily meet at 90°).\n\nCore CISCE definition (The sum of the exterior angles of any convex polygon is always 360 degrees.). Common exam pitfall: Confusing properties of rhombuses (diagonals bisect at 90°) with rectangles (diagonals are equal but do not necessarily meet at 90°).\nActive Recall: Q: What are the core equations and laws for Geometry and Understanding Quadrilaterals: Polygons, Parallelograms, Special Quadrilaterals & Constructions? | A: $S = (n - 2) \\times 180^\\circ$ (Interior Angle Sum of n-sided Polygon)\n$\\sum \\angle_{\\text{ext}} = 360^\\circ$ (Exterior Angle Sum of any Polygon)"
+    "searchableText": "Title: Geometry and Understanding Quadrilaterals: Polygons, Parallelograms, Special Quadrilaterals & Constructions\nSubject: Mathematics (General - class_8)\nTopic: Polygons, Parallelograms, Special Quadrilaterals & Constructions\nFormula / Rule: $S = (n - 2) \\times 180^\\circ$;\n$\\sum \\angle_{\\text{ext}} = 360^\\circ$\nExplanation: Core CISCE definition (The sum of interior angles of any convex n-gon.). Common exam pitfall: Confusing properties of rhombuses (diagonals bisect at 90°) with rectangles (diagonals are equal but do not necessarily meet at 90°).\n\nCore CISCE definition (The sum of the exterior angles of any convex polygon is always 360 degrees.). Common exam pitfall: Confusing properties of rhombuses (diagonals bisect at 90°) with rectangles (diagonals are equal but do not necessarily meet at 90°).\nActive Recall: Q: What are the core equations and laws for Geometry and Understanding Quadrilaterals: Polygons, Parallelograms, Special Quadrilaterals & Constructions? | A: $S = (n - 2) \\times 180^\\circ$ (Interior Angle Sum of n-sided Polygon)\n$\\sum \\angle_{\\text{ext}} = 360^\\circ$ (Exterior Angle Sum of any Polygon)"
   },
   {
     "id": "formula-cisce-8-mathematics-08",
-    "stream": "Science",
-    "level": "icse",
+    "stream": "General",
+    "level": "class_8",
     "subject": "Mathematics",
     "topic": "Area of Trapezium/General Polygons, Solid Volumes & Pie Charts",
     "title": "Mensuration and Data Handling: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts",
@@ -9239,6 +9239,6 @@
       "back": "$A = \\frac{1}{2}(a + b)h$ (Area of Trapezium)\n$A_{\\text{TSA}} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$ (Total Surface Area and Volume of Cylinder)\n$V = l \\times b \\times h$ (Volume of Cuboid)",
       "hint": "Area of Trapezium/General Polygons, Solid Volumes & Pie Charts"
     },
-    "searchableText": "Title: Mensuration and Data Handling: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts\nSubject: Mathematics (Science - icse)\nTopic: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts\nFormula / Rule: $A = \\frac{1}{2}(a + b)h$;\n$A_{\\text{TSA}} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$;\n$V = l \\times b \\times h$\nExplanation: Core CISCE definition (Half the product of the sum of parallel sides and the perpendicular distance between them.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\n\nCore CISCE definition (Surface area and internal capacity of a cylinder of radius r and height h.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\n\nCore CISCE definition (Product of length, breadth, and height.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\nActive Recall: Q: What are the core equations and laws for Mensuration and Data Handling: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts? | A: $A = \\frac{1}{2}(a + b)h$ (Area of Trapezium)\n$A_{\\text{TSA}} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$ (Total Surface Area and Volume of Cylinder)\n$V = l \\times b \\times h$ (Volume of Cuboid)"
+    "searchableText": "Title: Mensuration and Data Handling: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts\nSubject: Mathematics (General - class_8)\nTopic: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts\nFormula / Rule: $A = \\frac{1}{2}(a + b)h$;\n$A_{\\text{TSA}} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$;\n$V = l \\times b \\times h$\nExplanation: Core CISCE definition (Half the product of the sum of parallel sides and the perpendicular distance between them.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\n\nCore CISCE definition (Surface area and internal capacity of a cylinder of radius r and height h.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\n\nCore CISCE definition (Product of length, breadth, and height.). Common exam pitfall: Using curved surface area (2πrh) when asked for total surface area (2πr(h+r)) of a closed cylinder.\nActive Recall: Q: What are the core equations and laws for Mensuration and Data Handling: Area of Trapezium/General Polygons, Solid Volumes & Pie Charts? | A: $A = \\frac{1}{2}(a + b)h$ (Area of Trapezium)\n$A_{\\text{TSA}} = 2\\pi r(r + h), \\quad V = \\pi r^2 h$ (Total Surface Area and Volume of Cylinder)\n$V = l \\times b \\times h$ (Volume of Cuboid)"
   }
 ]

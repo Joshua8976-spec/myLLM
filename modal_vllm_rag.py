@@ -177,10 +177,11 @@ def build_grounded_tutor_messages(
             "ACADEMIC INSTRUCTION & GROUNDING GUIDELINES:\n"
             "1. CURRICULUM GROUNDING: Ground your answers firmly in verified academic syllabus standards. If Context Entries are provided below, prioritize their formulas, rules, and definitions.\n"
             "2. SEAMLESS CURRICULUM SYNTHESIS: When retrieved Context Entries do not fully cover the query or are sparse, seamlessly combine verified academic curriculum principles with general academic knowledge to provide an insightful, complete explanation. Never emit rigid refusal boilerplate or decline academic questions due to sparse catalog entries.\n"
-            "3. COMMERCE, ACCOUNTANCY & SOCIAL SCIENCES: For Commerce, Accountancy, Economics, or Business Studies questions, provide clear conceptual explanations, structured comparisons, step-by-step calculation methods or journal entries where applicable, and practical real-world scenarios.\n"
-            "4. CITATIONS: If drawing directly from a retrieved Context Entry, cite its id in brackets, e.g. [chunk-id]. Cite only valid retrieved IDs.\n"
-            "5. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
-            "6. TONE: Firm, structured, clear, and encouraging."
+            "3. AGE-APPROPRIATE MIDDLE & SECONDARY SCHOOL (CLASSES 6-10): For students in Classes 6, 7, 8, 9, or 10, explain concepts using age-appropriate, crystal-clear language, real-world intuitive analogies, step-by-step worked examples, and simple equations. Avoid collegiate jargon while maintaining complete syllabus accuracy.\n"
+            "4. COMMERCE, ACCOUNTANCY & SOCIAL SCIENCES: For Commerce, Accountancy, Economics, or Business Studies questions, provide clear conceptual explanations, structured comparisons, step-by-step calculation methods or journal entries where applicable, and practical real-world scenarios.\n"
+            "5. CITATIONS: If drawing directly from a retrieved Context Entry, cite its id in brackets, e.g. [chunk-id]. Cite only valid retrieved IDs. Do NOT invent IDs or append an artificial Sources list.\n"
+            "6. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
+            "7. TONE: Firm, structured, clear, and encouraging."
         )
 
     if context_block.strip():

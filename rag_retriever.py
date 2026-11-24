@@ -110,36 +110,101 @@ def normalize_stream_token(s: Optional[str]) -> str:
     """Normalizes stream string case-insensitively."""
     if not s:
         return ""
-    st = str(s).strip().lower()
+    st = str(s).strip().lower().replace("-", "_").replace(" ", "_")
     if st in ("commerce", "commercial"):
         return "commerce"
     if st in ("humanities", "arts"):
         return "humanities"
     if st in ("science", "stem"):
         return "science"
-    if st in ("ap", "advanced placement"):
+    if st in ("ap", "advanced_placement"):
         return "ap"
-    if st in ("testprep", "test prep", "sat", "act"):
+    if st in ("testprep", "test_prep", "sat", "act"):
         return "testprep"
+    if st in ("general", "middle", "middle_school", "secondary", "secondary_school", "middle_secondary", "none", "all"):
+        return "general"
     return st
 
 
 def normalize_level_token(s: Optional[str]) -> str:
-    """Normalizes level/grade string case-insensitively."""
+    """Normalizes level/grade string case-insensitively across Classes 6-12, SAT, ACT, AP."""
     if not s:
         return ""
     lv = str(s).strip().lower().replace("-", "_").replace(" ", "_")
-    if "11" in lv or "eleven" in lv:
-        return "class_11"
-    if "12" in lv or "twelve" in lv:
+
+    # Check Class 12
+    if re.search(r"\b(?:class_?12|grade_?12|12th|twelve|g12)\b", lv) or lv == "12":
         return "class_12"
+    # Check Class 11
+    if re.search(r"\b(?:class_?11|grade_?11|11th|eleven|g11)\b", lv) or lv == "11":
+        return "class_11"
+    # Check Class 10
+    if re.search(r"\b(?:class_?10|grade_?10|10th|ten|g10)\b", lv) or lv == "10":
+        return "class_10"
+    # Check Class 9
+    if re.search(r"\b(?:class_?9|grade_?9|9th|nine|g9)\b", lv) or lv == "9":
+        return "class_9"
+    # Check Class 8
+    if re.search(r"\b(?:class_?8|grade_?8|8th|eight|g8)\b", lv) or lv == "8":
+        return "class_8"
+    # Check Class 7
+    if re.search(r"\b(?:class_?7|grade_?7|7th|seven|g7)\b", lv) or lv == "7":
+        return "class_7"
+    # Check Class 6
+    if re.search(r"\b(?:class_?6|grade_?6|6th|six|g6)\b", lv) or lv == "6":
+        return "class_6"
+
     if "sat" in lv:
         return "sat"
     if "act" in lv:
         return "act"
     if "ap" in lv:
         return "ap"
+    if lv in ("middle", "middle_school"):
+        return "middle"
+    if lv in ("secondary", "secondary_school"):
+        return "secondary"
     return lv
+
+
+def extract_item_grade_or_level(item: Dict[str, Any]) -> str:
+    """Extracts normalized level token for an item (e.g. class_6..12, sat, act, ap)."""
+    item_id = (item.get("id") or "").strip().lower()
+    raw_level = (item.get("level") or "").strip().lower()
+    tags = " ".join(item.get("tags") or []).lower() if isinstance(item.get("tags"), list) else ""
+    combined = f"{item_id} {raw_level} {tags}"
+
+    if "-g6-" in item_id or "cisce-6-" in item_id or "class_6" in combined or "class 6" in combined or "grade 6" in combined:
+        return "class_6"
+    if "-g7-" in item_id or "cisce-7-" in item_id or "class_7" in combined or "class 7" in combined or "grade 7" in combined:
+        return "class_7"
+    if "-g8-" in item_id or "cisce-8-" in item_id or "class_8" in combined or "class 8" in combined or "grade 8" in combined:
+        return "class_8"
+    if "-g9-" in item_id or "cisce-9-" in item_id or "class_9" in combined or "class 9" in combined or "grade 9" in combined:
+        return "class_9"
+    if "-g10-" in item_id or "cisce-10-" in item_id or "class_10" in combined or "class 10" in combined or "grade 10" in combined:
+        return "class_10"
+    if "c11-" in item_id or "class_11" in combined or "class 11" in combined or "grade 11" in combined:
+        return "class_11"
+    if "c12-" in item_id or "class_12" in combined or "class 12" in combined or "grade 12" in combined:
+        return "class_12"
+
+    if "sat" in raw_level or item_id.startswith("sat-"):
+        return "sat"
+    if "act" in raw_level or item_id.startswith("act-"):
+        return "act"
+    if "ap" in raw_level or item_id.startswith("ap-"):
+        return "ap"
+
+    return normalize_level_token(raw_level)
+
+
+def extract_item_stream(item: Dict[str, Any]) -> str:
+    """Extracts normalized stream for an item."""
+    lvl = extract_item_grade_or_level(item)
+    if lvl in ("class_6", "class_7", "class_8", "class_9", "class_10"):
+        return "general"
+    return normalize_stream_token(item.get("stream"))
 
 
 class RAGRetriever:
@@ -210,6 +275,8 @@ class RAGRetriever:
             item["_norm_title"] = normalize_math_text((item.get("title") or "") + " " + (item.get("topic") or ""))
             item["_norm_searchable"] = normalize_math_text(item.get("searchableText") or "")
             item["_trimmed_explanation"] = trim_explanation_words(item.get("derivationOrExplanation", ""), max_words=150)
+            item["_normalized_level"] = extract_item_grade_or_level(item)
+            item["_normalized_stream"] = extract_item_stream(item)
 
         print(f"📖 Loaded & pre-indexed {len(self.corpus)} chunks from {self.corpus_path} (SHA-256: {self.corpus_hash[:12]}...)")
 
@@ -262,10 +329,11 @@ class RAGRetriever:
     ) -> bool:
         """
         Strictly checks whether a corpus item matches the student's profile & subject filter.
+        Supports Classes 6-12 across Science, Commerce, Humanities, and General Middle/Secondary.
         Prevents off-stream/off-grade leakage into context.
         """
-        item_stream = normalize_stream_token(item.get("stream"))
-        item_level = normalize_level_token(item.get("level"))
+        item_stream = item.get("_normalized_stream") or extract_item_stream(item)
+        item_level = item.get("_normalized_level") or extract_item_grade_or_level(item)
         item_subject = (item.get("subject") or "").strip().lower()
 
         # 1. Subject filter (highest specificity if provided)
@@ -277,21 +345,41 @@ class RAGRetriever:
         if not profile:
             return True
 
-        # 2. Stream filter
-        prof_stream = normalize_stream_token(profile.get("stream"))
-        if prof_stream:
-            if prof_stream != item_stream:
-                return False
-
-        # 3. Level / Grade filter
         prof_level = normalize_level_token(profile.get("level"))
+        prof_stream = normalize_stream_token(profile.get("stream"))
+
+        is_middle_secondary = prof_level in (
+            "class_6", "class_7", "class_8", "class_9", "class_10", "middle", "secondary"
+        ) or prof_stream == "general"
+
+        # 2. Grade/Level Filter
         if prof_level:
-            raw_item_level = (item.get("level") or "").strip().lower()
-            if prof_level == "class_11":
-                if item_level != "class_11" and raw_item_level not in ("cbse", "icse"):
+            if prof_level == "class_6":
+                if item_level != "class_6":
+                    return False
+            elif prof_level == "class_7":
+                if item_level != "class_7":
+                    return False
+            elif prof_level == "class_8":
+                if item_level != "class_8":
+                    return False
+            elif prof_level == "class_9":
+                if item_level != "class_9":
+                    return False
+            elif prof_level == "class_10":
+                if item_level != "class_10":
+                    return False
+            elif prof_level == "class_11":
+                if item_level != "class_11":
                     return False
             elif prof_level == "class_12":
                 if item_level != "class_12":
+                    return False
+            elif prof_level == "middle":
+                if item_level not in ("class_6", "class_7", "class_8"):
+                    return False
+            elif prof_level == "secondary":
+                if item_level not in ("class_9", "class_10"):
                     return False
             elif prof_level in ("sat", "act", "ap"):
                 if item_level != prof_level and prof_level not in item_stream:
@@ -299,6 +387,16 @@ class RAGRetriever:
             else:
                 if prof_level != item_level:
                     return False
+
+        # 3. Stream Filter
+        if is_middle_secondary:
+            # Classes 6-10 students study general middle/secondary curriculum.
+            # Never leak senior-secondary Commerce, Humanities, SAT, ACT, or AP chunks into middle school.
+            if item_stream in ("commerce", "humanities", "testprep", "ap") or item_level in ("class_11", "class_12", "sat", "act", "ap"):
+                return False
+        elif prof_stream and prof_stream != "general":
+            if prof_stream != item_stream:
+                return False
 
         # 4. Target exams filter (e.g. SAT, ACT, AP, JEE, NEET, CBSE, ICSE)
         target_exams = profile.get("targetExams")
@@ -317,10 +415,10 @@ class RAGRetriever:
                     if "ap" in ex and (item_level == "ap" or item_stream == "ap" or "ap" in item_subject):
                         exam_matched = True
                         break
-                    if "cbse" in ex and (item_level in ("class_11", "class_12") or raw_item_level in ("cbse", "class_11", "class_12") or item_stream in ("commerce", "humanities", "science")):
+                    if "cbse" in ex and (item_level in ("class_6", "class_7", "class_8", "class_9", "class_10", "class_11", "class_12") or raw_item_level in ("cbse", "class_11", "class_12") or item_stream in ("general", "commerce", "humanities", "science")):
                         exam_matched = True
                         break
-                    if "icse" in ex and (item_level in ("class_11", "class_12") or raw_item_level in ("icse", "class_11", "class_12") or item_stream in ("commerce", "humanities", "science")):
+                    if "icse" in ex and (item_level in ("class_6", "class_7", "class_8", "class_9", "class_10", "class_11", "class_12") or raw_item_level in ("icse", "class_11", "class_12") or item_stream in ("general", "commerce", "humanities", "science")):
                         exam_matched = True
                         break
                     if ("jee" in ex or "neet" in ex) and item_stream == "science":

@@ -188,7 +188,7 @@ def run_verification():
     # -------------------------------------------------------------
     # 2. Strict Metadata Scoping & Isolation
     # -------------------------------------------------------------
-    print("\n[TEST 2] Testing Strict Metadata Retrieval Isolation...")
+    print("\n[TEST 2] Testing Strict Metadata Retrieval Isolation across Classes 6-12 & Streams...")
     comm_res = retriever.retrieve(
         "Capital expenditure vs revenue expenditure",
         profile={"stream": "Commerce", "level": "class_11"},
@@ -208,7 +208,50 @@ def run_verification():
         assert r["stream"] == "TestPrep" or r["level"] == "sat"
         assert r["stream"] != "Commerce" and r["stream"] != "Humanities"
 
-    print("  ✅ 100% Zero-leakage metadata isolation verified across Commerce, SAT, and AP.")
+    # Middle School Grade 6 (Streamless)
+    g6_res = retriever.retrieve(
+        "Perimeter and area of rectangle 2(l + b)",
+        profile={"level": "Grade 6"},
+        top_k=4,
+    )
+    assert len(g6_res) > 0, "Expected at least 1 Grade 6 chunk"
+    for r in g6_res:
+        assert "-g6-" in r["id"] or "cisce-6-" in r["id"], f"Non-Grade 6 chunk leaked: {r['id']}"
+        assert r["stream"] not in ("Commerce", "Humanities", "TestPrep", "AP")
+
+    # Middle School Grade 7 (Streamless, passed as '7')
+    g7_res = retriever.retrieve(
+        "Simple interest formula P * R * T / 100",
+        profile={"level": "7"},
+        top_k=4,
+    )
+    assert len(g7_res) > 0, "Expected at least 1 Grade 7 chunk"
+    for r in g7_res:
+        assert "-g7-" in r["id"] or "cisce-7-" in r["id"], f"Non-Grade 7 chunk leaked: {r['id']}"
+        assert r["stream"] not in ("Commerce", "Humanities", "TestPrep", "AP")
+
+    # Middle School Grade 8 (Streamless, passed as 'class_8')
+    g8_res = retriever.retrieve(
+        "Compound interest and cylinder volume",
+        profile={"level": "class_8"},
+        top_k=4,
+    )
+    assert len(g8_res) > 0, "Expected at least 1 Grade 8 chunk"
+    for r in g8_res:
+        assert "-g8-" in r["id"] or "cisce-8-" in r["id"], f"Non-Grade 8 chunk leaked: {r['id']}"
+        assert r["stream"] not in ("Commerce", "Humanities", "TestPrep", "AP")
+
+    # Secondary School Grade 10 (Streamless, passed as '10th')
+    g10_res = retriever.retrieve(
+        "Trigonometric ratios sin cos tan and identities",
+        profile={"level": "10th"},
+        top_k=4,
+    )
+    for r in g10_res:
+        assert r["stream"] not in ("Commerce", "Humanities", "TestPrep", "AP")
+        assert r["level"] not in ("class_11", "class_12", "sat", "act", "ap")
+
+    print("  ✅ 100% Zero-leakage metadata isolation verified across Middle School (Grades 6-8), Secondary (Grade 10), Commerce, SAT, and AP.")
 
     # -------------------------------------------------------------
     # 3. Latency & Accuracy Benchmark (16 Queries)
