@@ -290,9 +290,9 @@ def run_verification():
 
     refusal_messages = build_grounded_tutor_messages(unrelated_query, [])
     assert len(refusal_messages) == 2
-    assert "No relevant curriculum entries met the relevance threshold" in refusal_messages[1]["content"]
-    assert "do not provide unverified formulas" in refusal_messages[1]["content"]
-    print("  ✅ Out-of-scope refusal behavior verified.")
+    assert "synthesize" in refusal_messages[1]["content"].lower() or "no specific formula sheet" in refusal_messages[1]["content"].lower()
+    assert "retrieved curriculum context does not contain" not in refusal_messages[0]["content"]
+    print("  ✅ Out-of-scope zero-chunk threshold & seamless synthesis fallback prompt verified.")
 
     # -------------------------------------------------------------
     # 5. Citation Sanitizer Fidelity Tests

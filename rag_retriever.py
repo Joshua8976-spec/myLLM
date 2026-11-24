@@ -106,6 +106,42 @@ def trim_explanation_words(text: str, max_words: int = 150) -> str:
     return trimmed
 
 
+def normalize_stream_token(s: Optional[str]) -> str:
+    """Normalizes stream string case-insensitively."""
+    if not s:
+        return ""
+    st = str(s).strip().lower()
+    if st in ("commerce", "commercial"):
+        return "commerce"
+    if st in ("humanities", "arts"):
+        return "humanities"
+    if st in ("science", "stem"):
+        return "science"
+    if st in ("ap", "advanced placement"):
+        return "ap"
+    if st in ("testprep", "test prep", "sat", "act"):
+        return "testprep"
+    return st
+
+
+def normalize_level_token(s: Optional[str]) -> str:
+    """Normalizes level/grade string case-insensitively."""
+    if not s:
+        return ""
+    lv = str(s).strip().lower().replace("-", "_").replace(" ", "_")
+    if "11" in lv or "eleven" in lv:
+        return "class_11"
+    if "12" in lv or "twelve" in lv:
+        return "class_12"
+    if "sat" in lv:
+        return "sat"
+    if "act" in lv:
+        return "act"
+    if "ap" in lv:
+        return "ap"
+    return lv
+
+
 class RAGRetriever:
     """
     Ultra-Fast, High-Precision Hybrid Metadata-Scoped Retriever.
@@ -228,8 +264,8 @@ class RAGRetriever:
         Strictly checks whether a corpus item matches the student's profile & subject filter.
         Prevents off-stream/off-grade leakage into context.
         """
-        item_stream = (item.get("stream") or "").strip().lower()
-        item_level = (item.get("level") or "").strip().lower()
+        item_stream = normalize_stream_token(item.get("stream"))
+        item_level = normalize_level_token(item.get("level"))
         item_subject = (item.get("subject") or "").strip().lower()
 
         # 1. Subject filter (highest specificity if provided)
@@ -242,44 +278,23 @@ class RAGRetriever:
             return True
 
         # 2. Stream filter
-        prof_stream = str(profile.get("stream") or "").strip().lower()
+        prof_stream = normalize_stream_token(profile.get("stream"))
         if prof_stream:
-            if prof_stream in ("commerce", "commercial"):
-                if item_stream != "commerce":
-                    return False
-            elif prof_stream in ("humanities", "arts"):
-                if item_stream != "humanities":
-                    return False
-            elif prof_stream in ("science", "stem"):
-                if item_stream != "science":
-                    return False
-            elif prof_stream in ("ap", "advanced placement"):
-                if item_stream != "ap":
-                    return False
-            elif prof_stream in ("testprep", "test prep", "sat", "act"):
-                if item_stream != "testprep":
-                    return False
-            else:
-                if prof_stream != item_stream:
-                    return False
+            if prof_stream != item_stream:
+                return False
 
         # 3. Level / Grade filter
-        prof_level = str(profile.get("level") or "").strip().lower()
+        prof_level = normalize_level_token(profile.get("level"))
         if prof_level:
-            if "11" in prof_level or "eleven" in prof_level:
-                if item_level not in ("class_11", "cbse", "icse"):
+            raw_item_level = (item.get("level") or "").strip().lower()
+            if prof_level == "class_11":
+                if item_level != "class_11" and raw_item_level not in ("cbse", "icse"):
                     return False
-            elif "12" in prof_level or "twelve" in prof_level:
+            elif prof_level == "class_12":
                 if item_level != "class_12":
                     return False
-            elif "sat" in prof_level:
-                if item_level != "sat":
-                    return False
-            elif "act" in prof_level:
-                if item_level != "act":
-                    return False
-            elif "ap" in prof_level:
-                if item_level != "ap":
+            elif prof_level in ("sat", "act", "ap"):
+                if item_level != prof_level and prof_level not in item_stream:
                     return False
             else:
                 if prof_level != item_level:
@@ -291,6 +306,7 @@ class RAGRetriever:
             exams_lower = [str(e).strip().lower() for e in target_exams if str(e).strip()]
             if exams_lower:
                 exam_matched = False
+                raw_item_level = (item.get("level") or "").strip().lower()
                 for ex in exams_lower:
                     if "sat" in ex and (item_level == "sat" or "sat" in item_subject or item_stream == "testprep"):
                         exam_matched = True
@@ -301,10 +317,10 @@ class RAGRetriever:
                     if "ap" in ex and (item_level == "ap" or item_stream == "ap" or "ap" in item_subject):
                         exam_matched = True
                         break
-                    if "cbse" in ex and (item_level in ("cbse", "class_11", "class_12")):
+                    if "cbse" in ex and (item_level in ("class_11", "class_12") or raw_item_level in ("cbse", "class_11", "class_12") or item_stream in ("commerce", "humanities", "science")):
                         exam_matched = True
                         break
-                    if "icse" in ex and (item_level in ("icse", "class_11", "class_12")):
+                    if "icse" in ex and (item_level in ("class_11", "class_12") or raw_item_level in ("icse", "class_11", "class_12") or item_stream in ("commerce", "humanities", "science")):
                         exam_matched = True
                         break
                     if ("jee" in ex or "neet" in ex) and item_stream == "science":
@@ -501,11 +517,23 @@ class RAGRetriever:
             item for score, item in scored_candidates if score >= min_score
         ]
 
-        # 5. Diversity / Deduplication filtering
+        # 5. Diversity / Strict Deduplication filtering (by unique id & title)
+        seen_ids: Set[str] = set()
+        seen_titles: Set[str] = set()
         diverse_results: List[Dict[str, Any]] = []
         for item in filtered_by_threshold:
+            item_id = str(item.get("id") or "").strip()
+            norm_title = (item.get("title") or "").strip().lower()
+            if item_id and item_id in seen_ids:
+                continue
+            if norm_title and norm_title in seen_titles:
+                continue
             if any(self._is_too_similar(item, existing) for existing in diverse_results):
                 continue
+            if item_id:
+                seen_ids.add(item_id)
+            if norm_title:
+                seen_titles.add(norm_title)
             diverse_results.append(item)
             if len(diverse_results) == top_k:
                 break
