@@ -72,15 +72,36 @@ print(f"Checkpoint directory ready: {CHECKPOINT_DIR}")"""),
 Locates `train.jsonl` and `val.jsonl` (from `ml-pipeline/prepare_dataset.py`).
 Automatically searches in the current directory, `/root/ml-pipeline`, `/content`, or Google Drive."""),
 
-        make_cell("code", """# 3. Verify and load datasets
+        make_cell("code", """# 3. Verify and load datasets (supports supabase_train.jsonl / train.jsonl)
 from datasets import load_dataset
 
-possible_dirs = [".", "/root/ml-pipeline", "/content", CHECKPOINT_DIR]
-train_path = next((os.path.join(d, "train.jsonl") for d in possible_dirs if os.path.exists(os.path.join(d, "train.jsonl"))), None)
-val_path = next((os.path.join(d, "val.jsonl") for d in possible_dirs if os.path.exists(os.path.join(d, "val.jsonl"))), None)
+possible_dirs = [".", "data", "/root/ml-pipeline", "/content", CHECKPOINT_DIR, "/content/drive/MyDrive"]
+train_candidates = ["supabase_train.jsonl", "train.jsonl"]
+val_candidates = ["supabase_val.jsonl", "val.jsonl"]
 
-assert train_path is not None, "train.jsonl not found. Run python ml-pipeline/prepare_dataset.py or upload to workspace."
-assert val_path is not None, "val.jsonl not found. Run python ml-pipeline/prepare_dataset.py or upload to workspace."
+def find_first(names):
+    for d in possible_dirs:
+        for n in names:
+            p = os.path.join(d, n)
+            if os.path.exists(p):
+                return p
+    return None
+
+train_path = find_first(train_candidates)
+val_path = find_first(val_candidates)
+
+if train_path is None or val_path is None:
+    try:
+        from google.colab import files
+        print("📤 Dataset not found. Please upload supabase_train.jsonl and supabase_val.jsonl:")
+        uploaded = files.upload()
+        train_path = find_first(train_candidates)
+        val_path = find_first(val_candidates)
+    except ImportError:
+        pass
+
+assert train_path is not None, "supabase_train.jsonl / train.jsonl not found. Upload it to /content or Google Drive."
+assert val_path is not None, "supabase_val.jsonl / val.jsonl not found. Upload it to /content or Google Drive."
 
 print(f"Using train dataset: {train_path}")
 print(f"Using val dataset:   {val_path}")
@@ -192,7 +213,7 @@ training_args = SFTConfig(
     per_device_train_batch_size=2,
     gradient_accumulation_steps=4,
     warmup_steps=10,
-    max_steps=120,
+    max_steps=255,
     learning_rate=2e-4,
     fp16=not torch.cuda.is_bf16_supported(),
     bf16=torch.cuda.is_bf16_supported(),
@@ -202,9 +223,9 @@ training_args = SFTConfig(
     lr_scheduler_type="cosine",
     seed=42,
     eval_strategy="steps",
-    eval_steps=30,
+    eval_steps=50,
     save_strategy="steps",
-    save_steps=30,
+    save_steps=50,
     save_total_limit=2,
     dataset_text_field="text",
     max_seq_length=max_seq_length,

@@ -52,4 +52,6 @@ Thumbs.db
 data/cache/
 *.npy
 checkpoints/
+ml-pipeline/studyverse-qwen-adapter/
+*.safetensors
 

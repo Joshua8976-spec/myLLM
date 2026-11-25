@@ -23,7 +23,8 @@ from typing import Dict, List, Any, Tuple
 STRICT_ACCOUNTABILITY_MARKERS = [
     "no", "slip", "error", "misconception", "accountability", "protocol",
     "execute", "triage", "must", "action", "consequence", "violation",
-    "rule", "blunder", "gap", "reality check", "unacceptable", "fix"
+    "rule", "blunder", "gap", "reality check", "unacceptable", "fix",
+    "rejected", "locked",
 ]
 
 STRICT_ACTIONABLE_MARKERS = [
@@ -69,8 +70,8 @@ def analyze_strict_coach_tone(response_text: str) -> Dict[str, Any]:
     """
     text_lower = response_text.lower()
 
-    accountability_hits = [w for w in STRICT_ACCOUNTABILITY_MARKERS if w in text_lower]
-    actionable_hits = [w for w in STRICT_ACTIONABLE_MARKERS if w in text_lower]
+    accountability_hits = [w for w in STRICT_ACCOUNTABILITY_MARKERS if re.search(rf"\b{re.escape(w)}\b", text_lower)]
+    actionable_hits = [w for w in STRICT_ACTIONABLE_MARKERS if re.search(rf"\b{re.escape(w)}\b", text_lower)]
     passive_violations = [w for w in STRICT_FORBIDDEN_PASSIVE if w in text_lower]
 
     has_accountability = len(accountability_hits) >= 2

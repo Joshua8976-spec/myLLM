@@ -59,7 +59,10 @@ export function App() {
 
   // Scroll to bottom when messages change or streaming
   const activeSession = sessions.find((s) => s.id === activeSessionId);
-  const messages = activeSession ? activeSession.messages : [];
+  const messages = React.useMemo(
+    () => (activeSession ? activeSession.messages : []),
+    [activeSession]
+  );
 
   React.useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

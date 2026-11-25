@@ -3527,7 +3527,7 @@
     "id": "act-eng-comma-splice",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Punctuation and Sentence Structure",
     "title": "Fixing Comma Splices",
     "formulaOrRule": "Two independent clauses cannot be joined by a comma alone.",
@@ -3540,13 +3540,13 @@
       "front": "Name four ways to fix a comma splice.",
       "back": "Period, semicolon, comma + FANBOYS, or subordinate one clause."
     },
-    "searchableText": "Title: Fixing Comma Splices\nSubject: ACT English (TestPrep - act)\nTopic: Punctuation and Sentence Structure\nFormula / Rule: Two independent clauses cannot be joined by a comma alone.\nVariables: Independent clause = has subject and verb and stands alone; FANBOYS = for, and, nor, but, or, yet, so\nExplanation: Fix a splice by using a period, a semicolon, a comma plus a FANBOYS conjunction, or by making one clause dependent. Wrong: 'She ran, he walked.' Right: 'She ran; he walked.'\nActive Recall: Q: Name four ways to fix a comma splice. | A: Period, semicolon, comma + FANBOYS, or subordinate one clause."
+    "searchableText": "Title: Fixing Comma Splices\nSubject: ACT Reading (TestPrep - act)\nTopic: Punctuation and Sentence Structure\nFormula / Rule: Two independent clauses cannot be joined by a comma alone.\nVariables: Independent clause = has subject and verb and stands alone; FANBOYS = for, and, nor, but, or, yet, so\nExplanation: Fix a splice by using a period, a semicolon, a comma plus a FANBOYS conjunction, or by making one clause dependent. Wrong: 'She ran, he walked.' Right: 'She ran; he walked.'\nActive Recall: Q: Name four ways to fix a comma splice. | A: Period, semicolon, comma + FANBOYS, or subordinate one clause."
   },
   {
     "id": "act-eng-restrictive-clauses",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Punctuation and Grammar",
     "title": "Restrictive vs Non-Restrictive Clauses",
     "formulaOrRule": "Restrictive: no commas, use 'that' or 'who'. Non-restrictive: commas, use 'which' or 'who'.",
@@ -3559,13 +3559,13 @@
       "front": "Which: 'that' or 'which' needs commas?",
       "back": "'Which' (non-restrictive) takes commas; 'that' (restrictive) does not."
     },
-    "searchableText": "Title: Restrictive vs Non-Restrictive Clauses\nSubject: ACT English (TestPrep - act)\nTopic: Punctuation and Grammar\nFormula / Rule: Restrictive: no commas, use 'that' or 'who'. Non-restrictive: commas, use 'which' or 'who'.\nVariables: Restrictive = essential to meaning; non-restrictive = extra information\nExplanation: If removing the clause changes the core meaning, do not set it off. 'The book that I bought is great.' vs 'My book, which I bought Friday, is great.' Use 'who' for people in either case.\nActive Recall: Q: Which: 'that' or 'which' needs commas? | A: 'Which' (non-restrictive) takes commas; 'that' (restrictive) does not."
+    "searchableText": "Title: Restrictive vs Non-Restrictive Clauses\nSubject: ACT Reading (TestPrep - act)\nTopic: Punctuation and Grammar\nFormula / Rule: Restrictive: no commas, use 'that' or 'who'. Non-restrictive: commas, use 'which' or 'who'.\nVariables: Restrictive = essential to meaning; non-restrictive = extra information\nExplanation: If removing the clause changes the core meaning, do not set it off. 'The book that I bought is great.' vs 'My book, which I bought Friday, is great.' Use 'who' for people in either case.\nActive Recall: Q: Which: 'that' or 'which' needs commas? | A: 'Which' (non-restrictive) takes commas; 'that' (restrictive) does not."
   },
   {
     "id": "act-eng-apostrophes",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Punctuation",
     "title": "Apostrophes: Its vs It's and Possessives",
     "formulaOrRule": "it's = it is / it has; its = possessive. Singular possessive: 's. Plural possessive ending in s: s'.",
@@ -3578,13 +3578,13 @@
       "front": "Possessive of 'the girls' (plural) plus 'room'?",
       "back": "the girls' room"
     },
-    "searchableText": "Title: Apostrophes: Its vs It's and Possessives\nSubject: ACT English (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: it's = it is / it has; its = possessive. Singular possessive: 's. Plural possessive ending in s: s'.\nVariables: Possessive pronouns (its, whose, theirs, hers) never take apostrophes = Possessive pronouns (its, whose, theirs, hers) never take apostrophes; irregular plurals (children, women) add 's = irregular plurals (children, women) add 's\nExplanation: Step 1: expand the word to 'it is' or 'it has'; if that works, use it's. Step 2: for possessives, decide whether the owner is singular or plural. One student's book; several students' books; the children's toys. Example: 'The team lost its coach; it's a shame.' Pitfall: plain plurals never take apostrophes (the dogs bark, not the dog's bark), and who's means who is while whose is possessive.\nActive Recall: Q: Possessive of 'the girls' (plural) plus 'room'? | A: the girls' room"
+    "searchableText": "Title: Apostrophes: Its vs It's and Possessives\nSubject: ACT Reading (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: it's = it is / it has; its = possessive. Singular possessive: 's. Plural possessive ending in s: s'.\nVariables: Possessive pronouns (its, whose, theirs, hers) never take apostrophes = Possessive pronouns (its, whose, theirs, hers) never take apostrophes; irregular plurals (children, women) add 's = irregular plurals (children, women) add 's\nExplanation: Step 1: expand the word to 'it is' or 'it has'; if that works, use it's. Step 2: for possessives, decide whether the owner is singular or plural. One student's book; several students' books; the children's toys. Example: 'The team lost its coach; it's a shame.' Pitfall: plain plurals never take apostrophes (the dogs bark, not the dog's bark), and who's means who is while whose is possessive.\nActive Recall: Q: Possessive of 'the girls' (plural) plus 'room'? | A: the girls' room"
   },
   {
     "id": "act-eng-parallel-structure",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Sentence Structure",
     "title": "Parallel Structure in Lists and Comparisons",
     "formulaOrRule": "Items in a series or comparison must share the same grammatical form.",
@@ -3597,13 +3597,13 @@
       "front": "Fix: 'He likes to read, cooking, and jogging.'",
       "back": "'He likes reading, cooking, and jogging.' (or 'to read, to cook, and to jog')"
     },
-    "searchableText": "Title: Parallel Structure in Lists and Comparisons\nSubject: ACT English (TestPrep - act)\nTopic: Sentence Structure\nFormula / Rule: Items in a series or comparison must share the same grammatical form.\nVariables: Parallel forms = all gerunds (-ing), all infinitives (to + verb), all nouns, or all clauses; correlative pairs = either/or, neither/nor, not only/but also\nExplanation: Step 1: identify the list or comparison. Step 2: match every item to the form of the first item. Wrong: 'She enjoys swimming, to bike, and hikes.' Right: 'She enjoys swimming, biking, and hiking.' Comparisons: 'Running is healthier than to sit' should be 'Running is healthier than sitting.' Pitfall: the form after both/and and not only/but also must match on each side.\nActive Recall: Q: Fix: 'He likes to read, cooking, and jogging.' | A: 'He likes reading, cooking, and jogging.' (or 'to read, to cook, and to jog')"
+    "searchableText": "Title: Parallel Structure in Lists and Comparisons\nSubject: ACT Reading (TestPrep - act)\nTopic: Sentence Structure\nFormula / Rule: Items in a series or comparison must share the same grammatical form.\nVariables: Parallel forms = all gerunds (-ing), all infinitives (to + verb), all nouns, or all clauses; correlative pairs = either/or, neither/nor, not only/but also\nExplanation: Step 1: identify the list or comparison. Step 2: match every item to the form of the first item. Wrong: 'She enjoys swimming, to bike, and hikes.' Right: 'She enjoys swimming, biking, and hiking.' Comparisons: 'Running is healthier than to sit' should be 'Running is healthier than sitting.' Pitfall: the form after both/and and not only/but also must match on each side.\nActive Recall: Q: Fix: 'He likes to read, cooking, and jogging.' | A: 'He likes reading, cooking, and jogging.' (or 'to read, to cook, and to jog')"
   },
   {
     "id": "act-eng-idioms-prepositions",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Usage",
     "title": "Idioms and Prepositions",
     "formulaOrRule": "Choose the preposition that standard English idiom requires for the specific word.",
@@ -3615,13 +3615,13 @@
       "front": "Choose: 'depend of' or 'depend on'?",
       "back": "depend on"
     },
-    "searchableText": "Title: Idioms and Prepositions\nSubject: ACT English (TestPrep - act)\nTopic: Usage\nFormula / Rule: Choose the preposition that standard English idiom requires for the specific word.\nVariables: Common pairs = different from, capable of, interested in, depend on, concerned about, prefer X to Y, responsible for\nExplanation: Step 1: identify the verb or adjective before the preposition. Step 2: recall the standard pairing, or read the choices aloud for what sounds natural. Example: 'She is capable to lead' is wrong; 'capable of leading' is correct. Use 'different from' for the ACT. Pitfall: the preposition belongs to the preceding word, not to the noun that follows, and a wrong choice often sounds only slightly off.\nActive Recall: Q: Choose: 'depend of' or 'depend on'? | A: depend on"
+    "searchableText": "Title: Idioms and Prepositions\nSubject: ACT Reading (TestPrep - act)\nTopic: Usage\nFormula / Rule: Choose the preposition that standard English idiom requires for the specific word.\nVariables: Common pairs = different from, capable of, interested in, depend on, concerned about, prefer X to Y, responsible for\nExplanation: Step 1: identify the verb or adjective before the preposition. Step 2: recall the standard pairing, or read the choices aloud for what sounds natural. Example: 'She is capable to lead' is wrong; 'capable of leading' is correct. Use 'different from' for the ACT. Pitfall: the preposition belongs to the preceding word, not to the noun that follows, and a wrong choice often sounds only slightly off.\nActive Recall: Q: Choose: 'depend of' or 'depend on'? | A: depend on"
   },
   {
     "id": "act-eng-concision",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Rhetorical Skills",
     "title": "Redundancy and Conciseness",
     "formulaOrRule": "When two choices say the same thing, choose the shorter one.",
@@ -3633,7 +3633,7 @@
       "front": "Which is better: 'repeat again' or 'repeat'?",
       "back": "'Repeat' (the other is redundant)"
     },
-    "searchableText": "Title: Redundancy and Conciseness\nSubject: ACT English (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: When two choices say the same thing, choose the shorter one.\nVariables: Redundant pairs = 'end result', 'past history', 'repeat again', 'free gift'\nExplanation: Delete words that repeat meaning. 'The reason is because' becomes 'The reason is that'. If 'NO CHANGE' or 'OMIT' is clear and complete, it is often correct. Never sacrifice clarity or grammar for brevity.\nActive Recall: Q: Which is better: 'repeat again' or 'repeat'? | A: 'Repeat' (the other is redundant)"
+    "searchableText": "Title: Redundancy and Conciseness\nSubject: ACT Reading (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: When two choices say the same thing, choose the shorter one.\nVariables: Redundant pairs = 'end result', 'past history', 'repeat again', 'free gift'\nExplanation: Delete words that repeat meaning. 'The reason is because' becomes 'The reason is that'. If 'NO CHANGE' or 'OMIT' is clear and complete, it is often correct. Never sacrifice clarity or grammar for brevity.\nActive Recall: Q: Which is better: 'repeat again' or 'repeat'? | A: 'Repeat' (the other is redundant)"
   },
   {
     "id": "act-sci-data-trends",
@@ -4091,7 +4091,7 @@
     "id": "act-eng-comma-splice-fused",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Sentence Structure",
     "title": "Comma Splices and Fused Sentences",
     "formulaOrRule": "Two independent clauses need a period, a semicolon, or a comma plus a FANBOYS conjunction.",
@@ -4106,13 +4106,13 @@
       "front": "Name four ways to fix a comma splice.",
       "back": "Period, semicolon, comma + FANBOYS conjunction, or subordinate one clause."
     },
-    "searchableText": "Title: Comma Splices and Fused Sentences\nSubject: ACT English (TestPrep - act)\nTopic: Sentence Structure\nFormula / Rule: Two independent clauses need a period, a semicolon, or a comma plus a FANBOYS conjunction.\nVariables: Independent clause = subject + verb that can stand alone; comma splice = two independent clauses joined by only a comma; fused sentence = joined with no punctuation; FANBOYS = for, and, nor, but, or, yet, so\nExplanation: Step 1: find the subject and verb of each clause. Step 2: if both clauses can stand alone, check the joiner. Fixes: period, semicolon, comma + FANBOYS, or make one clause dependent (Although she ran, he walked). Example: 'The bus was late, we missed the show' is a splice; 'The bus was late; we missed the show' is correct. A fused sentence is 'The bus was late we missed the show.' Pitfall: however, therefore, and thus are not conjunctions, so a comma before them still creates a splice; use a semicolon before and a comma after.\nActive Recall: Q: Name four ways to fix a comma splice. | A: Period, semicolon, comma + FANBOYS conjunction, or subordinate one clause."
+    "searchableText": "Title: Comma Splices and Fused Sentences\nSubject: ACT Reading (TestPrep - act)\nTopic: Sentence Structure\nFormula / Rule: Two independent clauses need a period, a semicolon, or a comma plus a FANBOYS conjunction.\nVariables: Independent clause = subject + verb that can stand alone; comma splice = two independent clauses joined by only a comma; fused sentence = joined with no punctuation; FANBOYS = for, and, nor, but, or, yet, so\nExplanation: Step 1: find the subject and verb of each clause. Step 2: if both clauses can stand alone, check the joiner. Fixes: period, semicolon, comma + FANBOYS, or make one clause dependent (Although she ran, he walked). Example: 'The bus was late, we missed the show' is a splice; 'The bus was late; we missed the show' is correct. A fused sentence is 'The bus was late we missed the show.' Pitfall: however, therefore, and thus are not conjunctions, so a comma before them still creates a splice; use a semicolon before and a comma after.\nActive Recall: Q: Name four ways to fix a comma splice. | A: Period, semicolon, comma + FANBOYS conjunction, or subordinate one clause."
   },
   {
     "id": "act-eng-restrictive-nonrestrictive",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Punctuation",
     "title": "Restrictive vs Non-Restrictive Clauses",
     "formulaOrRule": "Essential clause: no commas (that/who). Extra clause: commas on both sides (which/who).",
@@ -4125,13 +4125,13 @@
       "front": "Which word cannot begin a restrictive clause: that or which?",
       "back": "Which is used for non-restrictive (comma-set) clauses; restrictive clauses use that."
     },
-    "searchableText": "Title: Restrictive vs Non-Restrictive Clauses\nSubject: ACT English (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: Essential clause: no commas (that/who). Extra clause: commas on both sides (which/who).\nVariables: Restrictive = needed to identify the noun; non-restrictive = adds extra information and could be removed\nExplanation: Step 1: cover the clause. Step 2: if the sentence still identifies the same noun, the clause is extra and needs commas. Example: 'The film that won the award is long' (that identifies which film) vs 'Titanic, which won the award, is long' (the name already identifies it). Use who for people in both cases, and that only for restrictive clauses. Pitfall: a single comma around a non-restrictive clause is wrong; use a pair, or none. Never put a comma before that in a restrictive clause.\nActive Recall: Q: Which word cannot begin a restrictive clause: that or which? | A: Which is used for non-restrictive (comma-set) clauses; restrictive clauses use that."
+    "searchableText": "Title: Restrictive vs Non-Restrictive Clauses\nSubject: ACT Reading (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: Essential clause: no commas (that/who). Extra clause: commas on both sides (which/who).\nVariables: Restrictive = needed to identify the noun; non-restrictive = adds extra information and could be removed\nExplanation: Step 1: cover the clause. Step 2: if the sentence still identifies the same noun, the clause is extra and needs commas. Example: 'The film that won the award is long' (that identifies which film) vs 'Titanic, which won the award, is long' (the name already identifies it). Use who for people in both cases, and that only for restrictive clauses. Pitfall: a single comma around a non-restrictive clause is wrong; use a pair, or none. Never put a comma before that in a restrictive clause.\nActive Recall: Q: Which word cannot begin a restrictive clause: that or which? | A: Which is used for non-restrictive (comma-set) clauses; restrictive clauses use that."
   },
   {
     "id": "act-eng-verb-tense-form",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Grammar and Usage",
     "title": "Verb Tense and Verb Form Errors",
     "formulaOrRule": "Keep tense consistent unless time changes; use correct past and past participle forms.",
@@ -4145,13 +4145,13 @@
       "front": "Correct: 'has went' or 'has gone'?",
       "back": "has gone"
     },
-    "searchableText": "Title: Verb Tense and Verb Form Errors\nSubject: ACT English (TestPrep - act)\nTopic: Grammar and Usage\nFormula / Rule: Keep tense consistent unless time changes; use correct past and past participle forms.\nVariables: Past tense = went; past participle (with has/have/had) = gone; subject-verb agreement = verb matches the true subject, not a nearby noun\nExplanation: Step 1: find the time clue in the sentence or paragraph. Step 2: choose the tense that matches it. Step 3: check irregular forms (have gone, not have went; had written, not had wrote). Past perfect (had + participle) shows an action before another past action: 'She had left before he arrived.' Agreement example: 'The box of cookies is empty' (the subject is box). Pitfall: do not shift tense just because a narrative sentence sounds different; follow the surrounding passage.\nActive Recall: Q: Correct: 'has went' or 'has gone'? | A: has gone"
+    "searchableText": "Title: Verb Tense and Verb Form Errors\nSubject: ACT Reading (TestPrep - act)\nTopic: Grammar and Usage\nFormula / Rule: Keep tense consistent unless time changes; use correct past and past participle forms.\nVariables: Past tense = went; past participle (with has/have/had) = gone; subject-verb agreement = verb matches the true subject, not a nearby noun\nExplanation: Step 1: find the time clue in the sentence or paragraph. Step 2: choose the tense that matches it. Step 3: check irregular forms (have gone, not have went; had written, not had wrote). Past perfect (had + participle) shows an action before another past action: 'She had left before he arrived.' Agreement example: 'The box of cookies is empty' (the subject is box). Pitfall: do not shift tense just because a narrative sentence sounds different; follow the surrounding passage.\nActive Recall: Q: Correct: 'has went' or 'has gone'? | A: has gone"
   },
   {
     "id": "act-eng-wordiness-redundancy",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Rhetorical Skills",
     "title": "Wordiness and Redundancy",
     "formulaOrRule": "If two choices are grammatically correct and say the same thing, choose the shorter one.",
@@ -4163,13 +4163,13 @@
       "front": "Simplify: 'the reason is because'.",
       "back": "'the reason is that' (or just 'because')"
     },
-    "searchableText": "Title: Wordiness and Redundancy\nSubject: ACT English (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: If two choices are grammatically correct and say the same thing, choose the shorter one.\nVariables: Redundant phrases = end result, past history, repeat again, advance planning, the reason is because\nExplanation: Step 1: look for words that repeat a meaning already present. Step 2: delete them. Example: 'The final outcome was a surprising surprise' becomes 'The outcome was a surprise.' Prefer 'because' to 'due to the fact that.' Pitfall: concision never overrides grammar or clarity; if the shorter choice drops needed information or creates a fragment, it is wrong.\nActive Recall: Q: Simplify: 'the reason is because'. | A: 'the reason is that' (or just 'because')"
+    "searchableText": "Title: Wordiness and Redundancy\nSubject: ACT Reading (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: If two choices are grammatically correct and say the same thing, choose the shorter one.\nVariables: Redundant phrases = end result, past history, repeat again, advance planning, the reason is because\nExplanation: Step 1: look for words that repeat a meaning already present. Step 2: delete them. Example: 'The final outcome was a surprising surprise' becomes 'The outcome was a surprise.' Prefer 'because' to 'due to the fact that.' Pitfall: concision never overrides grammar or clarity; if the shorter choice drops needed information or creates a fragment, it is wrong.\nActive Recall: Q: Simplify: 'the reason is because'. | A: 'the reason is that' (or just 'because')"
   },
   {
     "id": "act-eng-delete-nochange-goal",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Rhetorical Skills",
     "title": "DELETE, NO CHANGE and Author's-Goal Questions",
     "formulaOrRule": "Test every choice against the question's stated purpose and the paragraph's focus.",
@@ -4183,7 +4183,7 @@
       "front": "When should you choose DELETE?",
       "back": "When the sentence is irrelevant, redundant, or breaks the paragraph's focus."
     },
-    "searchableText": "Title: DELETE, NO CHANGE and Author's-Goal Questions\nSubject: ACT English (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Test every choice against the question's stated purpose and the paragraph's focus.\nVariables: NO CHANGE = keep the underlined text; DELETE = omit it; goal question = asks which choice best accomplishes a stated aim\nExplanation: Step 1: for DELETE, ask whether the sentence is relevant to the paragraph's main point and whether the sentence before and after still connect. Step 2: for goal questions, restate the goal in your own words, then pick the choice that does exactly that and nothing else. Step 3: for NO CHANGE, only choose it if you cannot find an error or a better fit. Example: a sentence about a writer's lunch inside a paragraph about her research methods should be deleted. Pitfall: choosing a true or interesting sentence that does not serve the stated purpose.\nActive Recall: Q: When should you choose DELETE? | A: When the sentence is irrelevant, redundant, or breaks the paragraph's focus."
+    "searchableText": "Title: DELETE, NO CHANGE and Author's-Goal Questions\nSubject: ACT Reading (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Test every choice against the question's stated purpose and the paragraph's focus.\nVariables: NO CHANGE = keep the underlined text; DELETE = omit it; goal question = asks which choice best accomplishes a stated aim\nExplanation: Step 1: for DELETE, ask whether the sentence is relevant to the paragraph's main point and whether the sentence before and after still connect. Step 2: for goal questions, restate the goal in your own words, then pick the choice that does exactly that and nothing else. Step 3: for NO CHANGE, only choose it if you cannot find an error or a better fit. Example: a sentence about a writer's lunch inside a paragraph about her research methods should be deleted. Pitfall: choosing a true or interesting sentence that does not serve the stated purpose.\nActive Recall: Q: When should you choose DELETE? | A: When the sentence is irrelevant, redundant, or breaks the paragraph's focus."
   },
   {
     "id": "act-read-passage-pacing",
@@ -4562,7 +4562,7 @@
     "id": "act-eng-not-except-least",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Rhetorical Skills",
     "title": "NOT, EXCEPT and LEAST Questions",
     "formulaOrRule": "Three choices are acceptable; the answer is the one that is not.",
@@ -4574,13 +4574,13 @@
       "front": "On an EXCEPT question, which choice do you want?",
       "back": "The one choice that is NOT acceptable."
     },
-    "searchableText": "Title: NOT, EXCEPT and LEAST Questions\nSubject: ACT English (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Three choices are acceptable; the answer is the one that is not.\nVariables: NOT / EXCEPT / LEAST = signals that the correct answer is the odd one out\nExplanation: Step 1: circle the word NOT, EXCEPT, or LEAST in the question. Step 2: test each choice in the sentence and mark it acceptable (A) or unacceptable (U). Step 3: pick the single U. Example: if three choices all mean 'quickly' and one means 'carefully,' the odd one is the answer. Pitfall: reading the question as a normal 'best choice' item and selecting an acceptable option. Work quickly, since the three acceptable choices usually share meaning and grammar.\nActive Recall: Q: On an EXCEPT question, which choice do you want? | A: The one choice that is NOT acceptable."
+    "searchableText": "Title: NOT, EXCEPT and LEAST Questions\nSubject: ACT Reading (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Three choices are acceptable; the answer is the one that is not.\nVariables: NOT / EXCEPT / LEAST = signals that the correct answer is the odd one out\nExplanation: Step 1: circle the word NOT, EXCEPT, or LEAST in the question. Step 2: test each choice in the sentence and mark it acceptable (A) or unacceptable (U). Step 3: pick the single U. Example: if three choices all mean 'quickly' and one means 'carefully,' the odd one is the answer. Pitfall: reading the question as a normal 'best choice' item and selecting an acceptable option. Work quickly, since the three acceptable choices usually share meaning and grammar.\nActive Recall: Q: On an EXCEPT question, which choice do you want? | A: The one choice that is NOT acceptable."
   },
   {
     "id": "act-eng-pronoun-antecedent-number",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Grammar and Usage",
     "title": "Pronoun-Antecedent Agreement",
     "formulaOrRule": "A pronoun must match its antecedent in number, person, and clarity.",
@@ -4594,13 +4594,13 @@
       "front": "Correct: 'The team lost their game' or 'its game'?",
       "back": "its game (team is singular)"
     },
-    "searchableText": "Title: Pronoun-Antecedent Agreement\nSubject: ACT English (TestPrep - act)\nTopic: Grammar and Usage\nFormula / Rule: A pronoun must match its antecedent in number, person, and clarity.\nVariables: Collective nouns (team, committee, jury) = usually singular; indefinite pronouns = each, everyone, neither are singular; both, few, many are plural = both, few, many are plural\nExplanation: Step 1: find the antecedent the pronoun refers to. Step 2: decide whether it is singular or plural. Step 3: match it. Example: 'The committee announced its decision' (its, not their). 'Each of the players brought his or her gear' or reword to 'The players brought their gear.' Pitfall: a prepositional phrase does not change the antecedent: in 'one of the dogs lost its collar,' the antecedent is one. Also fix vague pronouns when they could refer to two nouns.\nActive Recall: Q: Correct: 'The team lost their game' or 'its game'? | A: its game (team is singular)"
+    "searchableText": "Title: Pronoun-Antecedent Agreement\nSubject: ACT Reading (TestPrep - act)\nTopic: Grammar and Usage\nFormula / Rule: A pronoun must match its antecedent in number, person, and clarity.\nVariables: Collective nouns (team, committee, jury) = usually singular; indefinite pronouns = each, everyone, neither are singular; both, few, many are plural = both, few, many are plural\nExplanation: Step 1: find the antecedent the pronoun refers to. Step 2: decide whether it is singular or plural. Step 3: match it. Example: 'The committee announced its decision' (its, not their). 'Each of the players brought his or her gear' or reword to 'The players brought their gear.' Pitfall: a prepositional phrase does not change the antecedent: in 'one of the dogs lost its collar,' the antecedent is one. Also fix vague pronouns when they could refer to two nouns.\nActive Recall: Q: Correct: 'The team lost their game' or 'its game'? | A: its game (team is singular)"
   },
   {
     "id": "act-eng-semicolon-conjunctive-adverb",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Punctuation",
     "title": "Semicolons and Conjunctive Adverbs",
     "formulaOrRule": "Independent clause; however, independent clause.",
@@ -4613,13 +4613,13 @@
       "front": "Punctuate: 'It rained however we played.'",
       "back": "'It rained; however, we played.'"
     },
-    "searchableText": "Title: Semicolons and Conjunctive Adverbs\nSubject: ACT English (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: Independent clause; however, independent clause.\nVariables: Conjunctive adverbs = however, therefore, moreover, consequently, thus; they are not FANBOYS conjunctions = they are not FANBOYS conjunctions\nExplanation: Step 1: confirm both sides are independent clauses. Step 2: use a semicolon before the conjunctive adverb and a comma after it. Example: 'The storm was fierce; however, the ship held.' A comma alone before however makes a comma splice. When the adverb sits mid-clause, set it off with commas: 'The ship, however, held.' Pitfall: do not use a semicolon before a dependent clause or a list that is not preceded by an independent clause.\nActive Recall: Q: Punctuate: 'It rained however we played.' | A: 'It rained; however, we played.'"
+    "searchableText": "Title: Semicolons and Conjunctive Adverbs\nSubject: ACT Reading (TestPrep - act)\nTopic: Punctuation\nFormula / Rule: Independent clause; however, independent clause.\nVariables: Conjunctive adverbs = however, therefore, moreover, consequently, thus; they are not FANBOYS conjunctions = they are not FANBOYS conjunctions\nExplanation: Step 1: confirm both sides are independent clauses. Step 2: use a semicolon before the conjunctive adverb and a comma after it. Example: 'The storm was fierce; however, the ship held.' A comma alone before however makes a comma splice. When the adverb sits mid-clause, set it off with commas: 'The ship, however, held.' Pitfall: do not use a semicolon before a dependent clause or a list that is not preceded by an independent clause.\nActive Recall: Q: Punctuate: 'It rained however we played.' | A: 'It rained; however, we played.'"
   },
   {
     "id": "act-eng-passive-wordiness",
     "stream": "TestPrep",
     "level": "act",
-    "subject": "ACT English",
+    "subject": "ACT Reading",
     "topic": "Rhetorical Skills",
     "title": "Eliminating Wordy Passive Phrasing",
     "formulaOrRule": "Prefer active voice and the most direct phrasing that keeps the meaning.",
@@ -4632,7 +4632,7 @@
       "front": "Make active: 'The ball was thrown by Maria.'",
       "back": "'Maria threw the ball.'"
     },
-    "searchableText": "Title: Eliminating Wordy Passive Phrasing\nSubject: ACT English (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Prefer active voice and the most direct phrasing that keeps the meaning.\nVariables: Passive = subject receives the action (was written by); active = subject performs the action\nExplanation: Step 1: find the actor and the action. Step 2: place the actor first and use a strong verb. Example: 'The decision was made by the board to approve the plan' becomes 'The board approved the plan.' Cut filler like 'it is the case that' and 'in the event that.' Pitfall: passive voice is sometimes correct when the actor is unknown or unimportant, and concision never overrides grammar or the question's stated goal.\nActive Recall: Q: Make active: 'The ball was thrown by Maria.' | A: 'Maria threw the ball.'"
+    "searchableText": "Title: Eliminating Wordy Passive Phrasing\nSubject: ACT Reading (TestPrep - act)\nTopic: Rhetorical Skills\nFormula / Rule: Prefer active voice and the most direct phrasing that keeps the meaning.\nVariables: Passive = subject receives the action (was written by); active = subject performs the action\nExplanation: Step 1: find the actor and the action. Step 2: place the actor first and use a strong verb. Example: 'The decision was made by the board to approve the plan' becomes 'The board approved the plan.' Cut filler like 'it is the case that' and 'in the event that.' Pitfall: passive voice is sometimes correct when the actor is unknown or unimportant, and concision never overrides grammar or the question's stated goal.\nActive Recall: Q: Make active: 'The ball was thrown by Maria.' | A: 'Maria threw the ball.'"
   },
   {
     "id": "act-read-attitude-shifts",

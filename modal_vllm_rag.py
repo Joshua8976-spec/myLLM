@@ -236,7 +236,8 @@ def sanitize_citations(
             if tag not in seen:
                 verified_citations.append(tag)
                 seen.add(tag)
-        else:
+        elif "-" in tag or "_" in tag or len(tag) >= 6:
+            # Only strip tags that look like citation IDs; preserve math/code brackets like [i], [0], [a]
             cleaned_text = re.sub(rf"\[{re.escape(tag)}\]", "", cleaned_text)
 
     # Recognize unbracketed formula or exact title mentions
@@ -358,7 +359,13 @@ class RagVllmService:
                     time.sleep(1.5)
 
         if not healthy:
-            print("⚠️ vLLM server failed to start within timeout; falling back to direct HuggingFace inference.")
+            print("⚠️ vLLM server failed to start within timeout; terminating vLLM and falling back to direct HuggingFace inference.")
+            if hasattr(self, "vllm_proc") and self.vllm_proc and self.vllm_proc.poll() is None:
+                self.vllm_proc.terminate()
+                try:
+                    self.vllm_proc.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    self.vllm_proc.kill()
             self._init_hf_fallback()
         else:
             self.hf_model = None
@@ -458,19 +465,28 @@ class RagVllmService:
             is_stream = body.get("stream", False)
 
             try:
-                client = httpx.AsyncClient(base_url="http://127.0.0.1:8000", timeout=120.0)
                 if is_stream:
                     async def stream_generator():
-                        async with client.stream("POST", "/v1/chat/completions", json=body) as resp:
-                            async for chunk in resp.aiter_bytes():
-                                yield chunk
-                        await client.aclose()
+                        client = httpx.AsyncClient(base_url="http://127.0.0.1:8000", timeout=120.0)
+                        try:
+                            async with client.stream("POST", "/v1/chat/completions", json=body) as resp:
+                                if resp.status_code != 200:
+                                    err_body = await resp.aread()
+                                    raise RuntimeError(f"vLLM stream error {resp.status_code}: {err_body.decode('utf-8', 'ignore')}")
+                                async for chunk in resp.aiter_bytes():
+                                    yield chunk
+                        finally:
+                            await client.aclose()
 
                     return StreamingResponse(stream_generator(), media_type="text/event-stream")
                 else:
-                    resp = await client.post("/v1/chat/completions", json=body)
-                    await client.aclose()
-                    return JSONResponse(status_code=resp.status_code, content=resp.json())
+                    async with httpx.AsyncClient(base_url="http://127.0.0.1:8000", timeout=120.0) as client:
+                        resp = await client.post("/v1/chat/completions", json=body)
+                        try:
+                            content = resp.json()
+                        except Exception:
+                            content = {"detail": resp.text}
+                        return JSONResponse(status_code=resp.status_code, content=content)
             except Exception as e:
                 if getattr(self, "hf_model", None) is not None:
                     return self._generate_hf_completion(body)
@@ -518,31 +534,38 @@ class RagVllmService:
                     accumulated_text = ""
                     client = httpx.AsyncClient(base_url="http://127.0.0.1:8000", timeout=120.0)
                     try:
-                        vllm_payload = {
-                            "model": MODEL_ID,
-                            "messages": messages,
-                            "temperature": gen_temp,
-                            "top_p": 0.9,
-                            "repetition_penalty": 1.05,
-                            "max_tokens": 500,
-                            "stream": True,
-                        }
-                        async with client.stream("POST", "/v1/chat/completions", json=vllm_payload) as resp:
-                            async for raw_line in resp.aiter_lines():
-                                if not raw_line or not raw_line.startswith("data: "):
-                                    continue
-                                data_str = raw_line[6:].strip()
-                                if data_str == "[DONE]":
-                                    break
-                                try:
-                                    chunk_json = json.loads(data_str)
-                                    delta = chunk_json.get("choices", [{}])[0].get("delta", {})
-                                    content_chunk = delta.get("content", "")
-                                    if content_chunk:
-                                        accumulated_text += content_chunk
-                                        yield f"data: {json.dumps({'text': content_chunk, 'done': False})}\n\n"
-                                except Exception:
-                                    continue
+                        if getattr(self, "hf_model", None) is not None:
+                            accumulated_text = self._generate_hf_text(messages, temperature=gen_temp, max_tokens=500)
+                            yield f"data: {json.dumps({'text': accumulated_text, 'done': False})}\n\n"
+                        else:
+                            vllm_payload = {
+                                "model": MODEL_ID,
+                                "messages": messages,
+                                "temperature": gen_temp,
+                                "top_p": 0.9,
+                                "repetition_penalty": 1.05,
+                                "max_tokens": 500,
+                                "stream": True,
+                            }
+                            async with client.stream("POST", "/v1/chat/completions", json=vllm_payload) as resp:
+                                if resp.status_code != 200:
+                                    err_body = await resp.aread()
+                                    raise RuntimeError(f"vLLM stream error {resp.status_code}: {err_body.decode('utf-8', 'ignore')}")
+                                async for raw_line in resp.aiter_lines():
+                                    if not raw_line or not raw_line.startswith("data: "):
+                                        continue
+                                    data_str = raw_line[6:].strip()
+                                    if data_str == "[DONE]":
+                                        break
+                                    try:
+                                        chunk_json = json.loads(data_str)
+                                        delta = chunk_json.get("choices", [{}])[0].get("delta", {})
+                                        content_chunk = delta.get("content", "")
+                                        if content_chunk:
+                                            accumulated_text += content_chunk
+                                            yield f"data: {json.dumps({'text': content_chunk, 'done': False})}\n\n"
+                                    except Exception:
+                                        continue
 
                         # Send final citations and retrieved chunks payload
                         cleaned_answer, citations = sanitize_citations(accumulated_text, retrieved_chunks)
@@ -582,7 +605,7 @@ class RagVllmService:
             except Exception as vllm_err:
                 print(f"⚠️ Local vLLM endpoint call error: {vllm_err}. Using fallback...")
                 if getattr(self, "hf_model", None) is not None:
-                    answer_text = self._generate_hf_text(messages, temperature=0.15, max_tokens=500)
+                    answer_text = self._generate_hf_text(messages, temperature=gen_temp, max_tokens=500)
                 else:
                     raise HTTPException(status_code=502, detail=f"vLLM generation error: {str(vllm_err)}")
 

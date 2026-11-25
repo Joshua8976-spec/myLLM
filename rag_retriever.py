@@ -541,7 +541,7 @@ class RAGRetriever:
                 if self.matches_profile(item, relaxed_profile, subject_filter)
             ]
 
-        if not candidate_indices and subject_filter:
+        if not candidate_indices and subject_filter and not profile:
             candidate_indices = [
                 i for i, item in enumerate(self.corpus)
                 if self.matches_profile(item, None, subject_filter)
