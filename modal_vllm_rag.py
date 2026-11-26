@@ -181,7 +181,8 @@ def build_grounded_tutor_messages(
             "4. COMMERCE, ACCOUNTANCY & SOCIAL SCIENCES: For Commerce, Accountancy, Economics, or Business Studies questions, provide clear conceptual explanations, structured comparisons, step-by-step calculation methods or journal entries where applicable, and practical real-world scenarios.\n"
             "5. CITATIONS: If drawing directly from a retrieved Context Entry, cite its id in brackets, e.g. [chunk-id]. Cite only valid retrieved IDs. Do NOT invent IDs or append an artificial Sources list.\n"
             "6. ACTIVE RECALL: Conclude every valid academic explanation with a single line labeled 'Quick Check:' containing one short conceptual active-recall question.\n"
-            "7. TONE: Firm, structured, clear, and encouraging."
+            "7. CLEAN UNICODE MATH: NEVER output raw LaTeX ($...$, $$...$$, \\frac, \\Delta, \\theta, \\sqrt). Use clean Unicode math notation (Δs, v² = u² + 2as, θ, ×, ÷, √) with clear paragraph and bullet spacing.\n"
+            "8. TONE: Firm, structured, clear, and encouraging."
         )
 
     if context_block.strip():
